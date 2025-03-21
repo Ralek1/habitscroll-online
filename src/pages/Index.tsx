@@ -1,11 +1,10 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import HabitScroll from '../components/HabitScroll';
 import { habits } from '../data/habits';
 import type { Habit } from '../data/habits';
-import { Sparkles, HeartPulse, Twitter, Youtube, Instagram, Facebook, Pinterest } from 'lucide-react';
+import { Sparkles, HeartPulse, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
 
 const Index: React.FC = () => {
   const [currentHabit, setCurrentHabit] = useState<Habit | null>(null);
@@ -121,9 +120,6 @@ const Index: React.FC = () => {
               </a>
               <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
-                <Pinterest className="w-5 h-5" />
               </a>
             </div>
             
