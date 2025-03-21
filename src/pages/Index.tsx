@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from 'react';
+
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import HabitScroll from '../components/HabitScroll';
 import { habits } from '../data/habits';
 import type { Habit } from '../data/habits';
-import { Sparkles, HeartPulse } from 'lucide-react';
+import { Sparkles, HeartPulse, Twitter, Youtube, Instagram, TikTok, PinterestIcon } from 'lucide-react';
 
 const Index: React.FC = () => {
   const [currentHabit, setCurrentHabit] = useState<Habit | null>(null);
   const [isScrollVisible, setIsScrollVisible] = useState(false);
   const [usedHabitIds, setUsedHabitIds] = useState<number[]>([]);
+  const [hasDiscovered, setHasDiscovered] = useState(false);
 
   const getRandomHabit = () => {
     if (usedHabitIds.length >= habits.length) {
@@ -24,6 +27,8 @@ const Index: React.FC = () => {
   };
 
   const handleButtonClick = () => {
+    if (hasDiscovered) return;
+    
     setIsScrollVisible(false);
     
     setTimeout(() => {
@@ -31,13 +36,14 @@ const Index: React.FC = () => {
       setCurrentHabit(newHabit);
       
       setUsedHabitIds(prev => [...prev, newHabit.id]);
+      setHasDiscovered(true);
       
       setIsScrollVisible(true);
     }, 500);
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center py-12 px-4">
+    <div className="min-h-screen flex flex-col items-center justify-between py-12 px-4">
       <div className="text-center mb-8 animate-appear">
         <div className="inline-block bg-retro-purple-700 px-4 py-1 rounded mb-2">
           <h1 className="font-pixel text-retro-light text-xs">PURPLE HABIT SCROLLS</h1>
@@ -66,9 +72,29 @@ const Index: React.FC = () => {
         </div>
         
         <div className="mt-8 mb-4 relative">
-          <PixelButton onClick={handleButtonClick}>
-            {currentHabit ? "New Habit" : "Discover Habit"}
-          </PixelButton>
+          {!hasDiscovered ? (
+            <PixelButton onClick={handleButtonClick}>
+              Discover Habit
+            </PixelButton>
+          ) : (
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+              <Link to="/learn-who-you-are">
+                <PixelButton onClick={() => {}}>
+                  Learn Who You Are
+                </PixelButton>
+              </Link>
+              <Link to="/learn-about-habits">
+                <PixelButton onClick={() => {}}>
+                  Learn About Habits
+                </PixelButton>
+              </Link>
+              <Link to="/learn-how-to-track">
+                <PixelButton onClick={() => {}}>
+                  Learn How To Track
+                </PixelButton>
+              </Link>
+            </div>
+          )}
           
           <div className="absolute -bottom-6 w-full text-center">
             <HeartPulse className="w-5 h-5 mx-auto text-retro-purple-400 animate-pulse" />
@@ -76,11 +102,43 @@ const Index: React.FC = () => {
         </div>
       </div>
       
-      <div className="mt-auto pt-8 pb-2 text-center">
-        <p className="font-pixel-text text-retro-purple-400 text-sm">
-          Build healthy habits, one scroll at a time
-        </p>
-      </div>
+      <footer className="w-full mt-12 pt-8 pb-6 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            {/* Left section - empty for now */}
+            <div className="hidden md:block"></div>
+            
+            {/* Center section - Social media */}
+            <div className="flex gap-6 items-center">
+              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+                <Youtube className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+                <TikTok className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+                <PinterestIcon className="w-5 h-5" />
+              </a>
+            </div>
+            
+            {/* Right section - Legal links */}
+            <div className="flex gap-4 items-center">
+              <Link to="/impressum" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
+                Impressum
+              </Link>
+              <Link to="/datenschutz" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
+                Datenschutz
+              </Link>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
