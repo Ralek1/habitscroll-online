@@ -76,6 +76,11 @@ const Index: React.FC = () => {
               Discover Habit
             </PixelButton>
           ) : (
+            <div className="flex flex-col items-center">
+              {/* Neuer Text unter der Schriftrolle */}
+              <p className="font-pixel text-retro-purple-200 text-center mb-4">
+                Don't know how to start a habit? Learn more about:
+              </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
               <Link to="/learn-who-you-are">
                 <PixelButton onClick={() => {}}>
