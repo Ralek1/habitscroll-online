@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
-import { ArrowLeft, Brain, User, Users, Briefcase, Heart, Shield, DollarSign } from 'lucide-react';
+import { Brain, User, Users, Briefcase, Heart, Shield, DollarSign } from 'lucide-react';
 
 interface PersonalityTest {
   id: string;
@@ -81,6 +81,13 @@ const LearnWhoYouAre: React.FC = () => {
           Learn Who <br /> 
           <span className="text-retro-accent">You Are</span>
         </h2>
+        <div className="mt-2">
+          <Link to="/">
+            <PixelButton onClick={() => {}}>
+              Home
+            </PixelButton>
+          </Link>
+        </div>
       </div>
       
       <div className="w-full max-w-3xl flex flex-col items-center">
