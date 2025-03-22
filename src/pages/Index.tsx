@@ -50,7 +50,7 @@ const Index: React.FC = () => {
           <h1 className="font-pixel text-retro-light text-xs">THE HABIT SCROLLS</h1>
         </div>
         <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed">
-          Now Start Your Next <br /> 
+          Now Start Your New <br /> 
           <span className="text-retro-accent">Daily Habit</span>
         </h2>
       </div>
@@ -80,17 +80,17 @@ const Index: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
                 <Link to="/learn-who-you-are">
                   <PixelButton onClick={() => {}}>
-                    Learn Who You Are
+                    Yourself
                   </PixelButton>
                 </Link>
                 <Link to="/learn-about-habits">
                   <PixelButton onClick={() => {}}>
-                    Learn About Habits
+                    Habits
                   </PixelButton>
                 </Link>
                 <Link to="/learn-how-to-track">
                   <PixelButton onClick={() => {}}>
-                    Learn How To Track
+                    Tracking
                   </PixelButton>
                 </Link>
               </div>
