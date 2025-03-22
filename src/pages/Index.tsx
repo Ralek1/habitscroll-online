@@ -45,7 +45,7 @@ const Index: React.FC = () => {
     <div className="min-h-screen flex flex-col items-center justify-between py-12 px-4">
       <div className="text-center mb-8 animate-appear">
         <div className="inline-block bg-retro-purple-700 px-4 py-1 rounded mb-2">
-          <h1 className="font-pixel text-retro-light text-xs">PURPLE HABIT SCROLLS</h1>
+          <h1 className="font-pixel text-retro-light text-xs">THE HABIT SCROLLS</h1>
         </div>
         <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed">
           Discover Your Next <br /> 
