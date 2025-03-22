@@ -13,23 +13,10 @@ const ClosedScroll: React.FC<ClosedScrollProps> = ({ onClick }) => {
       onClick={onClick}
     >
       <div className="pixel-scroll-closed relative">
-        {/* Top wooden handle */}
-        <div className="scroll-handle scroll-handle-top">
-          <div className="scroll-wooden-knob scroll-wooden-knob-left"></div>
-          <div className="scroll-wooden-knob scroll-wooden-knob-right"></div>
-        </div>
-        
-        {/* Middle rolled parchment */}
-        <div className="scroll-roll flex items-center justify-center py-3">
-          <Sparkles className="w-6 h-6 text-amber-800/70" />
-          <span className="font-pixel text-amber-950 text-sm px-2">Click to discover a habit</span>
-          <Sparkles className="w-6 h-6 text-amber-800/70" />
-        </div>
-        
-        {/* Bottom wooden handle */}
-        <div className="scroll-handle scroll-handle-bottom">
-          <div className="scroll-wooden-knob scroll-wooden-knob-left"></div>
-          <div className="scroll-wooden-knob scroll-wooden-knob-right"></div>
+        <div className="scroll-closed-body flex items-center justify-center py-6 px-4">
+          <Sparkles className="w-6 h-6 text-amber-800/80" />
+          <span className="font-pixel text-amber-950 text-sm px-3">Click to discover a habit</span>
+          <Sparkles className="w-6 h-6 text-amber-800/80" />
         </div>
       </div>
     </div>
