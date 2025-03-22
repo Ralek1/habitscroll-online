@@ -7,13 +7,20 @@ import { ArrowLeft } from 'lucide-react';
 const Datenschutz: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-12 px-4">
-      <div className="text-center mb-8 animate-appear">
+      <div className="text-center mb-8 animate-appear flex flex-col items-center">
         <div className="inline-block bg-retro-purple-700 px-4 py-1 rounded mb-2">
           <h1 className="font-pixel text-retro-light text-xs">PURPLE HABIT SCROLLS</h1>
         </div>
-        <h2 className="font-pixel text-xl text-retro-purple-200 leading-relaxed">
+        <h2 className="font-pixel text-xl text-retro-purple-200 leading-relaxed text-center">
           Datenschutz
         </h2>
+        <div className="mt-2">
+          <Link to="/?showHabit=true">
+            <PixelButton onClick={() => {}}>
+              Home
+            </PixelButton>
+          </Link>
+        </div>
       </div>
       
       <div className="w-full max-w-2xl flex flex-col items-center">
@@ -59,7 +66,7 @@ const Datenschutz: React.FC = () => {
           </div>
         </div>
         
-        <Link to="/">
+        <Link to="/?showHabit=true">
           <PixelButton onClick={() => {}}>
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
