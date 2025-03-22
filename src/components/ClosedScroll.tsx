@@ -20,8 +20,8 @@ const ClosedScroll: React.FC<ClosedScrollProps> = ({ onClick }) => {
           <div className="pixel-scroll-knob"></div>
         </div>
         
-        {/* Closed scroll body */}
-        <div className="scroll-closed-body flex items-center justify-center py-6 px-4 rounded-xl">
+        {/* Closed scroll body - updated with visible background */}
+        <div className="scroll-paper scroll-closed-body flex items-center justify-center py-6 px-4 rounded-xl">
           <Sparkles className="w-6 h-6 text-amber-800/80" />
           <span className="font-pixel text-amber-950 text-sm px-3">Click to discover a habit</span>
           <Sparkles className="w-6 h-6 text-amber-800/80" />
