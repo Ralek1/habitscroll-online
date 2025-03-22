@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -73,11 +74,11 @@ const personalityTests: PersonalityTest[] = [
 const LearnWhoYouAre: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-start py-12 px-4">
-      <div className="text-center mb-8 animate-appear">
+      <div className="text-center mb-8 animate-appear flex flex-col items-center">
         <div className="inline-block bg-retro-purple-700 px-4 py-1 rounded mb-2">
           <h1 className="font-pixel text-retro-light text-xs">PURPLE HABIT SCROLLS</h1>
         </div>
-        <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed">
+        <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed text-center">
           Learn Who <br /> 
           <span className="text-retro-accent">You Are</span>
         </h2>
