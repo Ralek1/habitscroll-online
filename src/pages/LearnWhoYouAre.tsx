@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -83,7 +82,7 @@ const LearnWhoYouAre: React.FC = () => {
           <span className="text-retro-accent">You Are</span>
         </h2>
         <div className="mt-2">
-          <Link to="/">
+          <Link to="/?showHabit=true">
             <PixelButton onClick={() => {}}>
               Home
             </PixelButton>
@@ -163,7 +162,7 @@ const LearnWhoYouAre: React.FC = () => {
           ))}
         </div>
         
-        <Link to="/">
+        <Link to="/?showHabit=true">
           <PixelButton onClick={() => {}}>
             Home
           </PixelButton>

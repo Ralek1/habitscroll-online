@@ -1,6 +1,5 @@
-
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import HabitScroll from '../components/HabitScroll';
 import ClosedScroll from '../components/ClosedScroll';
@@ -9,10 +8,26 @@ import type { Habit } from '../data/habits';
 import { Sparkles, HeartPulse, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
 
 const Index: React.FC = () => {
+  const location = useLocation();
   const [currentHabit, setCurrentHabit] = useState<Habit | null>(null);
   const [isScrollVisible, setIsScrollVisible] = useState(false);
   const [usedHabitIds, setUsedHabitIds] = useState<number[]>([]);
   const [hasDiscovered, setHasDiscovered] = useState(false);
+
+  useEffect(() => {
+    const savedHabitId = localStorage.getItem('currentHabitId');
+    const showHabit = new URLSearchParams(location.search).get('showHabit') === 'true';
+    
+    if (savedHabitId && (showHabit || localStorage.getItem('hasDiscovered') === 'true')) {
+      const habit = habits.find(h => h.id === parseInt(savedHabitId));
+      if (habit) {
+        setCurrentHabit(habit);
+        setHasDiscovered(true);
+        setIsScrollVisible(true);
+        localStorage.setItem('hasDiscovered', 'true');
+      }
+    }
+  }, [location]);
 
   const getRandomHabit = () => {
     if (usedHabitIds.length >= habits.length) {
@@ -35,6 +50,9 @@ const Index: React.FC = () => {
     setTimeout(() => {
       const newHabit = getRandomHabit();
       setCurrentHabit(newHabit);
+      
+      localStorage.setItem('currentHabitId', newHabit.id.toString());
+      localStorage.setItem('hasDiscovered', 'true');
       
       setUsedHabitIds(prev => [...prev, newHabit.id]);
       setHasDiscovered(true);
@@ -106,10 +124,8 @@ const Index: React.FC = () => {
       <footer className="w-full mt-12 pt-8 pb-6 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            {/* Left section - empty for now */}
             <div className="hidden md:block"></div>
             
-            {/* Center section - Social media */}
             <div className="flex gap-6 items-center">
               <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
                 <Twitter className="w-5 h-5" />
@@ -125,7 +141,6 @@ const Index: React.FC = () => {
               </a>
             </div>
             
-            {/* Right section - Legal links */}
             <div className="flex gap-4 items-center">
               <Link to="/impressum" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
                 Impressum
