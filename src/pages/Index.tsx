@@ -50,7 +50,7 @@ const Index: React.FC = () => {
           <h1 className="font-pixel text-retro-light text-xs">THE HABIT SCROLLS</h1>
         </div>
         <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed">
-          Discover Your Next <br /> 
+          Now Start Your Next <br /> 
           <span className="text-retro-accent">Daily Habit</span>
         </h2>
       </div>
