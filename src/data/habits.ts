@@ -4,7 +4,7 @@ export interface Habit {
   title: string;
   description: string;
   howToGain: string;
-  howToTrack: string;
+  perfectFor: string;
   benefits: string;
 }
 
@@ -14,7 +14,7 @@ export const habits: Habit[] = [
     title: "Morning Meditation",
     description: "Start your day with a clear mind through mindful meditation",
     howToGain: "Begin with just 2 minutes each morning before checking your phone. Gradually increase to 10-15 minutes as it becomes comfortable.",
-    howToTrack: "Use a habit tracker app or a simple calendar where you mark each day you complete your meditation session.",
+    perfectFor: "Mindful individuals who seek mental clarity and emotional balance. Ideal for those who want to start their day with intention rather than reaction.",
     benefits: "Reduced stress, improved focus, better emotional regulation, and enhanced self-awareness over time."
   },
   {
@@ -22,7 +22,7 @@ export const habits: Habit[] = [
     title: "Daily Reading",
     description: "Feed your mind with knowledge through consistent reading",
     howToGain: "Set aside 20 minutes daily. Start with books that genuinely interest you to build momentum.",
-    howToTrack: "Track pages read daily or use a reading app that logs your sessions. Aim for consistency, not speed.",
+    perfectFor: "Lifelong learners and curious minds who value knowledge acquisition. Great for those who want to expand their perspectives and grow intellectually.",
     benefits: "Expanded vocabulary, improved concentration, greater knowledge base, and enhanced cognitive function."
   },
   {
@@ -30,7 +30,7 @@ export const habits: Habit[] = [
     title: "Hydration Habit",
     description: "Transform your health by properly hydrating throughout the day",
     howToGain: "Start your morning with a full glass of water. Keep a water bottle visible at all times. Set reminders if needed.",
-    howToTrack: "Use a marked water bottle or an app that reminds you to drink. Aim for 8 glasses daily.",
+    perfectFor: "Health-conscious individuals who want a simple yet effective way to improve their wellbeing. Ideal for busy people who often forget to drink enough water.",
     benefits: "Improved energy levels, better skin health, enhanced cognitive function, and proper organ function."
   },
   {
@@ -38,7 +38,7 @@ export const habits: Habit[] = [
     title: "Gratitude Practice",
     description: "Cultivate joy by acknowledging the good in your life",
     howToGain: "Every evening, write down three things you're grateful for. Be specific and try not to repeat items.",
-    howToTrack: "Maintain a dedicated gratitude journal or note in your phone. Review weekly to see patterns.",
+    perfectFor: "Optimistic souls who want to train their minds to focus on the positive. Great for those struggling with negative thought patterns or seeking more joy in life.",
     benefits: "Increased happiness, reduced depression, better sleep quality, and stronger resilience to stress."
   },
   {
@@ -46,7 +46,7 @@ export const habits: Habit[] = [
     title: "Tech-Free Time",
     description: "Reclaim your attention through daily digital detox periods",
     howToGain: "Designate 30-60 minutes each day where all screens are put away. Start with dinner time or before bed.",
-    howToTrack: "Set a recurring alarm as a reminder. Track how you feel during and after these breaks.",
+    perfectFor: "Digital natives who feel overwhelmed by constant connectivity. Ideal for those who want to be more present in their relationships and personal time.",
     benefits: "Reduced anxiety, improved real-life connections, better sleep, and increased mindfulness."
   },
   {
@@ -54,7 +54,7 @@ export const habits: Habit[] = [
     title: "Daily Movement",
     description: "Energize your body with consistent physical activity",
     howToGain: "Start with just 5 minutes of any movement you enjoy. Schedule it at the same time each day to build consistency.",
-    howToTrack: "Use a fitness app or simple calendar. Focus on consistency rather than performance.",
+    perfectFor: "Energy-seekers who want to feel more alive and vibrant. Great for desk workers, busy professionals, or anyone who tends to be sedentary.",
     benefits: "Improved mood, increased energy, better cardiovascular health, and enhanced cognitive function."
   },
   {
@@ -62,7 +62,7 @@ export const habits: Habit[] = [
     title: "Mindful Eating",
     description: "Transform your relationship with food through present-moment awareness",
     howToGain: "For one meal a day, eat without distractions. Notice flavors, textures, and your body's hunger signals.",
-    howToTrack: "Rate your attentiveness from 1-10 after each mindful meal. Note insights in a journal.",
+    perfectFor: "Sensory appreciators who want to enjoy their food more deeply. Ideal for fast eaters, emotional eaters, or those who eat while distracted.",
     benefits: "Better digestion, natural portion control, increased enjoyment of food, and healthier food choices."
   },
   {
@@ -70,7 +70,7 @@ export const habits: Habit[] = [
     title: "Creative Expression",
     description: "Nurture your imagination through regular creative practice",
     howToGain: "Set aside 15 minutes daily for any creative activity: drawing, writing, music, etc. Focus on the process, not the result.",
-    howToTrack: "Keep a portfolio or journal of your creations, even if they're simple or unfinished.",
+    perfectFor: "Expressive souls who need an outlet for their thoughts and emotions. Great for analytical thinkers looking to balance their logical side with creativity.",
     benefits: "Reduced stress, enhanced problem-solving skills, improved emotional processing, and greater self-discovery."
   }
 ];

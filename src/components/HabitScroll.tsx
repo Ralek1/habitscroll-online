@@ -59,8 +59,8 @@ const HabitScroll: React.FC<HabitScrollProps> = ({ habit, isVisible }) => {
               </div>
               
               <div className="scroll-section">
-                <h3 className="font-pixel text-amber-950 text-sm mb-2">HOW TO TRACK</h3>
-                <p className="font-pixel-text text-amber-950">{habit.howToTrack}</p>
+                <h3 className="font-pixel text-amber-950 text-sm mb-2">PERFECT FOR</h3>
+                <p className="font-pixel-text text-amber-950">{habit.perfectFor}</p>
               </div>
               
               <div className="scroll-section">
