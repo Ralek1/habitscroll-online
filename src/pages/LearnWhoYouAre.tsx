@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -158,7 +157,6 @@ const LearnWhoYouAre: React.FC = () => {
         
         <Link to="/">
           <PixelButton onClick={() => {}}>
-            <ArrowLeft className="w-4 h-4 mr-2" />
             Home
           </PixelButton>
         </Link>
