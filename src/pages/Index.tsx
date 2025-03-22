@@ -73,7 +73,7 @@ const Index: React.FC = () => {
         <div className="mt-8 mb-4 relative">
           {!hasDiscovered ? (
             <PixelButton onClick={handleButtonClick}>
-              Discover Habit
+              Start Habit
             </PixelButton>
           ) : (
             <div className="flex flex-col items-center">
