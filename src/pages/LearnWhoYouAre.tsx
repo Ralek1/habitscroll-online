@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -71,6 +72,11 @@ const personalityTests: PersonalityTest[] = [
 ];
 
 const LearnWhoYouAre: React.FC = () => {
+  // Set page title
+  React.useEffect(() => {
+    document.title = 'You';
+  }, []);
+  
   return (
     <div className="min-h-screen flex flex-col items-center justify-start py-12 px-4">
       <div className="text-center mb-8 animate-appear flex flex-col items-center">

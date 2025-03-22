@@ -5,6 +5,11 @@ import PixelButton from '../components/PixelButton';
 import { ArrowLeft } from 'lucide-react';
 
 const LearnHowToTrack: React.FC = () => {
+  // Set page title
+  React.useEffect(() => {
+    document.title = 'Track';
+  }, []);
+  
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-12 px-4">
       <div className="text-center mb-8 animate-appear flex flex-col items-center">
@@ -35,8 +40,7 @@ const LearnHowToTrack: React.FC = () => {
         
         <Link to="/?showHabit=true">
           <PixelButton onClick={() => {}}>
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
+            Home
           </PixelButton>
         </Link>
       </div>
