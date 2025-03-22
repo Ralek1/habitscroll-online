@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -73,30 +74,30 @@ const Index: React.FC = () => {
         <div className="mt-8 mb-4 relative">
           {!hasDiscovered ? (
             <PixelButton onClick={handleButtonClick}>
-              Start Habit
+              Discover Habit
             </PixelButton>
           ) : (
             <div className="flex flex-col items-center">
-              {/* Neuer Text unter der Schriftrolle */}
               <p className="font-pixel text-retro-purple-200 text-center mb-4">
                 Don't know how to start a habit? Learn more about:
               </p>
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-              <Link to="/learn-who-you-are">
-                <PixelButton onClick={() => {}}>
-                  Learn Who You Are
-                </PixelButton>
-              </Link>
-              <Link to="/learn-about-habits">
-                <PixelButton onClick={() => {}}>
-                  Learn About Habits
-                </PixelButton>
-              </Link>
-              <Link to="/learn-how-to-track">
-                <PixelButton onClick={() => {}}>
-                  Learn How To Track
-                </PixelButton>
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                <Link to="/learn-who-you-are">
+                  <PixelButton onClick={() => {}}>
+                    Learn Who You Are
+                  </PixelButton>
+                </Link>
+                <Link to="/learn-about-habits">
+                  <PixelButton onClick={() => {}}>
+                    Learn About Habits
+                  </PixelButton>
+                </Link>
+                <Link to="/learn-how-to-track">
+                  <PixelButton onClick={() => {}}>
+                    Learn How To Track
+                  </PixelButton>
+                </Link>
+              </div>
             </div>
           )}
           
