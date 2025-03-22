@@ -2,8 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
-import { ArrowLeft, Brain, User, Users, Briefcase, Heart, Shield } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowLeft, Brain, User, Users, Briefcase, Heart, Shield, DollarSign } from 'lucide-react';
 
 interface PersonalityTest {
   id: string;
@@ -11,50 +10,64 @@ interface PersonalityTest {
   description: string;
   url: string;
   icon: React.ReactNode;
+  pricing: string;
+  scienceNote: string;
 }
 
 const personalityTests: PersonalityTest[] = [
   {
     id: "mbti",
     title: "Myers-Briggs Type Indicator (MBTI)",
-    description: "Discover your personality type among 16 different types. Learn how you perceive the world and make decisions.",
+    description: "A comprehensive cognitive function analysis that categorizes individuals into 16 distinct archetypes based on their psychological preferences for perception and judgment.",
     url: "https://www.16personalities.com/",
-    icon: <Brain className="h-6 w-6" />
+    icon: <Brain className="h-6 w-6" />,
+    pricing: "Free basic assessment; $49-175 for official versions with detailed reports.",
+    scienceNote: "While widely used in corporate settings, the MBTI has faced critique for test-retest reliability issues, with ~50% of respondents receiving different results upon retesting."
   },
   {
     id: "big5",
     title: "Big Five Personality Test",
-    description: "Measure the five core dimensions of your personality: Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.",
+    description: "Empirically validated assessment measuring the five primary dimensions of personality: Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism (OCEAN).",
     url: "https://www.truity.com/test/big-five-personality-test",
-    icon: <User className="h-6 w-6" />
+    icon: <User className="h-6 w-6" />,
+    pricing: "Free basic assessment; $19-29 for comprehensive reports.",
+    scienceNote: "Considered the gold standard in personality psychology, with strong cross-cultural validity and predictive power across multiple domains of human behavior."
   },
   {
     id: "disc",
     title: "DISC Assessment",
-    description: "Understand your behavioral style: Dominance, Influence, Steadiness, and Conscientiousness. Great for workplace dynamics.",
+    description: "Behavioral assessment tool analyzing temperament across four primary dimensions: Dominance, Influence, Steadiness, and Conscientiousness. Particularly valuable for workplace dynamics.",
     url: "https://www.discprofile.com/",
-    icon: <Users className="h-6 w-6" />
+    icon: <Users className="h-6 w-6" />,
+    pricing: "Free simplified versions available; $30-100 for complete assessments with interpretations.",
+    scienceNote: "Widely implemented in organizational contexts, the DISC provides actionable insights for team building, though it has less research validation than the Big Five."
   },
   {
     id: "strengthsfinder",
     title: "CliftonStrengths (StrengthsFinder)",
-    description: "Identify your top 5 talents from 34 themes to maximize your potential in work and life.",
+    description: "Positive psychology assessment identifying an individual's dominant talents across 34 themes, enabling strategic talent optimization and strength-based development.",
     url: "https://www.gallup.com/cliftonstrengths/",
-    icon: <Briefcase className="h-6 w-6" />
+    icon: <Briefcase className="h-6 w-6" />,
+    pricing: "$19.99 for Top 5 Strengths; $49.99 for complete 34 Strengths profile.",
+    scienceNote: "Developed by Gallup through extensive research with over 1.7 million professionals, this assessment focuses on leveraging natural talents rather than remediating weaknesses."
   },
   {
     id: "enneagram",
     title: "Enneagram",
-    description: "Explore your core motivations and fears through nine interconnected personality types.",
+    description: "Ancient typological system examining core motivations, fears, and defense mechanisms through nine interconnected personality archetypes and their various levels of development.",
     url: "https://www.truity.com/test/enneagram-personality-test",
-    icon: <Heart className="h-6 w-6" />
+    icon: <Heart className="h-6 w-6" />,
+    pricing: "Free basic test; $19-48 for in-depth reports and type development guides.",
+    scienceNote: "While gaining popularity in personal development circles, the Enneagram combines psychological insights with spiritual traditions and has less empirical research than other frameworks."
   },
   {
     id: "via",
     title: "VIA Character Strengths",
-    description: "Discover your top character strengths that contribute to your sense of well-being and fulfillment.",
+    description: "Positive psychology assessment identifying signature character strengths across 24 universal virtues, facilitating enhanced well-being through authentic strength utilization.",
     url: "https://www.viacharacter.org/",
-    icon: <Shield className="h-6 w-6" />
+    icon: <Shield className="h-6 w-6" />,
+    pricing: "Free basic assessment; Premium reports $20-50.",
+    scienceNote: "Developed through extensive cross-cultural research, the VIA framework has strong empirical support in positive psychology literature for enhancing well-being and life satisfaction."
   }
 ];
 
@@ -98,33 +111,48 @@ const LearnWhoYouAre: React.FC = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-8">
+        <div className="grid grid-cols-1 gap-6 w-full mb-8">
           {personalityTests.map((test) => (
-            <Card key={test.id} className="border-retro-purple-300 bg-white/95">
-              <CardHeader className="pb-2">
-                <div className="flex justify-between items-center">
-                  <CardTitle className="font-pixel-text text-lg text-retro-purple-700">
+            <div key={test.id} className="scroll-paper p-5 border-retro-purple-300">
+              <div className="flex justify-between items-start gap-4">
+                <div className="flex-1">
+                  <h3 className="font-pixel-text text-xl text-amber-950 mb-2 flex items-center gap-2">
+                    <span className="text-retro-purple-700">
+                      {test.icon}
+                    </span>
                     {test.title}
-                  </CardTitle>
-                  <div className="text-retro-purple-600">
-                    {test.icon}
+                  </h3>
+                  <p className="font-pixel-text text-amber-950 mb-3 text-base">
+                    {test.description}
+                  </p>
+                  
+                  <div className="scroll-section mt-4 mb-3">
+                    <h4 className="font-pixel text-amber-950 text-xs mb-1 flex items-center">
+                      <DollarSign className="h-4 w-4 mr-1 text-retro-purple-700" />
+                      PRICING
+                    </h4>
+                    <p className="font-pixel-text text-amber-950 text-sm">{test.pricing}</p>
                   </div>
+                  
+                  <div className="scroll-section mb-3">
+                    <h4 className="font-pixel text-amber-950 text-xs mb-1 flex items-center">
+                      <Brain className="h-4 w-4 mr-1 text-retro-purple-700" />
+                      SCIENTIFIC NOTE
+                    </h4>
+                    <p className="font-pixel-text text-amber-950 text-sm">{test.scienceNote}</p>
+                  </div>
+                  
+                  <a 
+                    href={test.url} 
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="inline-block mt-2 text-xs bg-retro-purple-600 hover:bg-retro-purple-700 text-white font-pixel py-1 px-3 rounded transition-colors"
+                  >
+                    Take the Assessment →
+                  </a>
                 </div>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="font-pixel-text text-sm mb-4">
-                  {test.description}
-                </CardDescription>
-                <a 
-                  href={test.url} 
-                  target="_blank"
-                  rel="noopener noreferrer" 
-                  className="inline-block text-xs bg-retro-purple-600 hover:bg-retro-purple-700 text-white font-pixel py-1 px-3 rounded transition-colors"
-                >
-                  Take the Test →
-                </a>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
         
