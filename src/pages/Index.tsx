@@ -57,13 +57,13 @@ const Index: React.FC = () => {
       
       <div className="w-full max-w-2xl flex flex-col items-center">
         <div className="w-full">
-          {!hasDiscovered ? (
-            <ClosedScroll onClick={handleButtonClick} />
-          ) : (
+          {hasDiscovered ? (
             <HabitScroll 
               habit={currentHabit} 
               isVisible={isScrollVisible} 
             />
+          ) : (
+            <ClosedScroll onClick={handleButtonClick} />
           )}
         </div>
         
