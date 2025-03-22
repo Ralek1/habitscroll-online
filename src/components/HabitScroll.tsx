@@ -26,43 +26,54 @@ const HabitScroll: React.FC<HabitScrollProps> = ({ habit, isVisible }) => {
       w-full max-w-xl mx-auto mt-6 transform transition-all duration-500
       ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'}
     `}>
-      <div className="scroll-ends scroll-ends-top"></div>
+      {/* Top scroll handle */}
+      <div className="pixel-scroll-handle pixel-scroll-handle-top">
+        <div className="pixel-scroll-knob pixel-scroll-knob-left"></div>
+        <div className="pixel-wooden-rod"></div>
+        <div className="pixel-scroll-knob pixel-scroll-knob-right"></div>
+      </div>
       
+      {/* Scroll content */}
       <div 
         ref={scrollRef}
         className={`
-          scroll-paper p-6 px-8 overflow-hidden
+          pixel-scroll-paper p-6 px-8 overflow-hidden
           ${isVisible ? 'animate-scroll-unroll' : 'h-0 opacity-0'}
         `}
         style={{ height: isVisible ? 'auto' : 0 }}
       >
-        <h2 className="font-pixel text-retro-purple-900 text-xl mb-4 text-center">
+        <h2 className="font-pixel text-amber-950 text-xl mb-4 text-center">
           {habit.title}
         </h2>
         
-        <p className="font-pixel-text text-lg mb-4">
+        <p className="font-pixel-text text-lg mb-4 text-amber-900">
           {habit.description}
         </p>
         
         <div className="space-y-4">
-          <div className="bg-retro-purple-100 p-3 rounded">
-            <h3 className="font-pixel text-retro-purple-800 text-sm mb-2">HOW TO GAIN</h3>
-            <p className="font-pixel-text text-retro-purple-900">{habit.howToGain}</p>
+          <div className="scroll-section">
+            <h3 className="font-pixel text-amber-950 text-sm mb-2">HOW TO GAIN</h3>
+            <p className="font-pixel-text text-amber-900">{habit.howToGain}</p>
           </div>
           
-          <div className="bg-retro-purple-100 p-3 rounded">
-            <h3 className="font-pixel text-retro-purple-800 text-sm mb-2">HOW TO TRACK</h3>
-            <p className="font-pixel-text text-retro-purple-900">{habit.howToTrack}</p>
+          <div className="scroll-section">
+            <h3 className="font-pixel text-amber-950 text-sm mb-2">HOW TO TRACK</h3>
+            <p className="font-pixel-text text-amber-900">{habit.howToTrack}</p>
           </div>
           
-          <div className="bg-retro-purple-100 p-3 rounded">
-            <h3 className="font-pixel text-retro-purple-800 text-sm mb-2">BENEFITS</h3>
-            <p className="font-pixel-text text-retro-purple-900">{habit.benefits}</p>
+          <div className="scroll-section">
+            <h3 className="font-pixel text-amber-950 text-sm mb-2">BENEFITS</h3>
+            <p className="font-pixel-text text-amber-900">{habit.benefits}</p>
           </div>
         </div>
       </div>
       
-      <div className="scroll-ends scroll-ends-bottom"></div>
+      {/* Bottom scroll handle */}
+      <div className="pixel-scroll-handle pixel-scroll-handle-bottom">
+        <div className="pixel-scroll-knob pixel-scroll-knob-left"></div>
+        <div className="pixel-wooden-rod"></div>
+        <div className="pixel-scroll-knob pixel-scroll-knob-right"></div>
+      </div>
     </div>
   );
 };

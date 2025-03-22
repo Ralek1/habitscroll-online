@@ -1,8 +1,8 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import HabitScroll from '../components/HabitScroll';
+import ClosedScroll from '../components/ClosedScroll';
 import { habits } from '../data/habits';
 import type { Habit } from '../data/habits';
 import { Sparkles, HeartPulse, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
@@ -62,12 +62,7 @@ const Index: React.FC = () => {
               isVisible={isScrollVisible} 
             />
           ) : (
-            <div className="text-center py-10 px-6 bg-retro-purple-900/50 rounded-lg border-2 border-retro-purple-700">
-              <Sparkles className="w-8 h-8 mx-auto text-retro-purple-400 mb-4" />
-              <p className="font-pixel text-retro-purple-200 text-sm">
-                Click the button below to discover a new habit!
-              </p>
-            </div>
+            <ClosedScroll onClick={handleButtonClick} />
           )}
         </div>
         
