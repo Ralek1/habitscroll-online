@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -56,13 +57,13 @@ const Index: React.FC = () => {
       
       <div className="w-full max-w-2xl flex flex-col items-center">
         <div className="w-full">
-          {currentHabit ? (
+          {!hasDiscovered ? (
+            <ClosedScroll onClick={handleButtonClick} />
+          ) : (
             <HabitScroll 
               habit={currentHabit} 
               isVisible={isScrollVisible} 
             />
-          ) : (
-            <ClosedScroll onClick={handleButtonClick} />
           )}
         </div>
         
