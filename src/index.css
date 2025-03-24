@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
@@ -58,7 +59,7 @@
     /* Enhanced mystical space background */
     background-color: #120824;
     background-image: 
-      /* Twinkling stars */
+      /* Twinkling stars with animation */
       radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px),
       radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),
       radial-gradient(white, rgba(255,255,255,.1) 3px, transparent 4px),
@@ -105,6 +106,43 @@
       0 0, 0 0;
     
     animation: subtle-float 90s infinite alternate ease-in-out;
+    position: relative;
+  }
+  
+  /* Add a twinkling stars overlay */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(white, rgba(255,255,255,.5) 1px, transparent 2px),
+      radial-gradient(white, rgba(255,255,255,.3) 1px, transparent 1.5px);
+    background-size: 450px 450px, 300px 300px;
+    background-position: 0 0, 40px 70px;
+    animation: twinkle-stars 8s infinite alternate;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  /* Add a glowing nebula overlay */
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+      radial-gradient(circle at 75% 35%, rgba(147, 64, 255, 0.15) 0%, transparent 45%),
+      radial-gradient(circle at 25% 60%, rgba(255, 64, 226, 0.15) 0%, transparent 45%);
+    background-size: 100% 100%, 100% 100%;
+    animation: nebula-pulse 15s infinite alternate;
+    pointer-events: none;
+    z-index: -1;
+    mix-blend-mode: screen;
   }
   
   @keyframes subtle-float {
@@ -127,6 +165,40 @@
         20px 20px,
         2% 2%, 2% 2%,
         2% 2%, 2% 2%;
+    }
+  }
+  
+  @keyframes twinkle-stars {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    25% {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+    50% {
+      opacity: 0.4;
+      transform: scale(0.98);
+    }
+    75% {
+      opacity: 0.8;
+      transform: scale(1.02);
+    }
+  }
+  
+  @keyframes nebula-pulse {
+    0%, 100% {
+      opacity: 0.6;
+      background-position: 0% 0%, 0% 0%;
+    }
+    33% {
+      opacity: 0.8;
+      background-position: 1% 1%, -1% -1%;
+    }
+    66% {
+      opacity: 0.7;
+      background-position: -1% 1%, 1% -1%;
     }
   }
   
