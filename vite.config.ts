@@ -20,5 +20,25 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "./", // Add this line to make relative paths work on GitHub Pages
+  base: "./", // This makes relative paths work on GitHub Pages
+  build: {
+    outDir: "dist",
+    sourcemap: false,
+    minify: true,
+    cssMinify: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ['react', 'react-dom', 'react-router-dom'],
+          ui: [
+            '@radix-ui/react-select',
+            '@radix-ui/react-separator',
+            '@radix-ui/react-slider',
+            '@radix-ui/react-toast',
+            'sonner'
+          ]
+        }
+      }
+    }
+  }
 }));
