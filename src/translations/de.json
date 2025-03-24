@@ -3,7 +3,7 @@
   "app.title": "DIE GEWOHNHEITSROLLE",
   "app.subtitle": "Starte jetzt deine neue",
   "app.subtitle.highlight": "tägliche Gewohnheit",
-  "button.becomeBetter": "Werde besser",
+  "button.becomeBetter": "Entfalte dein Potenzial",
   "learn.intro": "Weißt du nicht, wie du eine Gewohnheit beginnen sollst? Lerne mehr über:",
   "learn.yourself": "Dich",
   "learn.habits": "Gewohnheiten",
@@ -24,6 +24,6 @@
   "page.learn.habits.description": "Diese Seite wird nützliche Links zu Ressourcen über Gewohnheitsbildung, die Wissenschaft hinter Gewohnheiten und Expertenempfehlungen enthalten. Schau später wieder vorbei!",
   "footer.impressum": "Impressum",
   "footer.datenschutz": "Datenschutz",
-  "button.backToHome": "Zurück zur Startseite",
+  "button.backToHome": "Home",
   "language.switch": "English"
 }
