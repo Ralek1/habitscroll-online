@@ -7,7 +7,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { ArrowLeft } from 'lucide-react';
 
 const Impressum: React.FC = () => {
-  const { translate } = useLanguage();
+  const { translate, language } = useLanguage();
   
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-12 px-4">
@@ -33,38 +33,113 @@ const Impressum: React.FC = () => {
       
       <div className="w-full max-w-2xl flex flex-col items-center">
         <div className="mb-8 text-left w-full p-6 scroll-paper rounded-lg">
-          <h3 className="font-pixel-text text-xl mb-4 text-center">Legal Information</h3>
+          <h3 className="font-pixel-text text-xl mb-4 text-center">{language === 'en' ? 'Legal Information' : 'Impressum'}</h3>
           
           <div className="font-pixel-text text-base space-y-4">
-            <p>
-              <strong>Responsible for content:</strong><br />
-              Purple Habit Scrolls<br />
-              Example Street 123<br />
-              12345 City<br />
-              Country
-            </p>
-            
-            <p>
-              <strong>Contact:</strong><br />
-              Email: contact@example.com<br />
-              Phone: +1 234 567 890
-            </p>
-            
-            <p>
-              <strong>Represented by:</strong><br />
-              John Doe
-            </p>
-            
-            <p>
-              <strong>Commercial Register:</strong><br />
-              Register Court: Example Court<br />
-              Registration Number: 12345
-            </p>
-            
-            <p>
-              <strong>VAT Identification Number:</strong><br />
-              DE123456789
-            </p>
+            {language === 'en' ? (
+              // English version
+              <>
+                <p>
+                  <strong>Company:</strong><br />
+                  Dranoel UG (limited liability)<br />
+                  Rosenleite 16<br />
+                  90619 Trautskirchen<br />
+                  Germany
+                </p>
+                
+                <p>
+                  <strong>Commercial Register:</strong><br />
+                  Register Number: 20979<br />
+                  Register Court: Fürth
+                </p>
+                
+                <p>
+                  <strong>Represented by:</strong><br />
+                  Becker Egor
+                </p>
+                
+                <p>
+                  <strong>Contact:</strong><br />
+                  Phone: +4915203101898<br />
+                  Email: info@dranoelug.de
+                </p>
+                
+                <p>
+                  <strong>VAT Identification Number:</strong><br />
+                  VAT ID according to § 27a of the German VAT Act: 203/124/80663
+                </p>
+                
+                <p>
+                  <strong>Editorially responsible:</strong><br />
+                  Becker Egor
+                </p>
+                
+                <p>
+                  <strong>EU Dispute Resolution:</strong><br />
+                  The European Commission provides a platform for online dispute resolution (OS): https://ec.europa.eu/consumers/odr/. You can find our email address in the impressum above.
+                </p>
+                
+                <p>
+                  <strong>Consumer Dispute Resolution / Universal Arbitration Board:</strong><br />
+                  We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.
+                </p>
+                
+                <p>
+                  <strong>Source:</strong> https://www.e-recht24.de
+                </p>
+              </>
+            ) : (
+              // German version
+              <>
+                <p>
+                  <strong>Unternehmen:</strong><br />
+                  Dranoel UG (haftungsbeschränkt)<br />
+                  Rosenleite 16<br />
+                  90619 Trautskirchen
+                </p>
+                
+                <p>
+                  <strong>Handelsregister:</strong><br />
+                  Registernummer: 20979<br />
+                  Registergericht: Fürth
+                </p>
+                
+                <p>
+                  <strong>Vertreten durch:</strong><br />
+                  Becker Egor
+                </p>
+                
+                <p>
+                  <strong>Kontakt:</strong><br />
+                  Telefon: +4915203101898<br />
+                  E-Mail: info@dranoelug.de
+                </p>
+                
+                <p>
+                  <strong>Umsatzsteuer-ID:</strong><br />
+                  Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: 203/124/80663
+                </p>
+                
+                <p>
+                  <strong>Redaktionell verantwortlich:</strong><br />
+                  Becker Egor
+                </p>
+                
+                <p>
+                  <strong>EU-Streitschlichtung:</strong><br />
+                  Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/. Unsere E-Mail-Adresse finden Sie oben im Impressum.
+                </p>
+                
+                <p>
+                  <strong>Verbraucherstreitbeilegung/Universalschlichtungsstelle:</strong><br />
+                  Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                </p>
+                
+                <p>
+                  <strong>Quelle:</strong> https://www.e-recht24.de
+                </p>
+              </>
+            )}
           </div>
         </div>
         
