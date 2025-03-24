@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -130,33 +129,29 @@ const Index: React.FC = () => {
       </div>
       
       <footer className="w-full mt-12 pt-8 pb-6 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="hidden md:block"></div>
-            
-            <div className="flex gap-6 items-center">
-              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
-                <Youtube className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-            </div>
-            
-            <div className="flex gap-4 items-center">
-              <Link to="/impressum" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
-                {translate('footer.impressum')}
-              </Link>
-              <Link to="/datenschutz" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
-                {translate('footer.datenschutz')}
-              </Link>
-            </div>
+        <div className="max-w-4xl mx-auto flex flex-col items-center">
+          <div className="flex gap-6 items-center justify-center mb-4">
+            <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+              <Twitter className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+              <Youtube className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+              <Facebook className="w-5 h-5" />
+            </a>
+          </div>
+          
+          <div className="flex gap-4 items-center">
+            <Link to="/impressum" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
+              {translate('footer.impressum')}
+            </Link>
+            <Link to="/datenschutz" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
+              {translate('footer.datenschutz')}
+            </Link>
           </div>
         </div>
       </footer>
