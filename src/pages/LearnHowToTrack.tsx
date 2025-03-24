@@ -21,7 +21,7 @@ const LearnHowToTrack: React.FC = () => {
           <span className="text-retro-accent">Track Habits</span>
         </h2>
         <div className="mt-2">
-          <Link to="/?showHabit=true">
+          <Link to="/">
             <PixelButton onClick={() => {}}>
               Home
             </PixelButton>
@@ -38,7 +38,7 @@ const LearnHowToTrack: React.FC = () => {
           </p>
         </div>
         
-        <Link to="/?showHabit=true">
+        <Link to="/">
           <PixelButton onClick={() => {}}>
             Home
           </PixelButton>

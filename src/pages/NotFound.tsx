@@ -30,7 +30,7 @@ const NotFound = () => {
         The scroll you seek does not exist in this realm.
       </div>
       
-      <Link to="/?showHabit=true">
+      <Link to="/">
         <PixelButton onClick={() => {}}>
           Return Home
         </PixelButton>
