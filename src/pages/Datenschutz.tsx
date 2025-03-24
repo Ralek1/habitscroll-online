@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
-import { ArrowLeft } from 'lucide-react';
 
 const Datenschutz: React.FC = () => {
   const { translate, language } = useLanguage();
@@ -330,7 +329,6 @@ const Datenschutz: React.FC = () => {
         
         <Link to="/?showHabit=true">
           <PixelButton onClick={() => {}}>
-            <ArrowLeft className="w-4 h-4 mr-2" />
             {translate('button.backToHome')}
           </PixelButton>
         </Link>
