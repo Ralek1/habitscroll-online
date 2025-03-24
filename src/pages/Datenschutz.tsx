@@ -2,22 +2,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
+import LanguageSwitcher from '../components/LanguageSwitcher';
+import { useLanguage } from '../context/LanguageContext';
 import { ArrowLeft } from 'lucide-react';
 
 const Datenschutz: React.FC = () => {
+  const { translate } = useLanguage();
+  
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-12 px-4">
+      <div className="absolute top-4 right-4 z-10">
+        <LanguageSwitcher />
+      </div>
+      
       <div className="text-center mb-8 animate-appear flex flex-col items-center">
         <div className="inline-block bg-retro-purple-700 px-4 py-1 rounded mb-2">
           <h1 className="font-pixel text-retro-light text-xs">PURPLE HABIT SCROLLS</h1>
         </div>
         <h2 className="font-pixel text-xl text-retro-purple-200 leading-relaxed text-center">
-          Datenschutz
+          {translate('footer.datenschutz')}
         </h2>
         <div className="mt-2">
           <Link to="/?showHabit=true">
             <PixelButton onClick={() => {}}>
-              Home
+              {translate('button.home')}
             </PixelButton>
           </Link>
         </div>
@@ -69,7 +77,7 @@ const Datenschutz: React.FC = () => {
         <Link to="/?showHabit=true">
           <PixelButton onClick={() => {}}>
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
+            {translate('button.backToHome')}
           </PixelButton>
         </Link>
       </div>

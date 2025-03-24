@@ -8,22 +8,25 @@ import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import NotFound from './pages/NotFound';
 import Deploy from './pages/Deploy';
+import { LanguageProvider } from './context/LanguageContext';
 import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/learn-who-you-are" element={<LearnWhoYouAre />} />
-        <Route path="/learn-about-habits" element={<LearnAboutHabits />} />
-        <Route path="/learn-how-to-track" element={<LearnHowToTrack />} />
-        <Route path="/impressum" element={<Impressum />} />
-        <Route path="/datenschutz" element={<Datenschutz />} />
-        <Route path="/deploy" element={<Deploy />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
+    <LanguageProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/learn-who-you-are" element={<LearnWhoYouAre />} />
+          <Route path="/learn-about-habits" element={<LearnAboutHabits />} />
+          <Route path="/learn-how-to-track" element={<LearnHowToTrack />} />
+          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/datenschutz" element={<Datenschutz />} />
+          <Route path="/deploy" element={<Deploy />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+    </LanguageProvider>
   );
 }
 

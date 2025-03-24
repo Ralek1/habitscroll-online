@@ -1,14 +1,18 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import HabitScroll from '../components/HabitScroll';
 import ClosedScroll from '../components/ClosedScroll';
+import LanguageSwitcher from '../components/LanguageSwitcher';
+import { useLanguage } from '../context/LanguageContext';
 import { habits } from '../data/habits';
 import type { Habit } from '../data/habits';
 import { Sparkles, HeartPulse, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
 
 const Index: React.FC = () => {
   const location = useLocation();
+  const { translate } = useLanguage();
   const [currentHabit, setCurrentHabit] = useState<Habit | null>(null);
   const [isScrollVisible, setIsScrollVisible] = useState(false);
   const [usedHabitIds, setUsedHabitIds] = useState<number[]>([]);
@@ -63,13 +67,17 @@ const Index: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-between py-12 px-4">
+      <div className="absolute top-4 right-4 z-10">
+        <LanguageSwitcher />
+      </div>
+      
       <div className="text-center mb-8 animate-appear">
         <div className="inline-block bg-retro-purple-700 px-4 py-1 rounded mb-2">
-          <h1 className="font-pixel text-retro-light text-xs">THE HABIT SCROLL</h1>
+          <h1 className="font-pixel text-retro-light text-xs">{translate('app.title')}</h1>
         </div>
         <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed">
-          Now Start Your New <br /> 
-          <span className="text-retro-accent">Daily Habit</span>
+          {translate('app.subtitle')} <br /> 
+          <span className="text-retro-accent">{translate('app.subtitle.highlight')}</span>
         </h2>
       </div>
       
@@ -88,27 +96,27 @@ const Index: React.FC = () => {
         <div className="mt-8 mb-4 relative">
           {!hasDiscovered ? (
             <PixelButton onClick={handleButtonClick}>
-              Become Better
+              {translate('button.becomeBetter')}
             </PixelButton>
           ) : (
             <div className="flex flex-col items-center">
               <p className="font-pixel text-retro-purple-200 text-center mb-4">
-                Don't know how to start a habit? Learn more about:
+                {translate('learn.intro')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
                 <Link to="/learn-who-you-are">
                   <PixelButton onClick={() => {}}>
-                    Yourself
+                    {translate('learn.yourself')}
                   </PixelButton>
                 </Link>
                 <Link to="/learn-about-habits">
                   <PixelButton onClick={() => {}}>
-                    Habits
+                    {translate('learn.habits')}
                   </PixelButton>
                 </Link>
                 <Link to="/learn-how-to-track">
                   <PixelButton onClick={() => {}}>
-                    Tracking
+                    {translate('learn.tracking')}
                   </PixelButton>
                 </Link>
               </div>
@@ -143,10 +151,10 @@ const Index: React.FC = () => {
             
             <div className="flex gap-4 items-center">
               <Link to="/impressum" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
-                Impressum
+                {translate('footer.impressum')}
               </Link>
               <Link to="/datenschutz" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
-                Datenschutz
+                {translate('footer.datenschutz')}
               </Link>
             </div>
           </div>
