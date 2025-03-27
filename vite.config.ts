@@ -26,19 +26,38 @@ export default defineConfig(({ mode }) => ({
     sourcemap: false,
     minify: true,
     cssMinify: true,
+    // Improve chunk splitting strategy
     rollupOptions: {
       output: {
-        manualChunks: {
-          react: ['react', 'react-dom', 'react-router-dom'],
-          ui: [
-            '@radix-ui/react-select',
-            '@radix-ui/react-separator',
-            '@radix-ui/react-slider',
-            '@radix-ui/react-toast',
-            'sonner'
-          ]
+        manualChunks: (id) => {
+          // Group React and related packages
+          if (id.includes('node_modules/react') || 
+              id.includes('node_modules/react-dom') || 
+              id.includes('node_modules/react-router-dom')) {
+            return 'react-vendor';
+          }
+          
+          // Group UI components and Radix UI
+          if (id.includes('@radix-ui') || id.includes('node_modules/sonner')) {
+            return 'ui-vendor';
+          }
+          
+          // Group icons 
+          if (id.includes('node_modules/lucide-react')) {
+            return 'icons';
+          }
+          
+          // Group animations and transitions libraries
+          if (id.includes('node_modules/framer-motion') || 
+              id.includes('node_modules/tailwindcss-animate')) {
+            return 'animations';
+          }
         }
       }
     }
-  }
+  },
+  // Add build time optimizations
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom', 'lucide-react'],
+  },
 }));

@@ -1,14 +1,24 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
-import HabitScroll from '../components/HabitScroll';
-import ClosedScroll from '../components/ClosedScroll';
-import LanguageSwitcher from '../components/LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
 import { habits } from '../data/habits';
 import type { Habit } from '../data/habits';
 import { Sparkles, HeartPulse, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
+import { Skeleton } from '../components/ui/skeleton';
+
+// Lazy load components that aren't needed immediately
+const HabitScroll = lazy(() => import('../components/HabitScroll'));
+const ClosedScroll = lazy(() => import('../components/ClosedScroll'));
+const LanguageSwitcher = lazy(() => import('../components/LanguageSwitcher'));
+
+// Loading fallback component
+const LoadingFallback = () => (
+  <div className="w-full flex flex-col items-center justify-center p-8">
+    <Skeleton className="h-[300px] w-full rounded-md bg-retro-purple-900/20" />
+  </div>
+);
 
 const Index: React.FC = () => {
   const location = useLocation();
@@ -17,8 +27,12 @@ const Index: React.FC = () => {
   const [isScrollVisible, setIsScrollVisible] = useState(false);
   const [usedHabitIds, setUsedHabitIds] = useState<number[]>([]);
   const [hasDiscovered, setHasDiscovered] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    // Mark component as loaded after initial render
+    setIsLoaded(true);
+    
     const savedHabitId = localStorage.getItem('currentHabitId');
     const showHabit = new URLSearchParams(location.search).get('showHabit') === 'true';
     
@@ -32,6 +46,20 @@ const Index: React.FC = () => {
       }
     }
   }, [location]);
+
+  // Preload key components when main content is loaded
+  useEffect(() => {
+    if (isLoaded) {
+      // Preload other components that might be needed soon
+      const prefetchComponent = async () => {
+        if (!hasDiscovered) {
+          // Preload HabitScroll if user is likely to discover a habit
+          import('../components/HabitScroll');
+        }
+      };
+      prefetchComponent();
+    }
+  }, [isLoaded, hasDiscovered]);
 
   const getRandomHabit = () => {
     if (usedHabitIds.length >= habits.length) {
@@ -68,7 +96,9 @@ const Index: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-between py-12 px-4">
       <div className="absolute top-4 right-4 z-10">
-        <LanguageSwitcher />
+        <Suspense fallback={<div className="w-8 h-8 bg-retro-purple-700/20 rounded animate-pulse"></div>}>
+          <LanguageSwitcher />
+        </Suspense>
       </div>
       
       <div className="text-center mb-8 animate-appear">
@@ -83,14 +113,16 @@ const Index: React.FC = () => {
       
       <div className="w-full max-w-2xl flex flex-col items-center">
         <div className="w-full">
-          {hasDiscovered ? (
-            <HabitScroll 
-              habit={currentHabit} 
-              isVisible={isScrollVisible} 
-            />
-          ) : (
-            <ClosedScroll onClick={handleButtonClick} />
-          )}
+          <Suspense fallback={<LoadingFallback />}>
+            {hasDiscovered ? (
+              <HabitScroll 
+                habit={currentHabit} 
+                isVisible={isScrollVisible} 
+              />
+            ) : (
+              <ClosedScroll onClick={handleButtonClick} />
+            )}
+          </Suspense>
         </div>
         
         <div className="mt-8 mb-4 relative">
