@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -131,7 +132,7 @@ const Index: React.FC = () => {
       <footer className="w-full mt-12 pt-8 pb-6 px-4">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           <div className="flex gap-6 items-center justify-center mb-4">
-            <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+            <a href="https://x.com/habitscroll" target="_blank" rel="noopener noreferrer" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
               <Twitter className="w-5 h-5" />
             </a>
             <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
