@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -201,16 +200,7 @@ const LearnWhoYouAre: React.FC = () => {
           <span className="text-green-400">{pageSubtitle}</span>
         </h2>
         
-        {/* Updated styling for introduction text */}
-        <div className="mt-6 max-w-xl text-center pixel-scroll-container transform hover:scale-[1.02] transition-transform">
-          {/* Top scroll handle */}
-          <div className="pixel-scroll-handle pixel-scroll-handle-top">
-            <div className="pixel-scroll-knob"></div>
-            <div className="pixel-wooden-rod"></div>
-            <div className="pixel-scroll-knob"></div>
-          </div>
-          
-          {/* Scroll content */}
+        <div className="mt-6 max-w-xl text-center transform hover:scale-[1.02] transition-transform">
           <div className="scroll-closed-body rounded-xl">
             <div className="p-6">
               <h3 className="font-pixel text-lg text-green-400 mb-3">{whyTestsTitle}</h3>
@@ -225,13 +215,6 @@ const LearnWhoYouAre: React.FC = () => {
               </ul>
             </div>
           </div>
-          
-          {/* Bottom scroll handle */}
-          <div className="pixel-scroll-handle pixel-scroll-handle-bottom">
-            <div className="pixel-scroll-knob"></div>
-            <div className="pixel-wooden-rod"></div>
-            <div className="pixel-scroll-knob"></div>
-          </div>
         </div>
         
         <div className="mt-6">
@@ -244,19 +227,16 @@ const LearnWhoYouAre: React.FC = () => {
       </div>
       
       <div className="w-full max-w-5xl flex flex-col items-center">
-        {/* Personality tests scrolls */}
         <div className="grid grid-cols-1 gap-8 w-full mb-10">
           {personalityTests.map((test) => (
             <div key={test.id} className="w-full">
               <div className="pixel-scroll-container transform hover:scale-[1.02] transition-transform">
-                {/* Top scroll handle */}
                 <div className="pixel-scroll-handle pixel-scroll-handle-top">
                   <div className="pixel-scroll-knob"></div>
                   <div className="pixel-wooden-rod"></div>
                   <div className="pixel-scroll-knob"></div>
                 </div>
                 
-                {/* Scroll content with ScrollArea for better scalability */}
                 <div className="scroll-closed-body rounded-xl">
                   <ScrollArea className="pixel-scroll-content p-8 max-h-[500px]">
                     <h3 className="font-pixel-text text-xl text-green-400 mb-3 flex items-center gap-2">
@@ -296,7 +276,6 @@ const LearnWhoYouAre: React.FC = () => {
                   </ScrollArea>
                 </div>
                 
-                {/* Bottom scroll handle */}
                 <div className="pixel-scroll-handle pixel-scroll-handle-bottom">
                   <div className="pixel-scroll-knob"></div>
                   <div className="pixel-wooden-rod"></div>
