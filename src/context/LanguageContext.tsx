@@ -3,6 +3,10 @@ import React, { createContext, useContext, useState, useEffect, ReactNode } from
 
 type Language = 'en' | 'de';
 
+// Define a recursive type for translations that matches our JSON structure
+type TranslationValue = string | { [key: string]: TranslationValue };
+type TranslationObject = { [key: string]: TranslationValue };
+
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
@@ -17,7 +21,7 @@ interface LanguageProviderProps {
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const [language, setLanguage] = useState<Language>('en');
-  const [translations, setTranslations] = useState<Record<string, Record<string, string>>>({});
+  const [translations, setTranslations] = useState<Record<string, TranslationObject>>({});
 
   useEffect(() => {
     const loadTranslations = async () => {
@@ -51,7 +55,21 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
 
   const translate = (key: string): string => {
     if (!translations[language]) return key;
-    return translations[language][key] || key;
+    
+    // Handle nested keys like "app.title"
+    const keys = key.split('.');
+    let result: TranslationValue = translations[language];
+    
+    // Navigate through the nested objects
+    for (const k of keys) {
+      if (result && typeof result === 'object' && k in result) {
+        result = result[k];
+      } else {
+        return key; // Key not found, return the original key
+      }
+    }
+    
+    return typeof result === 'string' ? result : key;
   };
 
   return (
