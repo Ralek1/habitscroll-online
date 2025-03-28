@@ -25,14 +25,14 @@ const KnowledgeSeekers: React.FC = () => {
         </div>
         <div className="flex items-center justify-center gap-4">
           <Search className="w-8 h-8 text-retro-accent" />
-          <h2 className="font-pixel text-2xl text-retro-purple-200">
+          <h2 className="font-pixel text-2xl text-green-400">
             {translate('category.knowledgeSeekers')}
           </h2>
         </div>
       </div>
       
       <div className="w-full max-w-4xl text-center mb-8">
-        <p className="text-green-100 font-pixel-text">
+        <p className="text-retro-purple-200 font-pixel-text">
           {language === 'de' 
             ? "Entdecke unsere Sammlung von Forschungspapieren und Artikeln zum Thema Gewohnheiten."
             : "Discover our collection of research papers and articles about habits."}
