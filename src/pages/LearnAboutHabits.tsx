@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
-import { Sparkles, Book, Headphones, Film, Search, ArrowRight, BookOpen, Library, Bookmark } from 'lucide-react';
+import { Sparkles, Book, Headphones, Film, Search, ArrowRight, BookOpen } from 'lucide-react';
 import { optimizedImage } from '../utils/optimizeImage';
 
 const LearnAboutHabits: React.FC = () => {
@@ -60,7 +60,7 @@ const LearnAboutHabits: React.FC = () => {
               </p>
               
               <div className="space-y-4 w-full mb-6">
-                {/* Book 1 - Updated link */}
+                {/* Book 1 */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
                     <a 
@@ -86,7 +86,7 @@ const LearnAboutHabits: React.FC = () => {
                   </div>
                 </div>
                 
-                {/* Book 2 - Updated link to the new one provided */}
+                {/* Book 2 - Updated with consistent icon */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
                     <a 
@@ -106,13 +106,13 @@ const LearnAboutHabits: React.FC = () => {
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
-                        <Library className="w-8 h-8 text-retro-accent" />
+                        <BookOpen className="w-8 h-8 text-retro-accent" />
                       </div>
                     </a>
                   </div>
                 </div>
                 
-                {/* Book 3 - Updated title and description */}
+                {/* Book 3 - Updated title, description and icon */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
                     <a 
@@ -123,16 +123,16 @@ const LearnAboutHabits: React.FC = () => {
                     >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'Mini Habits' : 'Mini Habits'}
+                          {language === 'de' ? 'Die 7 Wege zur Effektivität' : 'The 7 Habits of Highly Effective People'}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Kleinere Gewohnheiten, größere Ergebnisse. Dieses Buch zeigt, wie winzige, leicht umzusetzende Gewohnheiten zu nachhaltigen Veränderungen führen können.' 
-                            : 'Smaller habits, bigger results. This book demonstrates how tiny, easy-to-implement habits can lead to sustainable life changes and overcome resistance to change.'}
+                            ? 'Ein praxisorientierter Ansatz für persönliche und berufliche Entwicklung durch effektive Gewohnheiten und Prinzipien.' 
+                            : 'A practical approach to personal and professional development through effective habits and principles that stand the test of time.'}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
-                        <Bookmark className="w-8 h-8 text-retro-accent" />
+                        <BookOpen className="w-8 h-8 text-retro-accent" />
                       </div>
                     </a>
                   </div>
