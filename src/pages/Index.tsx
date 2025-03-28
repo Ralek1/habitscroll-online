@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -7,6 +6,7 @@ import { habits } from '../data/habits';
 import type { Habit } from '../data/habits';
 import { Sparkles, HeartPulse, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
 import { Skeleton } from '../components/ui/skeleton';
+import CookieConsent from '../components/CookieConsent';
 
 // Lazy load components that aren't needed immediately
 const HabitScroll = lazy(() => import('../components/HabitScroll'));
@@ -28,6 +28,7 @@ const Index: React.FC = () => {
   const [usedHabitIds, setUsedHabitIds] = useState<number[]>([]);
   const [hasDiscovered, setHasDiscovered] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [showCookieConsent, setShowCookieConsent] = useState(false);
 
   useEffect(() => {
     // Mark component as loaded after initial render
@@ -45,6 +46,10 @@ const Index: React.FC = () => {
         localStorage.setItem('hasDiscovered', 'true');
       }
     }
+
+    // Check if cookie consent has been given
+    const cookieConsent = localStorage.getItem('cookieConsent');
+    setShowCookieConsent(!cookieConsent);
   }, [location]);
 
   // Preload key components when main content is loaded
@@ -91,6 +96,23 @@ const Index: React.FC = () => {
       
       setIsScrollVisible(true);
     }, 500);
+  };
+
+  const handleAcceptCookies = () => {
+    localStorage.setItem('cookieConsent', 'accepted');
+    setShowCookieConsent(false);
+
+    // Since consent was given, make sure GA is initialized
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+      });
+    }
+  };
+
+  const handleCloseCookieConsent = () => {
+    localStorage.setItem('cookieConsent', 'closed');
+    setShowCookieConsent(false);
   };
 
   return (
@@ -188,6 +210,13 @@ const Index: React.FC = () => {
           </div>
         </div>
       </footer>
+
+      {showCookieConsent && (
+        <CookieConsent
+          onAccept={handleAcceptCookies}
+          onClose={handleCloseCookieConsent}
+        />
+      )}
     </div>
   );
 };
