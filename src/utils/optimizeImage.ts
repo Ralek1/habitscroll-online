@@ -18,6 +18,30 @@ interface ImageOptions {
 const PLACEHOLDER_DATA_URL = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 
 /**
+ * Sanitize image source to prevent XSS attacks
+ */
+const sanitizeImageSrc = (src: string): string => {
+  // Allow only relative paths, absolute paths, or data URLs
+  if (src.startsWith('./') || src.startsWith('/') || src.startsWith('data:image/')) {
+    return src;
+  }
+  
+  // Allow only specific domains
+  const allowedDomains = ['lovable.dev', 'example.com']; // Add more as needed
+  try {
+    const url = new URL(src);
+    if (allowedDomains.some(domain => url.hostname.includes(domain))) {
+      return src;
+    }
+  } catch (e) {
+    // Invalid URL
+    console.warn('Invalid image URL:', src);
+  }
+  
+  return PLACEHOLDER_DATA_URL;
+};
+
+/**
  * Function that generates optimized image attributes
  */
 export const optimizedImage = ({
@@ -29,9 +53,12 @@ export const optimizedImage = ({
   priority = false,
   placeholder = true,
 }: ImageOptions) => {
+  // Sanitize src for security
+  const sanitizedSrc = sanitizeImageSrc(src);
+  
   // Define props for the image
   const imgProps = {
-    src,
+    src: placeholder && !priority ? PLACEHOLDER_DATA_URL : sanitizedSrc,
     alt,
     width,
     height,
@@ -39,8 +66,9 @@ export const optimizedImage = ({
     loading: priority ? 'eager' : 'lazy' as const,
     decoding: priority ? 'sync' as const : 'async' as const,
     fetchPriority: priority ? 'high' as const : 'auto' as const,
+    crossOrigin: 'anonymous' as const, // Enhance security
     // Use placeholder as needed
-    ...(placeholder && !priority ? { "data-src": src, src: PLACEHOLDER_DATA_URL } : { src }),
+    ...(placeholder && !priority ? { "data-src": sanitizedSrc } : {}),
     onLoad: (e: React.SyntheticEvent<HTMLImageElement>) => {
       if (placeholder && !priority && e.currentTarget.dataset.src) {
         // Replace placeholder with actual image
@@ -49,7 +77,7 @@ export const optimizedImage = ({
       
       // Mark image loading in performance timeline
       if (typeof window !== 'undefined' && 'performance' in window) {
-        window.performance.mark(`image-loaded:${src.substring(0, 100)}`);
+        window.performance.mark(`image-loaded:${sanitizedSrc.substring(0, 100)}`);
       }
     }
   };
@@ -68,23 +96,27 @@ export const lazyLoadImage = (imageSrc: string): Promise<string> => {
       return;
     }
     
+    // Sanitize source
+    const sanitizedSrc = sanitizeImageSrc(imageSrc);
+    
     const img = new Image();
-    img.src = imageSrc;
+    img.crossOrigin = 'anonymous';
+    img.src = sanitizedSrc;
     
     img.onload = () => {
       // Mark successful image load in performance metrics
       if (typeof window !== 'undefined' && 'performance' in window) {
-        window.performance.mark(`image-successful:${imageSrc.substring(0, 100)}`);
+        window.performance.mark(`image-successful:${sanitizedSrc.substring(0, 100)}`);
       }
-      resolve(imageSrc);
+      resolve(sanitizedSrc);
     };
     
     img.onerror = () => {
       // Log image load errors
       if (typeof window !== 'undefined' && 'console' in window) {
-        console.warn(`Failed to load image: ${imageSrc}`);
+        console.warn(`Failed to load image: ${sanitizedSrc}`);
       }
-      reject(new Error(`Failed to load image: ${imageSrc}`));
+      reject(new Error(`Failed to load image: ${sanitizedSrc}`));
     };
   });
 };
@@ -95,22 +127,31 @@ export const lazyLoadImage = (imageSrc: string): Promise<string> => {
 export const preloadCriticalImages = (imagePaths: string[]) => {
   if (typeof window === 'undefined') return;
   
+  // Sanitize all paths first
+  const sanitizedPaths = imagePaths.map(sanitizeImageSrc);
+  
   if ('requestIdleCallback' in window) {
     window.requestIdleCallback(() => {
-      for (const path of imagePaths) {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'image';
-        link.href = path;
-        document.head.appendChild(link);
+      for (const path of sanitizedPaths) {
+        if (path !== PLACEHOLDER_DATA_URL) {
+          const link = document.createElement('link');
+          link.rel = 'preload';
+          link.as = 'image';
+          link.href = path;
+          link.crossOrigin = 'anonymous';
+          document.head.appendChild(link);
+        }
       }
     });
   } else {
     // Fallback for browsers without requestIdleCallback
     setTimeout(() => {
-      for (const path of imagePaths) {
-        const img = new Image();
-        img.src = path;
+      for (const path of sanitizedPaths) {
+        if (path !== PLACEHOLDER_DATA_URL) {
+          const img = new Image();
+          img.crossOrigin = 'anonymous';
+          img.src = path;
+        }
       }
     }, 300);
   }

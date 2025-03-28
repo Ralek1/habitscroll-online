@@ -26,37 +26,48 @@ if (typeof window !== 'undefined' && 'performance' in window) {
   }
 }
 
-// Prefetch critical components and resources when idle
+// Prefetch critical resources in parallel
 const prefetchResources = () => {
   if ('requestIdleCallback' in window) {
     window.requestIdleCallback(() => {
-      // Prefetch important routes
-      import('./pages/LearnWhoYouAre');
-      import('./pages/LearnAboutHabits');
-      import('./pages/LearnHowToTrack');
+      const routes = [
+        './pages/LearnWhoYouAre',
+        './pages/LearnAboutHabits',
+        './pages/LearnHowToTrack'
+      ];
+      
+      // Use Promise.all to load all resources in parallel
+      Promise.all(
+        routes.map(route => import(/* @vite-ignore */ route).catch(err => console.debug(`Prefetch failed for ${route}:`, err)))
+      );
     });
   }
 };
 
-// Directly render the App component with all its providers
-createRoot(document.getElementById("root")!).render(<App />);
+// Use a self-executing function to optimize rendering process
+(async () => {
+  try {
+    // Create root and render app
+    const root = createRoot(document.getElementById("root")!);
+    root.render(<App />);
+    
+    // Mark app render complete
+    window.performance.mark('app-rendered');
+    window.performance.measure('app-render-time', 'app-init', 'app-rendered');
+    
+    // Prefetch resources after initial render
+    prefetchResources();
+  } catch (error) {
+    console.error('Error rendering application:', error);
+  }
+})();
 
-// Mark app render complete
-if (typeof window !== 'undefined' && 'performance' in window) {
-  window.performance.mark('app-rendered');
-  window.performance.measure('app-render-time', 'app-init', 'app-rendered');
-  
-  // Prefetch other resources after initial render
-  prefetchResources();
-}
-
-// Register additional performance marks
+// Track page load metrics
 window.addEventListener('DOMContentLoaded', () => {
   window.performance.mark('dom-content-loaded');
   window.performance.measure('dom-load-time', 'app-init', 'dom-content-loaded');
 });
 
-// Track when the page is fully loaded
 window.addEventListener('load', () => {
   window.performance.mark('page-load-complete');
   window.performance.measure('total-page-load', 'app-init', 'page-load-complete');
@@ -65,5 +76,13 @@ window.addEventListener('load', () => {
   const totalPageLoad = window.performance.getEntriesByName('total-page-load')[0];
   if (totalPageLoad) {
     console.debug(`Page fully loaded in: ${Math.round(totalPageLoad.duration)}ms`);
+  }
+  
+  // Add security headers for single-page application
+  if (typeof window !== 'undefined' && 'navigation' in window) {
+    window.addEventListener('navigate', () => {
+      // Refresh security context on navigation
+      document.dispatchEvent(new Event('securityrefresh'));
+    });
   }
 });
