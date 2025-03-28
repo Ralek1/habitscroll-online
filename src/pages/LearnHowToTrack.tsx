@@ -32,7 +32,7 @@ const LearnHowToTrack: React.FC = () => {
       
       <div className="w-full max-w-2xl flex flex-col items-center">
         {/* Scroll Component */}
-        <div className="pixel-scroll-container w-full max-w-xl mx-auto mb-8">
+        <div className="pixel-scroll-container w-full max-w-xl mx-auto mb-12">
           {/* Top scroll handle */}
           <div className="pixel-scroll-handle pixel-scroll-handle-top">
             <div className="pixel-scroll-knob"></div>
@@ -65,7 +65,7 @@ const LearnHowToTrack: React.FC = () => {
           </div>
         </div>
         
-        <Link to="/">
+        <Link to="/" className="mt-8">
           <PixelButton onClick={() => {}}>
             {translate('button.home')}
           </PixelButton>
