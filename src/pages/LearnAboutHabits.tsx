@@ -32,7 +32,7 @@ const LearnAboutHabits: React.FC = () => {
         </div>
         <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed text-center">
           {language === 'de' ? 'Lerne mehr über' : 'Learn About'} <br /> 
-          <span className="text-retro-accent">{translate('page.learn.habits.subtitle')}</span>
+          <span className="text-green-400">{translate('page.learn.habits.subtitle')}</span>
         </h2>
         
         <div className="mt-4 mb-6 text-retro-purple-100 italic max-w-md font-pixel-text text-sm">
