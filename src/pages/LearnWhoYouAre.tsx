@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -200,7 +201,7 @@ const LearnWhoYouAre: React.FC = () => {
           <span className="text-green-400">{pageSubtitle}</span>
         </h2>
         
-        <div className="mt-6 max-w-xl text-center transform hover:scale-[1.02] transition-transform">
+        <div className="mt-6 max-w-xl w-full text-center transform hover:scale-[1.02] transition-transform">
           <div className="scroll-closed-body rounded-xl">
             <div className="p-6">
               <h3 className="font-pixel text-lg text-green-400 mb-3">{whyTestsTitle}</h3>
@@ -226,7 +227,7 @@ const LearnWhoYouAre: React.FC = () => {
         </div>
       </div>
       
-      <div className="w-full max-w-5xl flex flex-col items-center">
+      <div className="w-full max-w-6xl flex flex-col items-center">
         <div className="grid grid-cols-1 gap-8 w-full mb-10">
           {personalityTests.map((test) => (
             <div key={test.id} className="w-full">
