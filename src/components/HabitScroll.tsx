@@ -49,34 +49,34 @@ const HabitScroll: React.FC<HabitScrollProps> = ({ habit, isVisible }) => {
             `}
             style={{ height: isVisible ? 'auto' : 0 }}
           >
-            <h2 className="font-pixel text-retro-purple-200 text-xl mb-4 text-center">
+            <h2 className="font-pixel text-purple-300 text-xl mb-4 text-center">
               {habit.title[lang]}
             </h2>
             
-            <p className="font-pixel-text text-lg mb-4 text-retro-dark">
+            <p className="font-pixel-text text-lg mb-4 text-purple-900">
               {habit.description[lang]}
             </p>
             
             <div className="space-y-4">
               <div className="scroll-section">
-                <h3 className="font-pixel text-retro-dark text-sm mb-2">
+                <h3 className="font-pixel text-purple-900 text-sm mb-2">
                   {lang === 'en' ? 'HOW TO GAIN' : 'WIE DU BEGINNST'}
                 </h3>
-                <p className="font-pixel-text text-retro-dark">{habit.howToGain[lang]}</p>
+                <p className="font-pixel-text text-purple-900">{habit.howToGain[lang]}</p>
               </div>
               
               <div className="scroll-section">
-                <h3 className="font-pixel text-retro-dark text-sm mb-2">
+                <h3 className="font-pixel text-purple-900 text-sm mb-2">
                   {lang === 'en' ? 'PERFECT FOR' : 'PERFEKT FÜR'}
                 </h3>
-                <p className="font-pixel-text text-retro-dark">{habit.perfectFor[lang]}</p>
+                <p className="font-pixel-text text-purple-900">{habit.perfectFor[lang]}</p>
               </div>
               
               <div className="scroll-section">
-                <h3 className="font-pixel text-retro-dark text-sm mb-2">
+                <h3 className="font-pixel text-purple-900 text-sm mb-2">
                   {lang === 'en' ? 'BENEFITS' : 'VORTEILE'}
                 </h3>
-                <p className="font-pixel-text text-retro-dark">{habit.benefits[lang]}</p>
+                <p className="font-pixel-text text-purple-900">{habit.benefits[lang]}</p>
               </div>
             </div>
           </div>
