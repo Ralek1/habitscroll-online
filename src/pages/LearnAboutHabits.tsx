@@ -35,6 +35,10 @@ const LearnAboutHabits: React.FC = () => {
           {translate('page.learn.habits.title')} <br /> 
           <span className="text-retro-accent">{translate('page.learn.habits.subtitle')}</span>
         </h2>
+        
+        <div className="mt-4 mb-6 text-retro-purple-100 italic max-w-md font-pixel-text text-sm">
+          {translate('quote.james.clear')}
+        </div>
       </div>
       
       <div className="w-full max-w-6xl">
@@ -50,6 +54,11 @@ const LearnAboutHabits: React.FC = () => {
                 <div className="flex flex-col items-center">
                   <Book className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.bookworms')}</h4>
+                  
+                  <p className="text-sm font-pixel-text text-amber-900 mb-4 text-center">
+                    Bücher, die dir helfen, gute Gewohnheiten zu entwickeln und schlechte zu überwinden. 
+                    Perfekt für alle, die sich gerne Zeit zum Lesen nehmen.
+                  </p>
                   
                   <ScrollArea className="h-[260px] w-full rounded-md border border-retro-purple-400/30 p-4 scroll-paper">
                     <div className="mb-4 rounded-lg p-3">
@@ -88,12 +97,12 @@ const LearnAboutHabits: React.FC = () => {
                   <Headphones className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.audiophiles')}</h4>
                   
+                  <p className="text-sm font-pixel-text text-amber-900 mb-4 text-center">
+                    Hörbücher und Podcasts über Gewohnheiten und persönliche Entwicklung.
+                    Perfekt für unterwegs oder beim Training!
+                  </p>
+                  
                   <ScrollArea className="h-[260px] w-full rounded-md border border-retro-purple-400/30 p-4 scroll-paper">
-                    <p className="text-sm font-pixel-text text-amber-900">
-                      Hörbücher und Podcasts über Gewohnheiten und persönliche Entwicklung.
-                      Perfekt für unterwegs oder beim Training!
-                    </p>
-                    
                     {/* Podcast or audiobook recommendations could be added here */}
                   </ScrollArea>
                 </div>
@@ -105,12 +114,12 @@ const LearnAboutHabits: React.FC = () => {
                   <Film className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.visualLearners')}</h4>
                   
+                  <p className="text-sm font-pixel-text text-amber-900 mb-4 text-center">
+                    Videos, Dokumentationen und Kurse, die visuelle Lerntypen 
+                    ansprechen und komplexe Konzepte einfach visualisieren.
+                  </p>
+                  
                   <ScrollArea className="h-[260px] w-full rounded-md border border-retro-purple-400/30 p-4 scroll-paper">
-                    <p className="text-sm font-pixel-text text-amber-900">
-                      Videos, Dokumentationen und Kurse, die visuelle Lerntypen 
-                      ansprechen und komplexe Konzepte einfach visualisieren.
-                    </p>
-                    
                     {/* Video recommendations could be added here */}
                   </ScrollArea>
                 </div>
@@ -122,12 +131,12 @@ const LearnAboutHabits: React.FC = () => {
                   <Search className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.knowledgeSeekers')}</h4>
                   
+                  <p className="text-sm font-pixel-text text-amber-900 mb-4 text-center">
+                    Forschungspapiere, Artikel und tiefgehende Analysen für alle, 
+                    die die Wissenschaft hinter Gewohnheiten verstehen möchten.
+                  </p>
+                  
                   <ScrollArea className="h-[260px] w-full rounded-md border border-retro-purple-400/30 p-4 scroll-paper">
-                    <p className="text-sm font-pixel-text text-amber-900">
-                      Forschungspapiere, Artikel und tiefgehende Analysen für alle, 
-                      die die Wissenschaft hinter Gewohnheiten verstehen möchten.
-                    </p>
-                    
                     {/* Research paper recommendations could be added here */}
                   </ScrollArea>
                 </div>
@@ -146,6 +155,11 @@ const LearnAboutHabits: React.FC = () => {
                 <div className="flex flex-col items-center">
                   <Book className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.bookworms')}</h4>
+                  
+                  <p className="text-sm font-pixel-text text-amber-900 mb-4 text-center">
+                    Books that help you build good habits and break bad ones.
+                    Perfect for those who enjoy taking time to read and reflect.
+                  </p>
                   
                   <ScrollArea className="h-[260px] w-full rounded-md border border-retro-purple-400/30 p-4 scroll-paper">
                     <div className="mb-4 rounded-lg p-3">
@@ -182,11 +196,13 @@ const LearnAboutHabits: React.FC = () => {
                   <Headphones className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.audiophiles')}</h4>
                   
+                  <p className="text-sm font-pixel-text text-amber-900 mb-4 text-center">
+                    Audiobooks and podcasts about habits and personal development.
+                    Perfect for on-the-go learning or during workouts!
+                  </p>
+                  
                   <ScrollArea className="h-[260px] w-full rounded-md border border-retro-purple-400/30 p-4 scroll-paper">
-                    <p className="text-sm font-pixel-text text-amber-900">
-                      Audiobooks and podcasts about habits and personal development.
-                      Perfect for on-the-go learning or during workouts!
-                    </p>
+                    {/* Podcast or audiobook recommendations could be added here */}
                   </ScrollArea>
                 </div>
               </div>
@@ -197,11 +213,13 @@ const LearnAboutHabits: React.FC = () => {
                   <Film className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.visualLearners')}</h4>
                   
+                  <p className="text-sm font-pixel-text text-amber-900 mb-4 text-center">
+                    Videos, documentaries, and courses that appeal to visual learners
+                    and simplify complex concepts through visualization.
+                  </p>
+                  
                   <ScrollArea className="h-[260px] w-full rounded-md border border-retro-purple-400/30 p-4 scroll-paper">
-                    <p className="text-sm font-pixel-text text-amber-900">
-                      Videos, documentaries, and courses that appeal to visual learners
-                      and simplify complex concepts through visualization.
-                    </p>
+                    {/* Video recommendations could be added here */}
                   </ScrollArea>
                 </div>
               </div>
@@ -212,11 +230,13 @@ const LearnAboutHabits: React.FC = () => {
                   <Search className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.knowledgeSeekers')}</h4>
                   
+                  <p className="text-sm font-pixel-text text-amber-900 mb-4 text-center">
+                    Research papers, articles, and deep analyses for those who
+                    want to understand the science behind habits and behavior change.
+                  </p>
+                  
                   <ScrollArea className="h-[260px] w-full rounded-md border border-retro-purple-400/30 p-4 scroll-paper">
-                    <p className="text-sm font-pixel-text text-amber-900">
-                      Research papers, articles, and deep analyses for those who
-                      want to understand the science behind habits and behavior change.
-                    </p>
+                    {/* Research paper recommendations could be added here */}
                   </ScrollArea>
                 </div>
               </div>

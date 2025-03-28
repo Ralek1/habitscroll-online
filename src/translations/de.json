@@ -19,7 +19,7 @@
   "cookies.description": "Diese Website verwendet Cookies, um dir die bestmögliche Erfahrung zu bieten. Durch die Nutzung unserer Website bestätigst du, dass du unsere Cookie-Richtlinie und Datenschutzerklärung gelesen und verstanden hast.",
   "cookies.accept": "Akzeptieren",
   "cookies.close": "Schließen",
-  "page.learn.habits.title": "Lerne über",
+  "page.learn.habits.title": "Lerne mehr über",
   "page.learn.habits.subtitle": "Gewohnheiten",
   "page.learn.habits.comingSoon": "Demnächst verfügbar",
   "page.learn.habits.description": "Dieser Bereich ist in Entwicklung. Bald kannst du hier alles darüber lernen, wie Gewohnheiten funktionieren, wie du sie bildest und wie du sie für dauerhafte Veränderungen beibehältst.",
@@ -30,5 +30,6 @@
   "category.bookworms": "Für Bücherwürmer",
   "category.audiophiles": "Für Audiophile",
   "category.visualLearners": "Für Sehgenießer",
-  "category.knowledgeSeekers": "Für Wissenssuchende"
+  "category.knowledgeSeekers": "Für Wissenssuchende",
+  "quote.james.clear": "\"Jeder Tag ist eine neue Gelegenheit, deine Gewohnheiten zu formen.\" - James Clear"
 }
