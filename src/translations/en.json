@@ -18,5 +18,13 @@
   "cookies.title": "Cookies & Privacy",
   "cookies.description": "This website uses cookies to ensure you get the best experience. By using our site, you acknowledge that you have read and understand our Cookie Policy and Privacy Policy.",
   "cookies.accept": "Accept",
-  "cookies.close": "Close"
+  "cookies.close": "Close",
+  "page.learn.habits.title": "Learn About",
+  "page.learn.habits.subtitle": "Habits",
+  "page.learn.habits.comingSoon": "Coming Soon",
+  "page.learn.habits.description": "This section is under development. Soon you'll be able to learn all about how habits work, how to form them, and how to stick with them for lasting change.",
+  "page.learn.track.title": "Learn How To",
+  "page.learn.track.subtitle": "Track Your Progress",
+  "page.learn.track.comingSoon": "Coming Soon",
+  "page.learn.track.description": "This section is under development. Soon you'll learn effective ways to track your habits and measure your progress towards your goals."
 }

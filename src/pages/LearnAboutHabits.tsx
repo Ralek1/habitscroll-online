@@ -1,16 +1,16 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
-import { ArrowLeft } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 const LearnAboutHabits: React.FC = () => {
   const { translate } = useLanguage();
   
   // Set page title
-  React.useEffect(() => {
+  useEffect(() => {
     document.title = translate('learn.habits');
   }, [translate]);
   
@@ -28,24 +28,44 @@ const LearnAboutHabits: React.FC = () => {
           {translate('page.learn.habits.title')} <br /> 
           <span className="text-retro-accent">{translate('page.learn.habits.subtitle')}</span>
         </h2>
-        <div className="mt-2">
-          <Link to="/?showHabit=true">
-            <PixelButton onClick={() => {}}>
-              {translate('button.home')}
-            </PixelButton>
-          </Link>
-        </div>
       </div>
       
       <div className="w-full max-w-2xl flex flex-col items-center">
-        <div className="mb-8 text-center w-full p-6 scroll-paper rounded-lg">
-          <h3 className="font-pixel-text text-xl mb-4">{translate('page.learn.habits.comingSoon')}</h3>
-          <p className="font-pixel-text text-lg">
-            {translate('page.learn.habits.description')}
-          </p>
+        {/* Scroll Component */}
+        <div className="pixel-scroll-container w-full max-w-xl mx-auto mb-8">
+          {/* Top scroll handle */}
+          <div className="pixel-scroll-handle pixel-scroll-handle-top">
+            <div className="pixel-scroll-knob"></div>
+            <div className="pixel-wooden-rod"></div>
+            <div className="pixel-scroll-knob"></div>
+          </div>
+          
+          {/* Scroll content */}
+          <div className="scroll-paper rounded-xl">
+            <div className="p-6 px-8">
+              <h3 className="font-pixel text-amber-950 text-xl mb-4 text-center">
+                {translate('page.learn.habits.comingSoon')}
+              </h3>
+              
+              <p className="font-pixel-text text-lg mb-4 text-amber-950">
+                {translate('page.learn.habits.description')}
+              </p>
+              
+              <div className="flex justify-center my-6">
+                <Sparkles className="w-6 h-6 text-amber-800/80 animate-pulse" />
+              </div>
+            </div>
+          </div>
+          
+          {/* Bottom scroll handle */}
+          <div className="pixel-scroll-handle pixel-scroll-handle-bottom">
+            <div className="pixel-scroll-knob"></div>
+            <div className="pixel-wooden-rod"></div>
+            <div className="pixel-scroll-knob"></div>
+          </div>
         </div>
         
-        <Link to="/?showHabit=true">
+        <Link to="/">
           <PixelButton onClick={() => {}}>
             {translate('button.home')}
           </PixelButton>
