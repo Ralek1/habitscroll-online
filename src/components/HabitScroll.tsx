@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import type { Habit } from '../data/habits';
+import { useLanguage } from '../context/LanguageContext';
 
 interface HabitScrollProps {
   habit: Habit | null;
@@ -10,6 +11,7 @@ interface HabitScrollProps {
 const HabitScroll: React.FC<HabitScrollProps> = ({ habit, isVisible }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [scrollHeight, setScrollHeight] = useState<number>(0);
+  const { language } = useLanguage();
   
   useEffect(() => {
     if (isVisible && scrollRef.current) {
@@ -20,6 +22,9 @@ const HabitScroll: React.FC<HabitScrollProps> = ({ habit, isVisible }) => {
   }, [isVisible, habit]);
 
   if (!habit) return null;
+
+  // Use content based on selected language
+  const lang = language as 'en' | 'de';
 
   return (
     <div className={`
@@ -45,27 +50,33 @@ const HabitScroll: React.FC<HabitScrollProps> = ({ habit, isVisible }) => {
             style={{ height: isVisible ? 'auto' : 0 }}
           >
             <h2 className="font-pixel text-amber-950 text-xl mb-4 text-center">
-              {habit.title}
+              {habit.title[lang]}
             </h2>
             
             <p className="font-pixel-text text-lg mb-4 text-amber-950">
-              {habit.description}
+              {habit.description[lang]}
             </p>
             
             <div className="space-y-4">
               <div className="scroll-section">
-                <h3 className="font-pixel text-amber-950 text-sm mb-2">HOW TO GAIN</h3>
-                <p className="font-pixel-text text-amber-950">{habit.howToGain}</p>
+                <h3 className="font-pixel text-amber-950 text-sm mb-2">
+                  {lang === 'en' ? 'HOW TO GAIN' : 'WIE DU BEGINNST'}
+                </h3>
+                <p className="font-pixel-text text-amber-950">{habit.howToGain[lang]}</p>
               </div>
               
               <div className="scroll-section">
-                <h3 className="font-pixel text-amber-950 text-sm mb-2">PERFECT FOR</h3>
-                <p className="font-pixel-text text-amber-950">{habit.perfectFor}</p>
+                <h3 className="font-pixel text-amber-950 text-sm mb-2">
+                  {lang === 'en' ? 'PERFECT FOR' : 'PERFEKT FÜR'}
+                </h3>
+                <p className="font-pixel-text text-amber-950">{habit.perfectFor[lang]}</p>
               </div>
               
               <div className="scroll-section">
-                <h3 className="font-pixel text-amber-950 text-sm mb-2">BENEFITS</h3>
-                <p className="font-pixel-text text-amber-950">{habit.benefits}</p>
+                <h3 className="font-pixel text-amber-950 text-sm mb-2">
+                  {lang === 'en' ? 'BENEFITS' : 'VORTEILE'}
+                </h3>
+                <p className="font-pixel-text text-amber-950">{habit.benefits[lang]}</p>
               </div>
             </div>
           </div>
