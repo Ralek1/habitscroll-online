@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import { Brain, User, Users, Briefcase, Heart, Shield, DollarSign } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import { ScrollArea } from '../components/ui/scroll-area';
+import { NonScrollableArea } from '../components/ui/non-scrollable-area';
 
 interface PersonalityTest {
   id: string;
@@ -239,7 +238,7 @@ const LearnWhoYouAre: React.FC = () => {
                 </div>
                 
                 <div className="scroll-closed-body rounded-xl">
-                  <ScrollArea className="pixel-scroll-content p-8 max-h-[500px]">
+                  <NonScrollableArea className="pixel-scroll-content p-8">
                     <h3 className="font-pixel-text text-xl text-green-400 mb-3 flex items-center gap-2">
                       <span className="text-retro-purple-700">
                         {test.icon}
@@ -274,7 +273,7 @@ const LearnWhoYouAre: React.FC = () => {
                     >
                       {takeAssessmentText}
                     </a>
-                  </ScrollArea>
+                  </NonScrollableArea>
                 </div>
                 
                 <div className="pixel-scroll-handle pixel-scroll-handle-bottom">
