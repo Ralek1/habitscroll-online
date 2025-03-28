@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -255,8 +256,8 @@ const LearnAboutHabits: React.FC = () => {
               
               <p className="text-sm font-pixel-text text-retro-purple-200 mb-6 text-center">
                 {language === 'de' 
-                  ? 'Visuelle Kurse und Videos, die das Lernen und Umsetzen von Gewohnheiten vereinfachen.' 
-                  : 'Visual courses and videos that simplify learning and implementing habits.'}
+                  ? 'Inspirierende Filme und Dokumentationen, die deine Denkweise verändern können.' 
+                  : 'Inspiring films and documentaries that can change your perspective on habits and life.'}
               </p>
               
               <div className="space-y-4 w-full mb-6">
@@ -264,19 +265,19 @@ const LearnAboutHabits: React.FC = () => {
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
                     <a 
-                      href="https://amzn.to/4iLDS8G"
+                      href="https://amzn.to/441T7FV"
                       className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'Meisterkurs: Gewohnheiten & Routinen' : 'Masterclass: Habits & Routines'}
+                          {language === 'de' ? 'Minimalismus: Eine Dokumentation' : 'Minimalism: A Documentary About the Important Things'}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Video-Kurs mit praktischen Übungen und Visualisierungen. Schritt-für-Schritt Anleitung für dauerhafte Gewohnheitsänderung.' 
-                            : 'Video course with practical exercises and visualizations. Step-by-step guide for lasting habit change with visual demonstrations.'}
+                            ? 'Entdecke, wie die minimalistische Lebensweise dir helfen kann, gesündere Gewohnheiten zu entwickeln und ein erfüllteres Leben zu führen.' 
+                            : 'Discover how embracing minimalism can help you develop healthier habits and lead a more meaningful life by focusing on what truly matters.'}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
@@ -290,19 +291,19 @@ const LearnAboutHabits: React.FC = () => {
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
                     <a 
-                      href="https://amzn.to/42ljzZU"
+                      href="https://amzn.to/3XBiiLQ"
                       className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'Visuelle Lernreihe: Habit Stacking' : 'Visual Learning Series: Habit Stacking'}
+                          {language === 'de' ? 'Das Streben nach Glück' : 'The Pursuit of Happyness'}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Animierte Tutorials, die zeigen, wie du neue Gewohnheiten an bestehende knüpfst. Mit visuellen Lernhilfen und Gedächtnistechniken.' 
-                            : 'Animated tutorials showing how to stack new habits onto existing ones. Visual aids and memory techniques that make habit formation intuitive.'}
+                            ? 'Diese inspirierende wahre Geschichte zeigt, wie Beharrlichkeit und positive Gewohnheiten selbst in den schwierigsten Situationen zum Erfolg führen können.' 
+                            : 'This inspirational true story demonstrates how persistence and positive habits can lead to success even in the most challenging circumstances.'}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
@@ -316,19 +317,19 @@ const LearnAboutHabits: React.FC = () => {
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
                     <a 
-                      href="https://amzn.to/441T7FV"
+                      href="https://amzn.to/3FIQEpQ"
                       className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'Neuroplastizität & Gewohnheiten: Videoserie' : 'Neuroplasticity & Habits: Video Series'}
+                          {language === 'de' ? 'The Secret - Das Geheimnis' : 'The Secret'}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Faszinierende visuelle Erklärungen der Gehirnveränderungen durch Gewohnheiten. Mit 3D-Animationen und praktischen Beispielen.' 
-                            : 'Fascinating visual explanations of brain changes through habits. With 3D animations and practical examples of neuroplasticity in action.'}
+                            ? 'Erfahre, wie das Gesetz der Anziehung und positive Gedankenmuster dir helfen können, neue Gewohnheiten zu manifestieren und dein Leben zu transformieren.' 
+                            : 'Learn how the law of attraction and positive thought patterns can help you manifest new habits and transform your life through visualization and consistent practice.'}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
