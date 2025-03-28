@@ -29,11 +29,11 @@ const NotFound = () => {
         </div>
         <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed">
           404 <br /> 
-          <span className="text-retro-accent">{translate('page.notFound')}</span>
+          <span className="text-green-400">{translate('page.notFound')}</span>
         </h2>
       </div>
 
-      <div className="text-center text-retro-purple-200 mb-8 font-pixel-text">
+      <div className="text-center text-green-200 mb-8 font-pixel-text">
         {translate('page.notFound.text')}
       </div>
       

@@ -32,7 +32,7 @@ const VisualLearners: React.FC = () => {
       </div>
       
       <div className="w-full max-w-4xl text-center mb-8">
-        <p className="text-amber-100 font-pixel-text">
+        <p className="text-green-100 font-pixel-text">
           {language === 'de' 
             ? "Entdecke unsere Sammlung von Videos und Kursen zum Thema Gewohnheiten."
             : "Discover our collection of videos and courses about habits."}
@@ -42,7 +42,7 @@ const VisualLearners: React.FC = () => {
       <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
         {/* This is where more visual resources would be listed */}
         <div className="coming-soon text-center p-8 border-2 border-retro-purple-600 rounded-lg">
-          <span className="text-retro-accent font-pixel">
+          <span className="text-green-400 font-pixel">
             {language === 'de' ? "Demnächst mehr Videoinhalte" : "More video content coming soon"}
           </span>
         </div>

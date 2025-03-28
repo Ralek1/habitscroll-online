@@ -24,11 +24,11 @@ const Deploy: React.FC = () => {
         </div>
         <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed">
           Build <br /> 
-          <span className="text-retro-accent">{translate('page.deploy.success')}</span>
+          <span className="text-green-400">{translate('page.deploy.success')}</span>
         </h2>
       </div>
 
-      <div className="text-center text-retro-purple-200 mb-8 font-pixel-text">
+      <div className="text-center text-green-200 mb-8 font-pixel-text">
         {translate('page.deploy.text')}
       </div>
       
