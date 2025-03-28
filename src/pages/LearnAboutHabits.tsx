@@ -6,6 +6,7 @@ import LanguageSwitcher from '../components/LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
 import { Sparkles, Book, Headphones, Film, Search } from 'lucide-react';
 import { ScrollArea } from '../components/ui/scroll-area';
+import { optimizedImage } from '../utils/optimizeImage';
 
 const LearnAboutHabits: React.FC = () => {
   const { translate, language } = useLanguage();
@@ -57,22 +58,25 @@ const LearnAboutHabits: React.FC = () => {
                   <ScrollArea className="h-[260px] w-full rounded-md border border-retro-purple-400/30 p-4 scroll-paper">
                     <div className="mb-4 rounded-lg p-3">
                       <a href="https://www.amazon.de/Die-1-Methode-Ver%C3%A4nderung-Gewohnheiten-erreichen/dp/3442178584?crid=1CN8NCTVN51F&dib=eyJ2IjoiMSJ9.qkrD_xpwUFVOJ0j7ub8oXp0yRy9v2OnDeLdC1cBr2G0bnY6xvODh-LPWhcjTDWLtSDLQ1ZUT-NrdHjZvK3hD812DBG4xhLk9lMBofmoOWaTZnKPRSCTmGNxwzN66hVzaegeyndwno3sNNlFTXTXdj6J_Scqw7beHNsQpFDgBrkkefLh_IrUGW1NUHGOVDuEUPcnl25CfY1XylxWl6MdrG6a69eE27GnqKA55EptM4iQ.wWIorMn7z7ezMDJghwdDyYgvUrw0Pe98pal75_6_5F4&dib_tag=se&keywords=james+clear+1+prozent+methode&qid=1743168903&sprefix=james+clear%2Caps%2C85&sr=8-1&linkCode=ll1&tag=habitscroll-21&linkId=732a8014feee8c933a134bacef62e35c&language=de_DE&ref_=as_li_ss_tl" 
-                        className="flex flex-col items-center hover:opacity-90 transition-opacity" 
+                        className="flex flex-row items-center hover:opacity-90 transition-opacity gap-4" 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
+                        <div className="flex-1">
+                          <span className="font-pixel-text text-base text-amber-800 block mb-3">Die 1% Methode</span>
+                          <p className="text-sm font-pixel-text text-amber-900">
+                            Dieses Buch von James Clear erklärt, wie kleine 1%-Verbesserungen zu 
+                            bahnbrechenden Erfolgen führen. Mit praktischen Strategien zur Gewohnheitsbildung 
+                            und wissenschaftlich fundierten Techniken.
+                          </p>
+                        </div>
                         <img 
                           src="https://m.media-amazon.com/images/I/71DLCNz1NhL._SY522_.jpg" 
                           alt="Die 1% Methode" 
-                          className="w-32 h-auto mb-3 rounded-md shadow-lg border border-retro-purple-400/30"
+                          className="w-32 h-auto rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0"
+                          {...optimizedImage({src: "https://m.media-amazon.com/images/I/71DLCNz1NhL._SY522_.jpg", alt: "Die 1% Methode"})}
                         />
-                        <span className="font-pixel-text text-base text-amber-800">Die 1% Methode</span>
                       </a>
-                      <p className="mt-4 text-sm font-pixel-text text-amber-900">
-                        Dieses Buch von James Clear erklärt, wie kleine 1%-Verbesserungen zu 
-                        bahnbrechenden Erfolgen führen. Mit praktischen Strategien zur Gewohnheitsbildung 
-                        und wissenschaftlich fundierten Techniken.
-                      </p>
                     </div>
                     
                     {/* Additional books could be added here */}
@@ -152,22 +156,25 @@ const LearnAboutHabits: React.FC = () => {
                   <ScrollArea className="h-[260px] w-full rounded-md border border-retro-purple-400/30 p-4 scroll-paper">
                     <div className="mb-4 rounded-lg p-3">
                       <a href="https://www.amazon.de/Die-1-Methode-Ver%C3%A4nderung-Gewohnheiten-erreichen/dp/3442178584?crid=1CN8NCTVN51F&dib=eyJ2IjoiMSJ9.qkrD_xpwUFVOJ0j7ub8oXp0yRy9v2OnDeLdC1cBr2G0bnY6xvODh-LPWhcjTDWLtSDLQ1ZUT-NrdHjZvK3hD812DBG4xhLk9lMBofmoOWaTZnKPRSCTmGNxwzN66hVzaegeyndwno3sNNlFTXTXdj6J_Scqw7beHNsQpFDgBrkkefLh_IrUGW1NUHGOVDuEUPcnl25CfY1XylxWl6MdrG6a69eE27GnqKA55EptM4iQ.wWIorMn7z7ezMDJghwdDyYgvUrw0Pe98pal75_6_5F4&dib_tag=se&keywords=james+clear+1+prozent+methode&qid=1743168903&sprefix=james+clear%2Caps%2C85&sr=8-1&linkCode=ll1&tag=habitscroll-21&linkId=732a8014feee8c933a134bacef62e35c&language=de_DE&ref_=as_li_ss_tl" 
-                        className="flex flex-col items-center hover:opacity-90 transition-opacity" 
+                        className="flex flex-row items-center hover:opacity-90 transition-opacity gap-4" 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
+                        <div className="flex-1">
+                          <span className="font-pixel-text text-base text-amber-800 block mb-3">Atomic Habits (German)</span>
+                          <p className="mt-1 text-sm font-pixel-text text-amber-900">
+                            This book by James Clear explains how tiny 1% improvements lead to 
+                            remarkable results. With practical strategies for habit formation and 
+                            science-backed techniques.
+                          </p>
+                        </div>
                         <img 
                           src="https://m.media-amazon.com/images/I/71DLCNz1NhL._SY522_.jpg" 
                           alt="Atomic Habits (German Edition)" 
-                          className="w-32 h-auto mb-3 rounded-md shadow-lg border border-retro-purple-400/30"
+                          className="w-32 h-auto rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0"
+                          {...optimizedImage({src: "https://m.media-amazon.com/images/I/71DLCNz1NhL._SY522_.jpg", alt: "Atomic Habits (German Edition)"})}
                         />
-                        <span className="font-pixel-text text-base text-amber-800">Atomic Habits (German)</span>
                       </a>
-                      <p className="mt-4 text-sm font-pixel-text text-amber-900">
-                        This book by James Clear explains how tiny 1% improvements lead to 
-                        remarkable results. With practical strategies for habit formation and 
-                        science-backed techniques.
-                      </p>
                     </div>
                   </ScrollArea>
                 </div>
