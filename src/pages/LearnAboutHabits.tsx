@@ -164,9 +164,7 @@ const LearnAboutHabits: React.FC = () => {
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
                     <a 
-                      href={language === 'de' 
-                        ? "https://www.amazon.de/audible-Die-1-Methode-James-Clear/dp/B07PBQKZ7F?&linkCode=ll1&tag=habitscroll-21&linkId=732a8014feee8c933a134bacef62e35c&language=de_DE&ref_=as_li_ss_tl"
-                        : "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/B07RFSSYBH?&linkCode=ll1&tag=habitscroll-21&linkId=732a8014feee8c933a134bacef62e35c&language=en_US&ref_=as_li_ss_tl"}
+                      href="https://amzn.to/4cjVW7G"
                       className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
                       target="_blank" 
                       rel="noopener noreferrer"
@@ -191,42 +189,52 @@ const LearnAboutHabits: React.FC = () => {
                 {/* Audio 2 */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
-                    <div className="flex flex-row items-center gap-3">
+                    <a 
+                      href="https://amzn.to/4ccrtYX"
+                      className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'Podcast: Habits & Growth' : 'Podcast: Habit Cast'}
+                          {language === 'de' ? 'Die Macht der Gewohnheit (Hörbuch)' : 'The Power of Habit (Audiobook)'}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Wöchentliche Tipps zur Gewohnheitsbildung. Jede Episode behandelt eine andere Technik, um Gewohnheiten zu etablieren und beizubehalten.' 
-                            : 'Weekly tips on habit formation. Each episode covers a different technique for establishing and maintaining habits.'}
+                            ? 'Charles Duhigg erklärt, warum wir tun, was wir tun. Entdecke die neurologischen Muster hinter deinen Gewohnheiten.' 
+                            : 'Charles Duhigg explains why we do what we do. Discover the neurological patterns behind your habits and how to transform them.'}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
                         <Headphones className="w-8 h-8 text-retro-accent" />
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 
                 {/* Audio 3 */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
-                    <div className="flex flex-row items-center gap-3">
+                    <a 
+                      href="https://amzn.to/43x1MAe"
+                      className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'Podcast: Gewohnheiten Meistern' : 'Podcast: Habit Hacking'}
+                          {language === 'de' ? 'Die 7 Wege zur Effektivität (Hörbuch)' : 'The 7 Habits of Highly Effective People (Audiobook)'}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Wissenschaftliche Erkenntnisse & Praxis. Tiefgehende Interviews mit Experten über die neuesten Forschungen zu Gewohnheiten.' 
-                            : 'Science of habits & practical techniques. In-depth interviews with experts on the latest habit research.'}
+                            ? 'Stephen R. Coveys Klassiker als Hörbuch. Zeitlose Prinzipien für persönliche und berufliche Effektivität durch gute Gewohnheiten.' 
+                            : 'Stephen R. Covey\'s classic in audio format. Timeless principles for personal and professional effectiveness through powerful habits.'}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
                         <Headphones className="w-8 h-8 text-retro-accent" />
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
