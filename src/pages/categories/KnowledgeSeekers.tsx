@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PixelButton from '../../components/PixelButton';
 import LanguageSwitcher from '../../components/LanguageSwitcher';
 import { useLanguage } from '../../context/LanguageContext';
-import { Search, ArrowLeft } from 'lucide-react';
+import { Search } from 'lucide-react';
 
 const KnowledgeSeekers: React.FC = () => {
   const { translate, language } = useLanguage();
@@ -51,7 +51,6 @@ const KnowledgeSeekers: React.FC = () => {
       <div className="mt-8">
         <Link to="/learn-about-habits">
           <PixelButton onClick={() => {}}>
-            <ArrowLeft className="w-4 h-4" />
             {language === 'de' ? "Zurück zu Gewohnheiten" : "Back to Habits"}
           </PixelButton>
         </Link>
