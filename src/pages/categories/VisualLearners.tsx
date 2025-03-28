@@ -34,8 +34,8 @@ const VisualLearners: React.FC = () => {
       <div className="w-full max-w-4xl text-center mb-8">
         <p className="text-retro-purple-200 font-pixel-text">
           {language === 'de' 
-            ? "Entdecke unsere Sammlung von Videos und Kursen zum Thema Gewohnheiten."
-            : "Discover our collection of videos and courses about habits."}
+            ? "Entdecke unsere Sammlung von visuellen Kursen und Videos, die Gewohnheitsbildung verständlich machen."
+            : "Discover our collection of visual courses and videos that make habit formation easy to understand."}
         </p>
       </div>
       
@@ -54,12 +54,12 @@ const VisualLearners: React.FC = () => {
               </div>
               <div className="text-center">
                 <span className="font-pixel-text text-base text-green-400 block mb-2">
-                  {language === 'de' ? 'Kurs: Gewohnheiten Meistern' : 'Course: Master Your Habits'}
+                  {language === 'de' ? 'Meisterkurs: Gewohnheiten & Routinen' : 'Masterclass: Habits & Routines'}
                 </span>
                 <p className="text-xs font-pixel-text text-retro-purple-200">
                   {language === 'de' 
-                    ? 'Umfassender Videokurs mit praktischen Übungen. Lerne visuell, wie du starke Gewohnheiten aufbaust und beibehältst.' 
-                    : 'Comprehensive video course with exercises. Learn visually how to build and maintain strong habits with practical demonstrations.'}
+                    ? 'Video-Kurs mit praktischen Übungen und Visualisierungen. Schritt-für-Schritt Anleitung für dauerhafte Gewohnheitsänderung.' 
+                    : 'Video course with practical exercises and visualizations. Step-by-step guide for lasting habit change with visual demonstrations.'}
                 </p>
               </div>
             </a>
@@ -80,12 +80,12 @@ const VisualLearners: React.FC = () => {
               </div>
               <div className="text-center">
                 <span className="font-pixel-text text-base text-green-400 block mb-2">
-                  {language === 'de' ? 'YouTube: Habits Simplified' : 'YouTube: Habits Simplified'}
+                  {language === 'de' ? 'Visuelle Lernreihe: Habit Stacking' : 'Visual Learning Series: Habit Stacking'}
                 </span>
                 <p className="text-xs font-pixel-text text-retro-purple-200">
                   {language === 'de' 
-                    ? 'Kurze Videos zu komplexen Konzepten. Animierte Erklärungen machen komplizierte Gewohnheitstheorien leicht verständlich.' 
-                    : 'Short videos that simplify complex concepts. Animated explanations make complicated habit theories easy to understand.'}
+                    ? 'Animierte Tutorials, die zeigen, wie du neue Gewohnheiten an bestehende knüpfst. Mit visuellen Lernhilfen und Gedächtnistechniken.' 
+                    : 'Animated tutorials showing how to stack new habits onto existing ones. Visual aids and memory techniques that make habit formation intuitive.'}
                 </p>
               </div>
             </a>
@@ -106,12 +106,12 @@ const VisualLearners: React.FC = () => {
               </div>
               <div className="text-center">
                 <span className="font-pixel-text text-base text-green-400 block mb-2">
-                  {language === 'de' ? 'Dokumentation: Die Wissenschaft der Gewohnheiten' : 'Documentary: The Science of Habits'}
+                  {language === 'de' ? 'Neuroplastizität & Gewohnheiten: Videoserie' : 'Neuroplasticity & Habits: Video Series'}
                 </span>
                 <p className="text-xs font-pixel-text text-retro-purple-200">
                   {language === 'de' 
-                    ? 'Neueste wissenschaftliche Erkenntnisse. Eine visuell beeindruckende Dokumentation über die Biologie und Psychologie der Gewohnheiten.' 
-                    : 'Latest scientific findings with visualizations. A visually stunning documentary about the biology and psychology of habits.'}
+                    ? 'Faszinierende visuelle Erklärungen der Gehirnveränderungen durch Gewohnheiten. Mit 3D-Animationen und praktischen Beispielen.' 
+                    : 'Fascinating visual explanations of brain changes through habits. With 3D animations and practical examples of neuroplasticity in action.'}
                 </p>
               </div>
             </a>

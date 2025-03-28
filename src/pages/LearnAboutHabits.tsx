@@ -255,8 +255,8 @@ const LearnAboutHabits: React.FC = () => {
               
               <p className="text-sm font-pixel-text text-retro-purple-200 mb-6 text-center">
                 {language === 'de' 
-                  ? 'Videos, Dokumentationen und Kurse, die visuelle Lerntypen ansprechen.' 
-                  : 'Videos, documentaries, and courses that appeal to visual learners.'}
+                  ? 'Visuelle Kurse und Videos, die das Lernen und Umsetzen von Gewohnheiten vereinfachen.' 
+                  : 'Visual courses and videos that simplify learning and implementing habits.'}
               </p>
               
               <div className="space-y-4 w-full mb-6">
@@ -271,12 +271,12 @@ const LearnAboutHabits: React.FC = () => {
                     >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'Kurs: Gewohnheiten Meistern' : 'Course: Master Your Habits'}
+                          {language === 'de' ? 'Meisterkurs: Gewohnheiten & Routinen' : 'Masterclass: Habits & Routines'}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Umfassender Videokurs mit praktischen Übungen. Lerne visuell, wie du starke Gewohnheiten aufbaust und beibehältst.' 
-                            : 'Comprehensive video course with exercises. Learn visually how to build and maintain strong habits with practical demonstrations.'}
+                            ? 'Video-Kurs mit praktischen Übungen und Visualisierungen. Schritt-für-Schritt Anleitung für dauerhafte Gewohnheitsänderung.' 
+                            : 'Video course with practical exercises and visualizations. Step-by-step guide for lasting habit change with visual demonstrations.'}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
@@ -297,12 +297,12 @@ const LearnAboutHabits: React.FC = () => {
                     >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'YouTube: Habits Simplified' : 'YouTube: Habits Simplified'}
+                          {language === 'de' ? 'Visuelle Lernreihe: Habit Stacking' : 'Visual Learning Series: Habit Stacking'}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Kurze Videos zu komplexen Konzepten. Animierte Erklärungen machen komplizierte Gewohnheitstheorien leicht verständlich.' 
-                            : 'Short videos that simplify complex concepts. Animated explanations make complicated habit theories easy to understand.'}
+                            ? 'Animierte Tutorials, die zeigen, wie du neue Gewohnheiten an bestehende knüpfst. Mit visuellen Lernhilfen und Gedächtnistechniken.' 
+                            : 'Animated tutorials showing how to stack new habits onto existing ones. Visual aids and memory techniques that make habit formation intuitive.'}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
@@ -323,12 +323,12 @@ const LearnAboutHabits: React.FC = () => {
                     >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'Dokumentation: Die Wissenschaft der Gewohnheiten' : 'Documentary: The Science of Habits'}
+                          {language === 'de' ? 'Neuroplastizität & Gewohnheiten: Videoserie' : 'Neuroplasticity & Habits: Video Series'}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Neueste wissenschaftliche Erkenntnisse. Eine visuell beeindruckende Dokumentation über die Biologie und Psychologie der Gewohnheiten.' 
-                            : 'Latest scientific findings with visualizations. A visually stunning documentary about the biology and psychology of habits.'}
+                            ? 'Faszinierende visuelle Erklärungen der Gehirnveränderungen durch Gewohnheiten. Mit 3D-Animationen und praktischen Beispielen.' 
+                            : 'Fascinating visual explanations of brain changes through habits. With 3D animations and practical examples of neuroplasticity in action.'}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
