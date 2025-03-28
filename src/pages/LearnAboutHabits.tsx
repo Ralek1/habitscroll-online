@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -87,13 +86,11 @@ const LearnAboutHabits: React.FC = () => {
                   </div>
                 </div>
                 
-                {/* Book 2 */}
+                {/* Book 2 - Updated link to the new one provided */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
                     <a 
-                      href={language === 'de' 
-                        ? "https://www.amazon.de/Die-Macht-Gewohnheit-Charles-Duhigg/dp/3442393493?&linkCode=ll1&tag=habitscroll-21&linkId=732a8014feee8c933a134bacef62e35c&language=de_DE&ref_=as_li_ss_tl"
-                        : "https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X?&linkCode=ll1&tag=habitscroll-21&linkId=732a8014feee8c933a134bacef62e35c&language=en_US&ref_=as_li_ss_tl"}
+                      href="https://amzn.to/3Yc3i7d"
                       className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
                       target="_blank" 
                       rel="noopener noreferrer"
