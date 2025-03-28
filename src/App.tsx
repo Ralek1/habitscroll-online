@@ -16,6 +16,12 @@ const Impressum = lazy(() => import('./pages/Impressum'));
 const Datenschutz = lazy(() => import('./pages/Datenschutz'));
 const Deploy = lazy(() => import('./pages/Deploy'));
 
+// New category pages
+const Bookworms = lazy(() => import('./pages/categories/Bookworms'));
+const Audiophiles = lazy(() => import('./pages/categories/Audiophiles'));
+const VisualLearners = lazy(() => import('./pages/categories/VisualLearners'));
+const KnowledgeSeekers = lazy(() => import('./pages/categories/KnowledgeSeekers'));
+
 // Loading component
 const PageLoading = () => (
   <div className="flex items-center justify-center min-h-screen bg-retro-dark">
@@ -36,6 +42,13 @@ function App() {
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="/deploy" element={<Deploy />} />
+            
+            {/* Category pages */}
+            <Route path="/bookworms" element={<Bookworms />} />
+            <Route path="/audiophiles" element={<Audiophiles />} />
+            <Route path="/visual-learners" element={<VisualLearners />} />
+            <Route path="/knowledge-seekers" element={<KnowledgeSeekers />} />
+            
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
