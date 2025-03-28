@@ -212,7 +212,7 @@ const LearnWhoYouAre: React.FC = () => {
         </div>
         <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed text-center">
           {language === 'de' ? 'Lerne, wer' : 'Learn Who'} <br /> 
-          <span className="text-retro-accent">{pageSubtitle}</span>
+          <span className="text-green-400">{pageSubtitle}</span>
         </h2>
         <div className="mt-2">
           <Link to="/?showHabit=true">
@@ -225,8 +225,8 @@ const LearnWhoYouAre: React.FC = () => {
       
       <div className="w-full max-w-3xl flex flex-col items-center">
         <div className="mb-8 w-full p-6 scroll-paper rounded-lg">
-          <h3 className="font-pixel-text text-xl mb-6 text-center text-amber-950">{whyPersonalityTestsTitle}</h3>
-          <p className="font-pixel-text text-lg mb-4 text-center italic text-amber-950">
+          <h3 className="font-pixel-text text-xl mb-6 text-center text-green-400">{whyPersonalityTestsTitle}</h3>
+          <p className="font-pixel-text text-lg mb-4 text-center italic text-retro-purple-700">
             "{personalityTestsQuote}"
           </p>
           
@@ -234,7 +234,7 @@ const LearnWhoYouAre: React.FC = () => {
             {benefitItems.map((item, index) => (
               <div key={index} className="flex items-start gap-3">
                 {item.icon}
-                <p className="font-pixel-text text-amber-950">{item.text}</p>
+                <p className="font-pixel-text text-retro-purple-700">{item.text}</p>
               </div>
             ))}
           </div>
@@ -245,30 +245,30 @@ const LearnWhoYouAre: React.FC = () => {
             <div key={test.id} className="scroll-paper p-5 border-retro-purple-300">
               <div className="flex justify-between items-start gap-4">
                 <div className="flex-1">
-                  <h3 className="font-pixel-text text-xl text-amber-950 mb-2 flex items-center gap-2">
+                  <h3 className="font-pixel-text text-xl text-green-400 mb-2 flex items-center gap-2">
                     <span className="text-retro-purple-700">
                       {test.icon}
                     </span>
                     {test.title[language]}
                   </h3>
-                  <p className="font-pixel-text text-amber-950 mb-3 text-base">
+                  <p className="font-pixel-text text-retro-purple-700 mb-3 text-base">
                     {test.description[language]}
                   </p>
                   
                   <div className="scroll-section mt-4 mb-3">
-                    <h4 className="font-pixel text-amber-950 text-xs mb-1 flex items-center">
+                    <h4 className="font-pixel text-green-400 text-xs mb-1 flex items-center">
                       <DollarSign className="h-4 w-4 mr-1 text-retro-purple-700" />
                       {language === 'de' ? 'PREISGESTALTUNG' : 'PRICING'}
                     </h4>
-                    <p className="font-pixel-text text-amber-950 text-sm">{test.pricing[language]}</p>
+                    <p className="font-pixel-text text-retro-purple-700 text-sm">{test.pricing[language]}</p>
                   </div>
                   
                   <div className="scroll-section mb-3">
-                    <h4 className="font-pixel text-amber-950 text-xs mb-1 flex items-center">
+                    <h4 className="font-pixel text-green-400 text-xs mb-1 flex items-center">
                       <Brain className="h-4 w-4 mr-1 text-retro-purple-700" />
                       {language === 'de' ? 'WISSENSCHAFTLICHER HINWEIS' : 'SCIENTIFIC NOTE'}
                     </h4>
-                    <p className="font-pixel-text text-amber-950 text-sm">{test.scienceNote[language]}</p>
+                    <p className="font-pixel-text text-retro-purple-700 text-sm">{test.scienceNote[language]}</p>
                   </div>
                   
                   <a 
