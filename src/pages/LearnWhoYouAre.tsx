@@ -224,9 +224,9 @@ const LearnWhoYouAre: React.FC = () => {
         </div>
       </div>
       
-      <div className="w-full max-w-4xl flex flex-col items-center">
-        {/* Introduction scroll - Made bigger */}
-        <div className="w-full max-w-2xl mb-10">
+      <div className="w-full max-w-5xl flex flex-col items-center">
+        {/* Introduction scroll - Made broader */}
+        <div className="w-full max-w-3xl mb-10">
           <div className="pixel-scroll-container transform hover:scale-[1.02] transition-transform">
             {/* Top scroll handle */}
             <div className="pixel-scroll-handle pixel-scroll-handle-top">
@@ -263,7 +263,7 @@ const LearnWhoYouAre: React.FC = () => {
           </div>
         </div>
         
-        {/* Personality tests scrolls - Made bigger and added ScrollArea */}
+        {/* Personality tests scrolls - Made broader */}
         <div className="grid grid-cols-1 gap-8 w-full mb-10">
           {personalityTests.map((test) => (
             <div key={test.id} className="w-full">
@@ -277,7 +277,7 @@ const LearnWhoYouAre: React.FC = () => {
                 
                 {/* Scroll content with ScrollArea for better scalability */}
                 <div className="scroll-closed-body rounded-xl">
-                  <ScrollArea className="pixel-scroll-content p-6 max-h-[500px]">
+                  <ScrollArea className="pixel-scroll-content p-8 max-h-[500px]">
                     <h3 className="font-pixel-text text-xl text-green-400 mb-3 flex items-center gap-2">
                       <span className="text-retro-purple-700">
                         {test.icon}
@@ -288,7 +288,7 @@ const LearnWhoYouAre: React.FC = () => {
                       {test.description[language]}
                     </p>
                     
-                    <div className="scroll-section mt-5 mb-4">
+                    <div className="scroll-section mt-5 mb-4 px-4">
                       <h4 className="font-pixel text-green-400 text-sm mb-2 flex items-center">
                         <DollarSign className="h-4 w-4 mr-1 text-retro-purple-700" />
                         {language === 'de' ? 'PREISGESTALTUNG' : 'PRICING'}
@@ -296,7 +296,7 @@ const LearnWhoYouAre: React.FC = () => {
                       <p className="font-pixel-text text-retro-purple-700 text-base">{test.pricing[language]}</p>
                     </div>
                     
-                    <div className="scroll-section mb-4">
+                    <div className="scroll-section mb-4 px-4">
                       <h4 className="font-pixel text-green-400 text-sm mb-2 flex items-center">
                         <Brain className="h-4 w-4 mr-1 text-retro-purple-700" />
                         {language === 'de' ? 'WISSENSCHAFTLICHER HINWEIS' : 'SCIENTIFIC NOTE'}
