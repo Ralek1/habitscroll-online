@@ -55,7 +55,7 @@ const LearnAboutHabits: React.FC = () => {
               
               <p className="text-sm font-pixel-text text-retro-purple-200 mb-6 text-center">
                 {language === 'de' 
-                  ? 'Bücher, die dir helfen, gute Gewohnheiten zu entwickeln und schlechte zu überwinden.' 
+                  ? 'Wie kannst du gute Gewohnheiten entwickeln und schlechte überwinden?' 
                   : 'Books that help you build good habits and break bad ones.'}
               </p>
               
