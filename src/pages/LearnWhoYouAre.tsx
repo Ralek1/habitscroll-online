@@ -201,18 +201,40 @@ const LearnWhoYouAre: React.FC = () => {
           <span className="text-green-400">{pageSubtitle}</span>
         </h2>
         
-        {/* Add introduction text under the title */}
-        <div className="mt-4 max-w-xl text-center">
-          <h3 className="font-pixel text-lg text-green-400 mb-2">{whyTestsTitle}</h3>
-          <p className="font-pixel-text text-retro-purple-200 italic mb-3">"{testsQuote}"</p>
-          <ul className="text-sm text-retro-purple-300 space-y-1">
-            {benefitItems.map((item, index) => (
-              <li key={index} className="font-pixel-text">{item}</li>
-            ))}
-          </ul>
+        {/* Updated styling for introduction text */}
+        <div className="mt-6 max-w-xl text-center pixel-scroll-container transform hover:scale-[1.02] transition-transform">
+          {/* Top scroll handle */}
+          <div className="pixel-scroll-handle pixel-scroll-handle-top">
+            <div className="pixel-scroll-knob"></div>
+            <div className="pixel-wooden-rod"></div>
+            <div className="pixel-scroll-knob"></div>
+          </div>
+          
+          {/* Scroll content */}
+          <div className="scroll-closed-body rounded-xl">
+            <div className="p-6">
+              <h3 className="font-pixel text-lg text-green-400 mb-3">{whyTestsTitle}</h3>
+              <p className="font-pixel-text text-retro-purple-700 italic mb-4 text-xl">"{testsQuote}"</p>
+              <ul className="text-sm text-retro-purple-700 space-y-2">
+                {benefitItems.map((item, index) => (
+                  <li key={index} className="font-pixel-text flex items-center justify-center">
+                    <span className="inline-block w-2 h-2 bg-green-400 mr-2"></span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          
+          {/* Bottom scroll handle */}
+          <div className="pixel-scroll-handle pixel-scroll-handle-bottom">
+            <div className="pixel-scroll-knob"></div>
+            <div className="pixel-wooden-rod"></div>
+            <div className="pixel-scroll-knob"></div>
+          </div>
         </div>
         
-        <div className="mt-4">
+        <div className="mt-6">
           <Link to="/?showHabit=true">
             <PixelButton onClick={() => {}}>
               {homeButtonText}
