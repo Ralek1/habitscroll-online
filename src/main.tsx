@@ -1,6 +1,7 @@
 
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import App from './App'
 
 // Register performance markers
 if (typeof window !== 'undefined' && 'performance' in window) {
@@ -37,22 +38,17 @@ const prefetchResources = () => {
   }
 };
 
-// Use dynamic import for App to improve initial loading
-const renderApp = async () => {
-  const { default: App } = await import('./App.tsx')
-  
-  createRoot(document.getElementById("root")!).render(<App />);
-  
-  // Mark app render complete
+// Directly render the App component with all its providers
+createRoot(document.getElementById("root")!).render(<App />);
+
+// Mark app render complete
+if (typeof window !== 'undefined' && 'performance' in window) {
   window.performance.mark('app-rendered');
   window.performance.measure('app-render-time', 'app-init', 'app-rendered');
   
   // Prefetch other resources after initial render
   prefetchResources();
 }
-
-// Initialize app
-renderApp();
 
 // Register additional performance marks
 window.addEventListener('DOMContentLoaded', () => {
