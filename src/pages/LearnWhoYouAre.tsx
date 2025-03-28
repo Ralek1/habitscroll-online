@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -159,15 +158,13 @@ const personalityTests: PersonalityTest[] = [
 const LearnWhoYouAre: React.FC = () => {
   const { language, translate } = useLanguage();
   
-  // Set page title
   React.useEffect(() => {
     document.title = language === 'de' ? 'Du' : 'You';
   }, [language]);
   
-  // Translated text elements
   const pageTitle = language === 'de' ? 'Lerne, wer du bist' : 'Learn Who You Are';
   const pageSubtitle = language === 'de' ? 'Du' : 'You Are';
-  const homeButtonText = language === 'de' ? 'Startseite' : 'Home';
+  const homeButtonText = translate("button.home");
   const whyPersonalityTestsTitle = language === 'de' ? 'Warum Persönlichkeitstests?' : 'Why Personality Tests?';
   const personalityTestsQuote = language === 'de' 
     ? 'Du kannst nicht verbessern, was du nicht verstehst.' 
