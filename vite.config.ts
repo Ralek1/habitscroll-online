@@ -26,6 +26,7 @@ export default defineConfig(({ mode }) => ({
     sourcemap: false,
     minify: true,
     cssMinify: true,
+    reportCompressedSize: false, // Speeds up build by skipping gzip size calculation
     // Improve chunk splitting strategy
     rollupOptions: {
       output: {
@@ -52,6 +53,15 @@ export default defineConfig(({ mode }) => ({
               id.includes('node_modules/tailwindcss-animate')) {
             return 'animations';
           }
+          
+          // Code splitting for app modules
+          if (id.includes('src/pages/') && !id.includes('Index.tsx')) {
+            return 'pages';
+          }
+          
+          if (id.includes('src/components/')) {
+            return 'components';
+          }
         }
       }
     }
@@ -59,5 +69,12 @@ export default defineConfig(({ mode }) => ({
   // Add build time optimizations
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom', 'lucide-react'],
+    esbuildOptions: {
+      target: 'esnext',
+    }
   },
+  // Improve CSS handling
+  css: {
+    devSourcemap: false,
+  }
 }));

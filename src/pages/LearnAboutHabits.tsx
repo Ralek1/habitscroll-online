@@ -12,6 +12,11 @@ const LearnAboutHabits: React.FC = () => {
   // Set page title
   useEffect(() => {
     document.title = translate('learn.habits');
+    
+    // Initialize performance mark for page load
+    if (typeof window !== 'undefined' && 'performance' in window) {
+      window.performance.mark('learn-habits-page-loaded');
+    }
   }, [translate]);
   
   return (
@@ -65,7 +70,7 @@ const LearnAboutHabits: React.FC = () => {
           </div>
         </div>
         
-        <Link to="/" className="mt-8">
+        <Link to="/" className="mt-16">
           <PixelButton onClick={() => {}}>
             {translate('button.home')}
           </PixelButton>

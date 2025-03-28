@@ -12,6 +12,11 @@ const LearnHowToTrack: React.FC = () => {
   // Set page title
   useEffect(() => {
     document.title = translate('learn.tracking');
+    
+    // Initialize performance mark for page load
+    if (typeof window !== 'undefined' && 'performance' in window) {
+      window.performance.mark('learn-tracking-page-loaded');
+    }
   }, [translate]);
   
   return (
@@ -65,7 +70,7 @@ const LearnHowToTrack: React.FC = () => {
           </div>
         </div>
         
-        <Link to="/" className="mt-8">
+        <Link to="/" className="mt-16">
           <PixelButton onClick={() => {}}>
             {translate('button.home')}
           </PixelButton>
