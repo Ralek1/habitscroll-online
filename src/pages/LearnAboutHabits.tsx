@@ -1,9 +1,10 @@
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
-import { Sparkles, Book, Headphones, Film, Search, FileText } from 'lucide-react';
+import { Sparkles, Book, Headphones, Film, Search, FileText, BookOpen } from 'lucide-react';
 import { optimizedImage } from '../utils/optimizeImage';
 
 const LearnAboutHabits: React.FC = () => {
