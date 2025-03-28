@@ -26,5 +26,9 @@
   "page.learn.track.title": "Lerne wie du",
   "page.learn.track.subtitle": "deinen Fortschritt verfolgst",
   "page.learn.track.comingSoon": "Demnächst verfügbar",
-  "page.learn.track.description": "Dieser Bereich ist in Entwicklung. Bald lernst du effektive Wege, um deine Gewohnheiten zu verfolgen und deinen Fortschritt in Richtung deiner Ziele zu messen."
+  "page.learn.track.description": "Dieser Bereich ist in Entwicklung. Bald lernst du effektive Wege, um deine Gewohnheiten zu verfolgen und deinen Fortschritt in Richtung deiner Ziele zu messen.",
+  "category.bookworms": "Für Bücherwürmer",
+  "category.audiophiles": "Für Audiophile",
+  "category.visualLearners": "Für Sehgenießer",
+  "category.knowledgeSeekers": "Für Wissenssuchende"
 }
