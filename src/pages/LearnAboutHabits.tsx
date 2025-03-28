@@ -1,10 +1,9 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
-import { Sparkles, Book, Headphones, Film, Search, ArrowRight, BookOpen } from 'lucide-react';
+import { Sparkles, Book, Headphones, Film, Search, FileText } from 'lucide-react';
 import { optimizedImage } from '../utils/optimizeImage';
 
 const LearnAboutHabits: React.FC = () => {
@@ -364,42 +363,56 @@ const LearnAboutHabits: React.FC = () => {
                 {/* Knowledge 1 */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
-                    <div className="flex flex-row items-center gap-3">
+                    <a 
+                      href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4826769/"
+                      className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'Studie: Neuronale Grundlagen von Gewohnheiten' : 'Study: Neural Basis of Habits'}
+                          {language === 'de' 
+                            ? "Neue Erkenntnisse über Gewohnheitsbildung" 
+                            : "New Insights on Habit Formation"}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Neuronale Mechanismen und Diagramme. Detaillierte Analyse der Gehirnaktivität während der Gewohnheitsbildung und -durchführung.' 
-                            : 'Neural mechanisms with detailed explanations. In-depth analysis of brain activity during habit formation and execution.'}
+                            ? "Eine umfassende Analyse der neuronalen Mechanismen, die der Bildung von Gewohnheiten zugrunde liegen." 
+                            : "A comprehensive analysis of the neural mechanisms underlying habit formation."}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
-                        <Search className="w-8 h-8 text-retro-accent" />
+                        <FileText className="w-8 h-8 text-retro-accent" />
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 
                 {/* Knowledge 2 */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
-                    <div className="flex flex-row items-center gap-3">
+                    <a 
+                      href="https://www.researchgate.net/publication/228671219_Review_Behaviors_Models_and_Clinical_Applications_of_Vergence_Eye_Movements"
+                      className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'Artikel: Die Psychologie der Gewohnheitsveränderung' : 'Article: The Psychology of Habit Change'}
+                          {language === 'de' 
+                            ? "Verhalten, Modelle und klinische Anwendungen" 
+                            : "Behaviors, Models, and Clinical Applications"}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Psychologische Faktoren und Anwendungen. Eine wissenschaftliche Betrachtung der kognitiven Prozesse, die unsere Gewohnheiten antreiben.' 
-                            : 'Psychological factors and applications. A scientific look at the cognitive processes that drive our habits.'}
+                            ? "Diese Studie untersucht Verhaltensmodelle und deren klinische Anwendungen." 
+                            : "This study examines behavioral models and their clinical applications."}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
-                        <Search className="w-8 h-8 text-retro-accent" />
+                        <FileText className="w-8 h-8 text-retro-accent" />
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 
@@ -409,16 +422,18 @@ const LearnAboutHabits: React.FC = () => {
                     <div className="flex flex-row items-center gap-3">
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'Forschungsanalyse: Langfristige Gewohnheitsbildung' : 'Research Analysis: Long-term Habit Formation'}
+                          {language === 'de' 
+                            ? "Metaanalyse: Langfristige Gewohnheitsbildung" 
+                            : "Meta-analysis: Long-term Habit Formation"}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Metaanalyse verschiedener Studien. Zusammenfassung von Forschungsergebnissen über die Faktoren, die langfristige Gewohnheiten beeinflussen.' 
-                            : 'Meta-analysis of various studies on habits. Summary of research findings on the factors that influence long-term habit formation.'}
+                            ? "Metaanalyse verschiedener Studien. Zusammenfassung von Forschungsergebnissen über die Faktoren, die langfristige Gewohnheiten beeinflussen." 
+                            : "Meta-analysis of various studies on habits. Summary of research findings on the factors that influence long-term habit formation."}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
-                        <Search className="w-8 h-8 text-retro-accent" />
+                        <FileText className="w-8 h-8 text-retro-accent" />
                       </div>
                     </div>
                   </div>
