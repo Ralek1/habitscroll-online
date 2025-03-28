@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -168,38 +167,7 @@ const LearnWhoYouAre: React.FC = () => {
   const pageTitle = language === 'de' ? 'Lerne, wer du bist' : 'Learn Who You Are';
   const pageSubtitle = language === 'de' ? 'Du bist' : 'You Are';
   const homeButtonText = translate("button.home");
-  const whyPersonalityTestsTitle = language === 'de' ? 'Warum Persönlichkeitstests?' : 'Why Personality Tests?';
-  const personalityTestsQuote = language === 'de' 
-    ? 'Du kannst nicht verbessern, was du nicht verstehst.' 
-    : 'You can\'t improve what you don\'t understand.';
   const takeAssessmentText = language === 'de' ? 'Test durchführen →' : 'Take the Assessment →';
-  
-  const benefitItems = [
-    {
-      icon: <Brain className="h-5 w-5 text-retro-purple-700 mt-1" />,
-      text: language === 'de' 
-        ? 'Gewinne datengestütztes Selbstbewusstsein' 
-        : 'Gain data-backed self-awareness'
-    },
-    {
-      icon: <Briefcase className="h-5 w-5 text-retro-purple-700 mt-1" />,
-      text: language === 'de' 
-        ? 'Bringe deine Karriere und deinen Lebensstil mit deinen Eigenschaften in Einklang' 
-        : 'Align your career and lifestyle with your traits'
-    },
-    {
-      icon: <Users className="h-5 w-5 text-retro-purple-700 mt-1" />,
-      text: language === 'de' 
-        ? 'Verstehe Teamdynamiken und deinen Kommunikationsstil' 
-        : 'Understand team dynamics and your communication style'
-    },
-    {
-      icon: <Heart className="h-5 w-5 text-retro-purple-700 mt-1" />,
-      text: language === 'de' 
-        ? 'Baue emotionale Intelligenz und Widerstandsfähigkeit auf' 
-        : 'Build emotional intelligence and resilience'
-    }
-  ];
   
   return (
     <div className="min-h-screen flex flex-col items-center justify-start py-12 px-4">
@@ -225,45 +193,7 @@ const LearnWhoYouAre: React.FC = () => {
       </div>
       
       <div className="w-full max-w-5xl flex flex-col items-center">
-        {/* Introduction scroll - Made broader */}
-        <div className="w-full max-w-3xl mb-10">
-          <div className="pixel-scroll-container transform hover:scale-[1.02] transition-transform">
-            {/* Top scroll handle */}
-            <div className="pixel-scroll-handle pixel-scroll-handle-top">
-              <div className="pixel-scroll-knob"></div>
-              <div className="pixel-wooden-rod"></div>
-              <div className="pixel-scroll-knob"></div>
-            </div>
-            
-            {/* Scroll content */}
-            <div className="scroll-closed-body rounded-xl">
-              <div className="pixel-scroll-content p-8">
-                <h3 className="font-pixel-text text-2xl mb-6 text-center text-green-400">{whyPersonalityTestsTitle}</h3>
-                <p className="font-pixel-text text-xl mb-6 text-center italic text-retro-purple-700">
-                  "{personalityTestsQuote}"
-                </p>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                  {benefitItems.map((item, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      {item.icon}
-                      <p className="font-pixel-text text-lg text-retro-purple-700">{item.text}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-            
-            {/* Bottom scroll handle */}
-            <div className="pixel-scroll-handle pixel-scroll-handle-bottom">
-              <div className="pixel-scroll-knob"></div>
-              <div className="pixel-wooden-rod"></div>
-              <div className="pixel-scroll-knob"></div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Personality tests scrolls - Made broader */}
+        {/* Personality tests scrolls */}
         <div className="grid grid-cols-1 gap-8 w-full mb-10">
           {personalityTests.map((test) => (
             <div key={test.id} className="w-full">
