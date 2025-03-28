@@ -224,10 +224,10 @@ const LearnWhoYouAre: React.FC = () => {
         </div>
       </div>
       
-      <div className="w-full max-w-3xl flex flex-col items-center">
-        {/* Introduction scroll */}
-        <div className="w-full max-w-xl mb-8">
-          <div className="pixel-scroll-container">
+      <div className="w-full max-w-4xl flex flex-col items-center">
+        {/* Introduction scroll - Made bigger */}
+        <div className="w-full max-w-2xl mb-10">
+          <div className="pixel-scroll-container transform hover:scale-[1.02] transition-transform">
             {/* Top scroll handle */}
             <div className="pixel-scroll-handle pixel-scroll-handle-top">
               <div className="pixel-scroll-knob"></div>
@@ -237,17 +237,17 @@ const LearnWhoYouAre: React.FC = () => {
             
             {/* Scroll content */}
             <div className="scroll-closed-body rounded-xl">
-              <div className="pixel-scroll-content p-6 px-8">
-                <h3 className="font-pixel-text text-xl mb-6 text-center text-green-400">{whyPersonalityTestsTitle}</h3>
-                <p className="font-pixel-text text-lg mb-4 text-center italic text-retro-purple-700">
+              <div className="pixel-scroll-content p-8">
+                <h3 className="font-pixel-text text-2xl mb-6 text-center text-green-400">{whyPersonalityTestsTitle}</h3>
+                <p className="font-pixel-text text-xl mb-6 text-center italic text-retro-purple-700">
                   "{personalityTestsQuote}"
                 </p>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                   {benefitItems.map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
                       {item.icon}
-                      <p className="font-pixel-text text-retro-purple-700">{item.text}</p>
+                      <p className="font-pixel-text text-lg text-retro-purple-700">{item.text}</p>
                     </div>
                   ))}
                 </div>
@@ -263,11 +263,11 @@ const LearnWhoYouAre: React.FC = () => {
           </div>
         </div>
         
-        {/* Personality tests scrolls */}
-        <div className="grid grid-cols-1 gap-6 w-full mb-8">
+        {/* Personality tests scrolls - Made bigger and added ScrollArea */}
+        <div className="grid grid-cols-1 gap-8 w-full mb-10">
           {personalityTests.map((test) => (
             <div key={test.id} className="w-full">
-              <div className="pixel-scroll-container">
+              <div className="pixel-scroll-container transform hover:scale-[1.02] transition-transform">
                 {/* Top scroll handle */}
                 <div className="pixel-scroll-handle pixel-scroll-handle-top">
                   <div className="pixel-scroll-knob"></div>
@@ -275,44 +275,44 @@ const LearnWhoYouAre: React.FC = () => {
                   <div className="pixel-scroll-knob"></div>
                 </div>
                 
-                {/* Scroll content */}
+                {/* Scroll content with ScrollArea for better scalability */}
                 <div className="scroll-closed-body rounded-xl">
-                  <div className="pixel-scroll-content p-5">
-                    <h3 className="font-pixel-text text-xl text-green-400 mb-2 flex items-center gap-2">
+                  <ScrollArea className="pixel-scroll-content p-6 max-h-[500px]">
+                    <h3 className="font-pixel-text text-xl text-green-400 mb-3 flex items-center gap-2">
                       <span className="text-retro-purple-700">
                         {test.icon}
                       </span>
                       {test.title[language]}
                     </h3>
-                    <p className="font-pixel-text text-retro-purple-700 mb-3 text-base">
+                    <p className="font-pixel-text text-retro-purple-700 mb-4 text-lg">
                       {test.description[language]}
                     </p>
                     
-                    <div className="scroll-section mt-4 mb-3">
-                      <h4 className="font-pixel text-green-400 text-xs mb-1 flex items-center">
+                    <div className="scroll-section mt-5 mb-4">
+                      <h4 className="font-pixel text-green-400 text-sm mb-2 flex items-center">
                         <DollarSign className="h-4 w-4 mr-1 text-retro-purple-700" />
                         {language === 'de' ? 'PREISGESTALTUNG' : 'PRICING'}
                       </h4>
-                      <p className="font-pixel-text text-retro-purple-700 text-sm">{test.pricing[language]}</p>
+                      <p className="font-pixel-text text-retro-purple-700 text-base">{test.pricing[language]}</p>
                     </div>
                     
-                    <div className="scroll-section mb-3">
-                      <h4 className="font-pixel text-green-400 text-xs mb-1 flex items-center">
+                    <div className="scroll-section mb-4">
+                      <h4 className="font-pixel text-green-400 text-sm mb-2 flex items-center">
                         <Brain className="h-4 w-4 mr-1 text-retro-purple-700" />
                         {language === 'de' ? 'WISSENSCHAFTLICHER HINWEIS' : 'SCIENTIFIC NOTE'}
                       </h4>
-                      <p className="font-pixel-text text-retro-purple-700 text-sm">{test.scienceNote[language]}</p>
+                      <p className="font-pixel-text text-retro-purple-700 text-base">{test.scienceNote[language]}</p>
                     </div>
                     
                     <a 
                       href={test.url} 
                       target="_blank"
                       rel="noopener noreferrer" 
-                      className="inline-block mt-2 text-xs bg-retro-purple-600 hover:bg-retro-purple-700 text-white font-pixel py-1 px-3 rounded transition-colors"
+                      className="inline-block mt-3 text-sm bg-retro-purple-600 hover:bg-retro-purple-700 text-white font-pixel py-2 px-4 rounded transition-colors"
                     >
                       {takeAssessmentText}
                     </a>
-                  </div>
+                  </ScrollArea>
                 </div>
                 
                 {/* Bottom scroll handle */}
