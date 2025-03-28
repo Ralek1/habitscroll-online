@@ -112,13 +112,11 @@ const LearnAboutHabits: React.FC = () => {
                   </div>
                 </div>
                 
-                {/* Book 3 */}
+                {/* Book 3 - Updated with new link */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
                     <a 
-                      href={language === 'de' 
-                        ? "https://www.amazon.de/Das-6-Minuten-Tagebuch-PUR-Erfolgsjournal/dp/B08VNJVZZ7?&linkCode=ll1&tag=habitscroll-21&linkId=732a8014feee8c933a134bacef62e35c&language=de_DE&ref_=as_li_ss_tl"
-                        : "https://www.amazon.com/Daily-Stoic-Meditations-Wisdom-Perseverance/dp/0735211736?&linkCode=ll1&tag=habitscroll-21&linkId=732a8014feee8c933a134bacef62e35c&language=en_US&ref_=as_li_ss_tl"}
+                      href="https://amzn.to/4caPShG"
                       className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
                       target="_blank" 
                       rel="noopener noreferrer"
