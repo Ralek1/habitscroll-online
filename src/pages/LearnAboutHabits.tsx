@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
-import { Sparkles, Book, Headphones, Film, Search, ArrowRight } from 'lucide-react';
+import { Sparkles, Book, Headphones, Film, Search, ArrowRight, BookOpen, Library, Bookmark } from 'lucide-react';
 import { optimizedImage } from '../utils/optimizeImage';
 
 const LearnAboutHabits: React.FC = () => {
@@ -41,7 +41,7 @@ const LearnAboutHabits: React.FC = () => {
       </div>
       
       <div className="w-full max-w-6xl">
-        <p className="font-pixel-text text-lg mb-10 text-retro-purple-200 text-center">
+        <p className="font-pixel-text text-lg mb-10 text-retro-light text-center">
           {language === 'de' 
             ? 'Vertiefe dich in die Wissenschaft und Kunst der Gewohnheiten' 
             : 'Dive deep into the science and art of habit formation'}
@@ -54,7 +54,7 @@ const LearnAboutHabits: React.FC = () => {
               <Book className="w-12 h-12 text-retro-accent mb-3" />
               <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.bookworms')}</h4>
               
-              <p className="text-sm font-pixel-text text-retro-purple-200 mb-6 text-center">
+              <p className="text-sm font-pixel-text text-retro-light mb-6 text-center">
                 {language === 'de' 
                   ? 'Bücher, die dir helfen, gute Gewohnheiten zu entwickeln und schlechte zu überwinden.' 
                   : 'Books that help you build good habits and break bad ones.'}
@@ -73,25 +73,18 @@ const LearnAboutHabits: React.FC = () => {
                       rel="noopener noreferrer"
                     >
                       <div className="flex-1">
-                        <span className="font-pixel-text text-base text-amber-800 block mb-1">
+                        <span className="font-pixel-text text-base text-amber-300 block mb-1">
                           {language === 'de' ? 'Die 1% Methode' : 'Atomic Habits'}
                         </span>
-                        <p className="text-xs font-pixel-text text-amber-900">
+                        <p className="text-xs font-pixel-text text-retro-light">
                           {language === 'de' 
-                            ? 'Kleine Gewohnheiten, große Veränderungen' 
-                            : 'Tiny changes, remarkable results'}
+                            ? 'Kleine Gewohnheiten, große Veränderungen. Dieses Buch zeigt dir, wie kleine Änderungen in deinem Alltag zu massiven Verbesserungen führen können.' 
+                            : 'Tiny changes, remarkable results. This book shows how small habits can lead to significant life improvements.'}
                         </p>
                       </div>
-                      <img 
-                        src={language === 'de' 
-                          ? "https://m.media-amazon.com/images/I/71DLCNz1NhL._SY522_.jpg"
-                          : "https://m.media-amazon.com/images/I/81wgcld4wxL._SY522_.jpg"}
-                        alt={language === 'de' ? "Die 1% Methode" : "Atomic Habits"}
-                        className="w-16 h-auto rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0"
-                        width={64}
-                        height={100}
-                        loading="lazy"
-                      />
+                      <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
+                        <BookOpen className="w-8 h-8 text-retro-accent" />
+                      </div>
                     </a>
                   </div>
                 </div>
@@ -108,25 +101,18 @@ const LearnAboutHabits: React.FC = () => {
                       rel="noopener noreferrer"
                     >
                       <div className="flex-1">
-                        <span className="font-pixel-text text-base text-amber-800 block mb-1">
+                        <span className="font-pixel-text text-base text-amber-300 block mb-1">
                           {language === 'de' ? 'Die Macht der Gewohnheit' : 'The Power of Habit'}
                         </span>
-                        <p className="text-xs font-pixel-text text-amber-900">
+                        <p className="text-xs font-pixel-text text-retro-light">
                           {language === 'de' 
-                            ? 'Warum wir tun, was wir tun' 
-                            : 'Why we do what we do'}
+                            ? 'Warum wir tun, was wir tun. Erkenne die neurologischen Muster, die deine Gewohnheiten steuern und finde Wege, sie zu verändern.' 
+                            : 'Why we do what we do. Discover the neurological patterns behind your habits and learn how to transform them.'}
                         </p>
                       </div>
-                      <img 
-                        src={language === 'de' 
-                          ? "https://m.media-amazon.com/images/I/71Ew6F-P9nL._SY522_.jpg"
-                          : "https://m.media-amazon.com/images/I/51Ny4Kw-DHL._SY522_.jpg"}
-                        alt={language === 'de' ? "Die Macht der Gewohnheit" : "The Power of Habit"}
-                        className="w-16 h-auto rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0"
-                        width={64}
-                        height={100}
-                        loading="lazy"
-                      />
+                      <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
+                        <Library className="w-8 h-8 text-retro-accent" />
+                      </div>
                     </a>
                   </div>
                 </div>
@@ -143,25 +129,18 @@ const LearnAboutHabits: React.FC = () => {
                       rel="noopener noreferrer"
                     >
                       <div className="flex-1">
-                        <span className="font-pixel-text text-base text-amber-800 block mb-1">
+                        <span className="font-pixel-text text-base text-amber-300 block mb-1">
                           {language === 'de' ? 'Das 6-Minuten Tagebuch' : 'The Daily Stoic'}
                         </span>
-                        <p className="text-xs font-pixel-text text-amber-900">
+                        <p className="text-xs font-pixel-text text-retro-light">
                           {language === 'de' 
-                            ? 'Ein Journal für mehr Dankbarkeit' 
-                            : '366 daily meditations on wisdom'}
+                            ? 'Ein Journal für mehr Dankbarkeit. Mit nur 6 Minuten am Tag kannst du Gewohnheiten bilden, die deine mentale Gesundheit transformieren.' 
+                            : '366 daily meditations on wisdom. A structured journal that helps you build daily habits for mental clarity and gratitude.'}
                         </p>
                       </div>
-                      <img 
-                        src={language === 'de' 
-                          ? "https://m.media-amazon.com/images/I/81lG7kdyuzL._SY522_.jpg"
-                          : "https://m.media-amazon.com/images/I/71FNWWH6TfL._SY522_.jpg"}
-                        alt={language === 'de' ? "Das 6-Minuten Tagebuch" : "The Daily Stoic"}
-                        className="w-16 h-auto rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0"
-                        width={64}
-                        height={100}
-                        loading="lazy"
-                      />
+                      <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
+                        <Bookmark className="w-8 h-8 text-retro-accent" />
+                      </div>
                     </a>
                   </div>
                 </div>
@@ -181,7 +160,7 @@ const LearnAboutHabits: React.FC = () => {
               <Headphones className="w-12 h-12 text-retro-accent mb-3" />
               <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.audiophiles')}</h4>
               
-              <p className="text-sm font-pixel-text text-retro-purple-200 mb-6 text-center">
+              <p className="text-sm font-pixel-text text-retro-light mb-6 text-center">
                 {language === 'de' 
                   ? 'Hörbücher und Podcasts über Gewohnheiten und persönliche Entwicklung.' 
                   : 'Audiobooks and podcasts about habits and personal development.'}
@@ -200,17 +179,17 @@ const LearnAboutHabits: React.FC = () => {
                       rel="noopener noreferrer"
                     >
                       <div className="flex-1">
-                        <span className="font-pixel-text text-base text-amber-800 block mb-1">
+                        <span className="font-pixel-text text-base text-amber-300 block mb-1">
                           {language === 'de' ? 'Die 1% Methode (Hörbuch)' : 'Atomic Habits (Audiobook)'}
                         </span>
-                        <p className="text-xs font-pixel-text text-amber-900">
+                        <p className="text-xs font-pixel-text text-retro-light">
                           {language === 'de' 
-                            ? 'James Clear, für unterwegs' 
-                            : 'James Clear, for on-the-go learning'}
+                            ? 'James Clear, für unterwegs. Perfekt für Pendler, dieses Hörbuch vermittelt die Kernprinzipien der Gewohnheitsentwicklung.' 
+                            : 'James Clear, for on-the-go learning. Perfect for commuters, this audiobook delivers the core principles of habit formation.'}
                         </p>
                       </div>
-                      <div className="w-16 h-16 rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0 bg-amber-50 flex items-center justify-center">
-                        <Headphones className="w-10 h-10 text-amber-800" />
+                      <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
+                        <Headphones className="w-8 h-8 text-retro-accent" />
                       </div>
                     </a>
                   </div>
@@ -221,17 +200,17 @@ const LearnAboutHabits: React.FC = () => {
                   <div className="scroll-closed-body p-3">
                     <div className="flex flex-row items-center gap-3">
                       <div className="flex-1">
-                        <span className="font-pixel-text text-base text-amber-800 block mb-1">
+                        <span className="font-pixel-text text-base text-amber-300 block mb-1">
                           {language === 'de' ? 'Podcast: Habits & Growth' : 'Podcast: Habit Cast'}
                         </span>
-                        <p className="text-xs font-pixel-text text-amber-900">
+                        <p className="text-xs font-pixel-text text-retro-light">
                           {language === 'de' 
-                            ? 'Wöchentliche Tipps zur Gewohnheitsbildung' 
-                            : 'Weekly tips on habit formation'}
+                            ? 'Wöchentliche Tipps zur Gewohnheitsbildung. Jede Episode behandelt eine andere Technik, um Gewohnheiten zu etablieren und beizubehalten.' 
+                            : 'Weekly tips on habit formation. Each episode covers a different technique for establishing and maintaining habits.'}
                         </p>
                       </div>
-                      <div className="w-16 h-16 rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0 bg-amber-50 flex items-center justify-center">
-                        <Headphones className="w-10 h-10 text-amber-800" />
+                      <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
+                        <Headphones className="w-8 h-8 text-retro-accent" />
                       </div>
                     </div>
                   </div>
@@ -242,17 +221,17 @@ const LearnAboutHabits: React.FC = () => {
                   <div className="scroll-closed-body p-3">
                     <div className="flex flex-row items-center gap-3">
                       <div className="flex-1">
-                        <span className="font-pixel-text text-base text-amber-800 block mb-1">
+                        <span className="font-pixel-text text-base text-amber-300 block mb-1">
                           {language === 'de' ? 'Podcast: Gewohnheiten Meistern' : 'Podcast: Habit Hacking'}
                         </span>
-                        <p className="text-xs font-pixel-text text-amber-900">
+                        <p className="text-xs font-pixel-text text-retro-light">
                           {language === 'de' 
-                            ? 'Wissenschaftliche Erkenntnisse & Praxis' 
-                            : 'Science of habits & practical techniques'}
+                            ? 'Wissenschaftliche Erkenntnisse & Praxis. Tiefgehende Interviews mit Experten über die neuesten Forschungen zu Gewohnheiten.' 
+                            : 'Science of habits & practical techniques. In-depth interviews with experts on the latest habit research.'}
                         </p>
                       </div>
-                      <div className="w-16 h-16 rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0 bg-amber-50 flex items-center justify-center">
-                        <Headphones className="w-10 h-10 text-amber-800" />
+                      <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
+                        <Headphones className="w-8 h-8 text-retro-accent" />
                       </div>
                     </div>
                   </div>
@@ -273,7 +252,7 @@ const LearnAboutHabits: React.FC = () => {
               <Film className="w-12 h-12 text-retro-accent mb-3" />
               <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.visualLearners')}</h4>
               
-              <p className="text-sm font-pixel-text text-retro-purple-200 mb-6 text-center">
+              <p className="text-sm font-pixel-text text-retro-light mb-6 text-center">
                 {language === 'de' 
                   ? 'Videos, Dokumentationen und Kurse, die visuelle Lerntypen ansprechen.' 
                   : 'Videos, documentaries, and courses that appeal to visual learners.'}
@@ -285,17 +264,17 @@ const LearnAboutHabits: React.FC = () => {
                   <div className="scroll-closed-body p-3">
                     <div className="flex flex-row items-center gap-3">
                       <div className="flex-1">
-                        <span className="font-pixel-text text-base text-amber-800 block mb-1">
+                        <span className="font-pixel-text text-base text-amber-300 block mb-1">
                           {language === 'de' ? 'Kurs: Gewohnheiten Meistern' : 'Course: Master Your Habits'}
                         </span>
-                        <p className="text-xs font-pixel-text text-amber-900">
+                        <p className="text-xs font-pixel-text text-retro-light">
                           {language === 'de' 
-                            ? 'Umfassender Videokurs mit praktischen Übungen' 
-                            : 'Comprehensive video course with exercises'}
+                            ? 'Umfassender Videokurs mit praktischen Übungen. Lerne visuell, wie du starke Gewohnheiten aufbaust und beibehältst.' 
+                            : 'Comprehensive video course with exercises. Learn visually how to build and maintain strong habits with practical demonstrations.'}
                         </p>
                       </div>
-                      <div className="w-16 h-16 rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0 bg-amber-50 flex items-center justify-center">
-                        <Film className="w-10 h-10 text-amber-800" />
+                      <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
+                        <Film className="w-8 h-8 text-retro-accent" />
                       </div>
                     </div>
                   </div>
@@ -306,17 +285,17 @@ const LearnAboutHabits: React.FC = () => {
                   <div className="scroll-closed-body p-3">
                     <div className="flex flex-row items-center gap-3">
                       <div className="flex-1">
-                        <span className="font-pixel-text text-base text-amber-800 block mb-1">
+                        <span className="font-pixel-text text-base text-amber-300 block mb-1">
                           {language === 'de' ? 'YouTube: Habits Simplified' : 'YouTube: Habits Simplified'}
                         </span>
-                        <p className="text-xs font-pixel-text text-amber-900">
+                        <p className="text-xs font-pixel-text text-retro-light">
                           {language === 'de' 
-                            ? 'Kurze Videos zu komplexen Konzepten' 
-                            : 'Short videos that simplify complex concepts'}
+                            ? 'Kurze Videos zu komplexen Konzepten. Animierte Erklärungen machen komplizierte Gewohnheitstheorien leicht verständlich.' 
+                            : 'Short videos that simplify complex concepts. Animated explanations make complicated habit theories easy to understand.'}
                         </p>
                       </div>
-                      <div className="w-16 h-16 rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0 bg-amber-50 flex items-center justify-center">
-                        <Film className="w-10 h-10 text-amber-800" />
+                      <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
+                        <Film className="w-8 h-8 text-retro-accent" />
                       </div>
                     </div>
                   </div>
@@ -327,17 +306,17 @@ const LearnAboutHabits: React.FC = () => {
                   <div className="scroll-closed-body p-3">
                     <div className="flex flex-row items-center gap-3">
                       <div className="flex-1">
-                        <span className="font-pixel-text text-base text-amber-800 block mb-1">
+                        <span className="font-pixel-text text-base text-amber-300 block mb-1">
                           {language === 'de' ? 'Dokumentation: Die Wissenschaft der Gewohnheiten' : 'Documentary: The Science of Habits'}
                         </span>
-                        <p className="text-xs font-pixel-text text-amber-900">
+                        <p className="text-xs font-pixel-text text-retro-light">
                           {language === 'de' 
-                            ? 'Neueste wissenschaftliche Erkenntnisse' 
-                            : 'Latest scientific findings with visualizations'}
+                            ? 'Neueste wissenschaftliche Erkenntnisse. Eine visuell beeindruckende Dokumentation über die Biologie und Psychologie der Gewohnheiten.' 
+                            : 'Latest scientific findings with visualizations. A visually stunning documentary about the biology and psychology of habits.'}
                         </p>
                       </div>
-                      <div className="w-16 h-16 rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0 bg-amber-50 flex items-center justify-center">
-                        <Film className="w-10 h-10 text-amber-800" />
+                      <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
+                        <Film className="w-8 h-8 text-retro-accent" />
                       </div>
                     </div>
                   </div>
@@ -358,7 +337,7 @@ const LearnAboutHabits: React.FC = () => {
               <Search className="w-12 h-12 text-retro-accent mb-3" />
               <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.knowledgeSeekers')}</h4>
               
-              <p className="text-sm font-pixel-text text-retro-purple-200 mb-6 text-center">
+              <p className="text-sm font-pixel-text text-retro-light mb-6 text-center">
                 {language === 'de' 
                   ? 'Forschungspapiere, Artikel und tiefgehende Analysen für Wissbegierige.' 
                   : 'Research papers, articles, and deep analyses for those who want to understand the science.'}
@@ -370,17 +349,17 @@ const LearnAboutHabits: React.FC = () => {
                   <div className="scroll-closed-body p-3">
                     <div className="flex flex-row items-center gap-3">
                       <div className="flex-1">
-                        <span className="font-pixel-text text-base text-amber-800 block mb-1">
+                        <span className="font-pixel-text text-base text-amber-300 block mb-1">
                           {language === 'de' ? 'Studie: Neuronale Grundlagen von Gewohnheiten' : 'Study: Neural Basis of Habits'}
                         </span>
-                        <p className="text-xs font-pixel-text text-amber-900">
+                        <p className="text-xs font-pixel-text text-retro-light">
                           {language === 'de' 
-                            ? 'Neuronale Mechanismen und Diagramme' 
-                            : 'Neural mechanisms with detailed explanations'}
+                            ? 'Neuronale Mechanismen und Diagramme. Detaillierte Analyse der Gehirnaktivität während der Gewohnheitsbildung und -durchführung.' 
+                            : 'Neural mechanisms with detailed explanations. In-depth analysis of brain activity during habit formation and execution.'}
                         </p>
                       </div>
-                      <div className="w-16 h-16 rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0 bg-amber-50 flex items-center justify-center">
-                        <Search className="w-10 h-10 text-amber-800" />
+                      <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
+                        <Search className="w-8 h-8 text-retro-accent" />
                       </div>
                     </div>
                   </div>
@@ -391,17 +370,17 @@ const LearnAboutHabits: React.FC = () => {
                   <div className="scroll-closed-body p-3">
                     <div className="flex flex-row items-center gap-3">
                       <div className="flex-1">
-                        <span className="font-pixel-text text-base text-amber-800 block mb-1">
+                        <span className="font-pixel-text text-base text-amber-300 block mb-1">
                           {language === 'de' ? 'Artikel: Die Psychologie der Gewohnheitsveränderung' : 'Article: The Psychology of Habit Change'}
                         </span>
-                        <p className="text-xs font-pixel-text text-amber-900">
+                        <p className="text-xs font-pixel-text text-retro-light">
                           {language === 'de' 
-                            ? 'Psychologische Faktoren und Anwendungen' 
-                            : 'Psychological factors and applications'}
+                            ? 'Psychologische Faktoren und Anwendungen. Eine wissenschaftliche Betrachtung der kognitiven Prozesse, die unsere Gewohnheiten antreiben.' 
+                            : 'Psychological factors and applications. A scientific look at the cognitive processes that drive our habits.'}
                         </p>
                       </div>
-                      <div className="w-16 h-16 rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0 bg-amber-50 flex items-center justify-center">
-                        <Search className="w-10 h-10 text-amber-800" />
+                      <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
+                        <Search className="w-8 h-8 text-retro-accent" />
                       </div>
                     </div>
                   </div>
@@ -412,17 +391,17 @@ const LearnAboutHabits: React.FC = () => {
                   <div className="scroll-closed-body p-3">
                     <div className="flex flex-row items-center gap-3">
                       <div className="flex-1">
-                        <span className="font-pixel-text text-base text-amber-800 block mb-1">
+                        <span className="font-pixel-text text-base text-amber-300 block mb-1">
                           {language === 'de' ? 'Forschungsanalyse: Langfristige Gewohnheitsbildung' : 'Research Analysis: Long-term Habit Formation'}
                         </span>
-                        <p className="text-xs font-pixel-text text-amber-900">
+                        <p className="text-xs font-pixel-text text-retro-light">
                           {language === 'de' 
-                            ? 'Metaanalyse verschiedener Studien' 
-                            : 'Meta-analysis of various studies on habits'}
+                            ? 'Metaanalyse verschiedener Studien. Zusammenfassung von Forschungsergebnissen über die Faktoren, die langfristige Gewohnheiten beeinflussen.' 
+                            : 'Meta-analysis of various studies on habits. Summary of research findings on the factors that influence long-term habit formation.'}
                         </p>
                       </div>
-                      <div className="w-16 h-16 rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0 bg-amber-50 flex items-center justify-center">
-                        <Search className="w-10 h-10 text-amber-800" />
+                      <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
+                        <Search className="w-8 h-8 text-retro-accent" />
                       </div>
                     </div>
                   </div>
