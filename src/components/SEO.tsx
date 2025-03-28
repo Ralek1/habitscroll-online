@@ -22,7 +22,7 @@ const SEO = ({
   type = 'website',
   publishedTime,
   modifiedTime,
-  author = 'Purple Habit Scrolls',
+  author = 'Your Habit Scroll',
   twitterCard = 'summary_large_image'
 }: SEOProps) => {
   const { translate } = useLanguage();
@@ -30,7 +30,7 @@ const SEO = ({
   const defaultTitle = translate('app.title') + ' | ' + translate('app.subtitle');
   const defaultDescription = translate('app.description') || 'Discover personalized habits to improve your life based on your learning style';
   
-  const siteTitle = title ? `${title} | Purple Habit Scrolls` : defaultTitle;
+  const siteTitle = title ? `${title} | Your habitscroll.online` : defaultTitle;
   const siteDescription = description || defaultDescription;
   const siteUrl = 'https://habitscroll.online';
   const canonicalUrl = `${siteUrl}${canonicalPath}`;
