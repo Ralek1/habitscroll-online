@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -168,6 +169,22 @@ const LearnWhoYouAre: React.FC = () => {
   const pageSubtitle = language === 'de' ? 'Du bist' : 'You Are';
   const homeButtonText = translate("button.home");
   const takeAssessmentText = language === 'de' ? 'Test durchführen →' : 'Take the Assessment →';
+  const whyTestsTitle = language === 'de' ? 'Warum Persönlichkeitstests?' : 'Why Personality Tests?';
+  const testsQuote = language === 'de' ? 'Du kannst nicht verbessern, was du nicht verstehst.' : 'You can\'t improve what you don\'t understand.';
+  
+  const benefitItems = language === 'de' 
+    ? [
+        'Gewinne datengestütztes Selbstbewusstsein',
+        'Bringe deine Karriere und deinen Lebensstil mit deinen Eigenschaften in Einklang',
+        'Verstehe Teamdynamiken und deinen Kommunikationsstil',
+        'Baue emotionale Intelligenz und Widerstandsfähigkeit auf'
+      ]
+    : [
+        'Gain data-backed self-awareness',
+        'Align your career and lifestyle with your traits',
+        'Understand team dynamics and your communication style',
+        'Build emotional intelligence and resilience'
+      ];
   
   return (
     <div className="min-h-screen flex flex-col items-center justify-start py-12 px-4">
@@ -183,7 +200,19 @@ const LearnWhoYouAre: React.FC = () => {
           {language === 'de' ? 'Lerne, wer' : 'Learn Who'} <br /> 
           <span className="text-green-400">{pageSubtitle}</span>
         </h2>
-        <div className="mt-2">
+        
+        {/* Add introduction text under the title */}
+        <div className="mt-4 max-w-xl text-center">
+          <h3 className="font-pixel text-lg text-green-400 mb-2">{whyTestsTitle}</h3>
+          <p className="font-pixel-text text-retro-purple-200 italic mb-3">"{testsQuote}"</p>
+          <ul className="text-sm text-retro-purple-300 space-y-1">
+            {benefitItems.map((item, index) => (
+              <li key={index} className="font-pixel-text">{item}</li>
+            ))}
+          </ul>
+        </div>
+        
+        <div className="mt-4">
           <Link to="/?showHabit=true">
             <PixelButton onClick={() => {}}>
               {homeButtonText}
