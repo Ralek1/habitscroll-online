@@ -1,3 +1,4 @@
+
 export interface Habit {
   id: number;
   title: {
@@ -654,3 +655,16 @@ export const habits: Habit[] = [
       "de": "Schütze deine Zeit und Energie, indem du gesunde Grenzen setzt"
     },
     howToGain: {
+      "en": "Practice gentle but firm refusals. Lead with appreciation before declining. Use 'I don't' rather than 'I can't'.",
+      "de": "Übe sanfte, aber feste Ablehnungen. Beginne mit Wertschätzung, bevor du ablehnst. Verwende 'Ich mache nicht' anstatt 'Ich kann nicht'."
+    },
+    perfectFor: {
+      "en": "People-pleasers and those who feel overcommitted. Great for individuals seeking to reclaim their personal time.",
+      "de": "Menschen-Gefallende und diejenigen, die sich überverpflichtet fühlen. Großartig für Personen, die ihre persönliche Zeit zurückgewinnen möchten."
+    },
+    benefits: {
+      "en": "More time for priorities, reduced burnout, increased self-respect, and deeper connections with fewer obligations.",
+      "de": "Mehr Zeit für Prioritäten, reduziertes Burnout, erhöhter Selbstrespekt und tiefere Verbindungen mit weniger Verpflichtungen."
+    }
+  }
+];
