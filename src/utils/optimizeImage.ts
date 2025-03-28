@@ -36,9 +36,9 @@ export const optimizedImage = ({
     width,
     height,
     className,
-    loading: priority ? 'eager' : 'lazy',
-    decoding: priority ? 'sync' : 'async',
-    fetchpriority: priority ? 'high' : 'auto',
+    loading: priority ? 'eager' : 'lazy' as const,
+    decoding: priority ? 'sync' as const : 'async' as const,
+    fetchPriority: priority ? 'high' as const : 'auto' as const,
     // Use placeholder as needed
     ...(placeholder && !priority ? { "data-src": src, src: PLACEHOLDER_DATA_URL } : { src }),
     onLoad: (e: React.SyntheticEvent<HTMLImageElement>) => {

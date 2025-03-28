@@ -50,7 +50,7 @@ const LearnAboutHabits: React.FC = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               {/* Category 1 */}
-              <div className="border-2 border-retro-purple-600 rounded-xl p-6 hover:bg-retro-purple-700/10 transition-colors">
+              <div className="border-2 border-retro-purple-600 rounded-xl p-6">
                 <div className="flex flex-col items-center">
                   <Book className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.bookworms')}</h4>
@@ -74,7 +74,9 @@ const LearnAboutHabits: React.FC = () => {
                           src="https://m.media-amazon.com/images/I/71DLCNz1NhL._SY522_.jpg" 
                           alt="Die 1% Methode" 
                           className="w-32 h-auto rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0"
-                          {...optimizedImage({src: "https://m.media-amazon.com/images/I/71DLCNz1NhL._SY522_.jpg", alt: "Die 1% Methode"})}
+                          width={128}
+                          height={200}
+                          loading="lazy"
                         />
                       </a>
                     </div>
@@ -85,7 +87,7 @@ const LearnAboutHabits: React.FC = () => {
               </div>
               
               {/* Category 2 */}
-              <div className="border-2 border-retro-purple-600 rounded-xl p-6 hover:bg-retro-purple-700/10 transition-colors">
+              <div className="border-2 border-retro-purple-600 rounded-xl p-6">
                 <div className="flex flex-col items-center">
                   <Headphones className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.audiophiles')}</h4>
@@ -102,7 +104,7 @@ const LearnAboutHabits: React.FC = () => {
               </div>
               
               {/* Category 3 */}
-              <div className="border-2 border-retro-purple-600 rounded-xl p-6 hover:bg-retro-purple-700/10 transition-colors">
+              <div className="border-2 border-retro-purple-600 rounded-xl p-6">
                 <div className="flex flex-col items-center">
                   <Film className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.visualLearners')}</h4>
@@ -119,7 +121,7 @@ const LearnAboutHabits: React.FC = () => {
               </div>
               
               {/* Category 4 */}
-              <div className="border-2 border-retro-purple-600 rounded-xl p-6 hover:bg-retro-purple-700/10 transition-colors">
+              <div className="border-2 border-retro-purple-600 rounded-xl p-6">
                 <div className="flex flex-col items-center">
                   <Search className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.knowledgeSeekers')}</h4>
@@ -148,7 +150,7 @@ const LearnAboutHabits: React.FC = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               {/* Category 1 */}
-              <div className="border-2 border-retro-purple-600 rounded-xl p-6 hover:bg-retro-purple-700/10 transition-colors">
+              <div className="border-2 border-retro-purple-600 rounded-xl p-6">
                 <div className="flex flex-col items-center">
                   <Book className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.bookworms')}</h4>
@@ -172,7 +174,9 @@ const LearnAboutHabits: React.FC = () => {
                           src="https://m.media-amazon.com/images/I/71DLCNz1NhL._SY522_.jpg" 
                           alt="Atomic Habits (German Edition)" 
                           className="w-32 h-auto rounded-md shadow-lg border border-retro-purple-400/30 flex-shrink-0"
-                          {...optimizedImage({src: "https://m.media-amazon.com/images/I/71DLCNz1NhL._SY522_.jpg", alt: "Atomic Habits (German Edition)"})}
+                          width={128}
+                          height={200}
+                          loading="lazy"
                         />
                       </a>
                     </div>
@@ -181,7 +185,7 @@ const LearnAboutHabits: React.FC = () => {
               </div>
               
               {/* Category 2 */}
-              <div className="border-2 border-retro-purple-600 rounded-xl p-6 hover:bg-retro-purple-700/10 transition-colors">
+              <div className="border-2 border-retro-purple-600 rounded-xl p-6">
                 <div className="flex flex-col items-center">
                   <Headphones className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.audiophiles')}</h4>
@@ -196,7 +200,7 @@ const LearnAboutHabits: React.FC = () => {
               </div>
               
               {/* Category 3 */}
-              <div className="border-2 border-retro-purple-600 rounded-xl p-6 hover:bg-retro-purple-700/10 transition-colors">
+              <div className="border-2 border-retro-purple-600 rounded-xl p-6">
                 <div className="flex flex-col items-center">
                   <Film className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.visualLearners')}</h4>
@@ -211,7 +215,7 @@ const LearnAboutHabits: React.FC = () => {
               </div>
               
               {/* Category 4 */}
-              <div className="border-2 border-retro-purple-600 rounded-xl p-6 hover:bg-retro-purple-700/10 transition-colors">
+              <div className="border-2 border-retro-purple-600 rounded-xl p-6">
                 <div className="flex flex-col items-center">
                   <Search className="w-12 h-12 text-retro-accent mb-3" />
                   <h4 className="font-pixel text-retro-light text-xl mb-4">{translate('category.knowledgeSeekers')}</h4>
