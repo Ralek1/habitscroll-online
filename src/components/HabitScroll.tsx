@@ -49,7 +49,7 @@ const HabitScroll: React.FC<HabitScrollProps> = ({ habit, isVisible }) => {
             `}
             style={{ height: isVisible ? 'auto' : 0 }}
           >
-            <h2 className="font-pixel text-retro-accent text-xl mb-4 text-center">
+            <h2 className="font-pixel text-green-500 text-xl mb-4 text-center">
               {habit.title[lang]}
             </h2>
             
@@ -59,21 +59,21 @@ const HabitScroll: React.FC<HabitScrollProps> = ({ habit, isVisible }) => {
             
             <div className="space-y-4">
               <div className="scroll-section">
-                <h3 className="font-pixel text-green-800 text-sm mb-2">
+                <h3 className="font-pixel text-green-600 text-sm mb-2">
                   {lang === 'en' ? 'HOW TO GAIN' : 'WIE DU BEGINNST'}
                 </h3>
                 <p className="font-pixel-text text-green-950">{habit.howToGain[lang]}</p>
               </div>
               
               <div className="scroll-section">
-                <h3 className="font-pixel text-green-800 text-sm mb-2">
+                <h3 className="font-pixel text-green-600 text-sm mb-2">
                   {lang === 'en' ? 'PERFECT FOR' : 'PERFEKT FÜR'}
                 </h3>
                 <p className="font-pixel-text text-green-950">{habit.perfectFor[lang]}</p>
               </div>
               
               <div className="scroll-section">
-                <h3 className="font-pixel text-green-800 text-sm mb-2">
+                <h3 className="font-pixel text-green-600 text-sm mb-2">
                   {lang === 'en' ? 'BENEFITS' : 'VORTEILE'}
                 </h3>
                 <p className="font-pixel-text text-green-950">{habit.benefits[lang]}</p>

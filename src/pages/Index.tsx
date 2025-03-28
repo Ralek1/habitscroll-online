@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -129,7 +130,7 @@ const Index: React.FC = () => {
         </div>
         <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed">
           {translate('app.subtitle')} <br /> 
-          <span className="text-retro-accent">{translate('app.subtitle.highlight')}</span>
+          <span className="text-green-500">{translate('app.subtitle.highlight')}</span>
         </h2>
       </div>
       
