@@ -112,7 +112,7 @@ const LearnAboutHabits: React.FC = () => {
                   </div>
                 </div>
                 
-                {/* Book 3 - Updated with new link */}
+                {/* Book 3 - Updated title and description */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
                     <a 
@@ -123,12 +123,12 @@ const LearnAboutHabits: React.FC = () => {
                     >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
-                          {language === 'de' ? 'Das 6-Minuten Tagebuch' : 'The Daily Stoic'}
+                          {language === 'de' ? 'Mini Habits' : 'Mini Habits'}
                         </span>
                         <p className="text-xs font-pixel-text text-retro-purple-200">
                           {language === 'de' 
-                            ? 'Ein Journal für mehr Dankbarkeit. Mit nur 6 Minuten am Tag kannst du Gewohnheiten bilden, die deine mentale Gesundheit transformieren.' 
-                            : '366 daily meditations on wisdom. A structured journal that helps you build daily habits for mental clarity and gratitude.'}
+                            ? 'Kleinere Gewohnheiten, größere Ergebnisse. Dieses Buch zeigt, wie winzige, leicht umzusetzende Gewohnheiten zu nachhaltigen Veränderungen führen können.' 
+                            : 'Smaller habits, bigger results. This book demonstrates how tiny, easy-to-implement habits can lead to sustainable life changes and overcome resistance to change.'}
                         </p>
                       </div>
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
