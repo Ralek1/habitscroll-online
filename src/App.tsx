@@ -2,6 +2,7 @@
 import { lazy, Suspense } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
+import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 
 // Import common components
@@ -31,29 +32,31 @@ const PageLoading = () => (
 
 function App() {
   return (
-    <LanguageProvider>
-      <Router>
-        <Suspense fallback={<PageLoading />}>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/learn-who-you-are" element={<LearnWhoYouAre />} />
-            <Route path="/learn-about-habits" element={<LearnAboutHabits />} />
-            <Route path="/learn-how-to-track" element={<LearnHowToTrack />} />
-            <Route path="/impressum" element={<Impressum />} />
-            <Route path="/datenschutz" element={<Datenschutz />} />
-            <Route path="/deploy" element={<Deploy />} />
-            
-            {/* Category pages */}
-            <Route path="/bookworms" element={<Bookworms />} />
-            <Route path="/audiophiles" element={<Audiophiles />} />
-            <Route path="/visual-learners" element={<VisualLearners />} />
-            <Route path="/knowledge-seekers" element={<KnowledgeSeekers />} />
-            
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </Router>
-    </LanguageProvider>
+    <HelmetProvider>
+      <LanguageProvider>
+        <Router>
+          <Suspense fallback={<PageLoading />}>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/learn-who-you-are" element={<LearnWhoYouAre />} />
+              <Route path="/learn-about-habits" element={<LearnAboutHabits />} />
+              <Route path="/learn-how-to-track" element={<LearnHowToTrack />} />
+              <Route path="/impressum" element={<Impressum />} />
+              <Route path="/datenschutz" element={<Datenschutz />} />
+              <Route path="/deploy" element={<Deploy />} />
+              
+              {/* Category pages */}
+              <Route path="/bookworms" element={<Bookworms />} />
+              <Route path="/audiophiles" element={<Audiophiles />} />
+              <Route path="/visual-learners" element={<VisualLearners />} />
+              <Route path="/knowledge-seekers" element={<KnowledgeSeekers />} />
+              
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
+        </Router>
+      </LanguageProvider>
+    </HelmetProvider>
   );
 }
 

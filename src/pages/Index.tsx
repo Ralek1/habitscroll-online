@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -8,6 +7,7 @@ import type { Habit } from '../data/habits';
 import { Sparkles, HeartPulse, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
 import { Skeleton } from '../components/ui/skeleton';
 import CookieConsent from '../components/CookieConsent';
+import SEO from '../components/SEO';
 
 // Lazy load components that aren't needed immediately
 const HabitScroll = lazy(() => import('../components/HabitScroll'));
@@ -32,6 +32,9 @@ const Index: React.FC = () => {
   const [showCookieConsent, setShowCookieConsent] = useState(false);
 
   useEffect(() => {
+    // Set document title based on language
+    document.title = `${translate('app.title')} | ${translate('app.subtitle')}`;
+    
     // Mark component as loaded after initial render
     setIsLoaded(true);
     
@@ -51,9 +54,8 @@ const Index: React.FC = () => {
     // Check if cookie consent has been given
     const cookieConsent = localStorage.getItem('cookieConsent');
     setShowCookieConsent(!cookieConsent);
-  }, [location]);
+  }, [location, translate]);
 
-  // Preload key components when main content is loaded
   useEffect(() => {
     if (isLoaded) {
       // Preload other components that might be needed soon
@@ -117,108 +119,116 @@ const Index: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-between py-12 px-4">
-      <div className="absolute top-4 right-4 z-10">
-        <Suspense fallback={<div className="w-8 h-8 bg-retro-purple-700/20 rounded animate-pulse"></div>}>
-          <LanguageSwitcher />
-        </Suspense>
-      </div>
+    <>
+      <SEO 
+        title={translate('app.title')}
+        description={translate('app.description') || 'Discover personalized habits to improve your life based on your learning style'}
+        canonicalPath="/"
+      />
       
-      <div className="text-center mb-8 animate-appear">
-        <div className="inline-block bg-retro-purple-700 px-4 py-1 rounded mb-2">
-          <h1 className="font-pixel text-retro-light text-xs">{translate('app.title')}</h1>
-        </div>
-        <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed">
-          {translate('app.subtitle')} <br /> 
-          <span className="text-green-500">{translate('app.subtitle.highlight')}</span>
-        </h2>
-      </div>
-      
-      <div className="w-full max-w-2xl flex flex-col items-center">
-        <div className="w-full">
-          <Suspense fallback={<LoadingFallback />}>
-            {hasDiscovered ? (
-              <HabitScroll 
-                habit={currentHabit} 
-                isVisible={isScrollVisible} 
-              />
-            ) : (
-              <ClosedScroll onClick={handleButtonClick} />
-            )}
+      <div className="min-h-screen flex flex-col items-center justify-between py-12 px-4">
+        <div className="absolute top-4 right-4 z-10">
+          <Suspense fallback={<div className="w-8 h-8 bg-retro-purple-700/20 rounded animate-pulse"></div>}>
+            <LanguageSwitcher />
           </Suspense>
         </div>
         
-        <div className="mt-8 mb-4 relative">
-          {!hasDiscovered ? (
-            <PixelButton onClick={handleButtonClick}>
-              {translate('button.becomeBetter')}
-            </PixelButton>
-          ) : (
-            <div className="flex flex-col items-center">
-              <p className="font-pixel text-retro-purple-200 text-center mb-4">
-                {translate('learn.intro')}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-                <Link to="/learn-who-you-are">
-                  <PixelButton onClick={() => {}}>
-                    {translate('learn.yourself')}
-                  </PixelButton>
-                </Link>
-                <Link to="/learn-about-habits">
-                  <PixelButton onClick={() => {}}>
-                    {translate('learn.habits')}
-                  </PixelButton>
-                </Link>
-                <Link to="/learn-how-to-track">
-                  <PixelButton onClick={() => {}}>
-                    {translate('learn.tracking')}
-                  </PixelButton>
-                </Link>
+        <div className="text-center mb-8 animate-appear">
+          <div className="inline-block bg-retro-purple-700 px-4 py-1 rounded mb-2">
+            <h1 className="font-pixel text-retro-light text-xs">{translate('app.title')}</h1>
+          </div>
+          <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed">
+            {translate('app.subtitle')} <br /> 
+            <span className="text-green-500">{translate('app.subtitle.highlight')}</span>
+          </h2>
+        </div>
+        
+        <div className="w-full max-w-2xl flex flex-col items-center">
+          <div className="w-full">
+            <Suspense fallback={<LoadingFallback />}>
+              {hasDiscovered ? (
+                <HabitScroll 
+                  habit={currentHabit} 
+                  isVisible={isScrollVisible} 
+                />
+              ) : (
+                <ClosedScroll onClick={handleButtonClick} />
+              )}
+            </Suspense>
+          </div>
+          
+          <div className="mt-8 mb-4 relative">
+            {!hasDiscovered ? (
+              <PixelButton onClick={handleButtonClick}>
+                {translate('button.becomeBetter')}
+              </PixelButton>
+            ) : (
+              <div className="flex flex-col items-center">
+                <p className="font-pixel text-retro-purple-200 text-center mb-4">
+                  {translate('learn.intro')}
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                  <Link to="/learn-who-you-are">
+                    <PixelButton onClick={() => {}}>
+                      {translate('learn.yourself')}
+                    </PixelButton>
+                  </Link>
+                  <Link to="/learn-about-habits">
+                    <PixelButton onClick={() => {}}>
+                      {translate('learn.habits')}
+                    </PixelButton>
+                  </Link>
+                  <Link to="/learn-how-to-track">
+                    <PixelButton onClick={() => {}}>
+                      {translate('learn.tracking')}
+                    </PixelButton>
+                  </Link>
+                </div>
               </div>
+            )}
+            
+            <div className="absolute -bottom-6 w-full text-center">
+              <HeartPulse className="w-5 h-5 mx-auto text-retro-purple-400 animate-pulse" />
             </div>
-          )}
-          
-          <div className="absolute -bottom-6 w-full text-center">
-            <HeartPulse className="w-5 h-5 mx-auto text-retro-purple-400 animate-pulse" />
           </div>
         </div>
-      </div>
-      
-      <footer className="w-full mt-12 pt-8 pb-6 px-4">
-        <div className="max-w-4xl mx-auto flex flex-col items-center">
-          <div className="flex gap-6 items-center justify-center mb-4">
-            <a href="https://x.com/habitscroll" target="_blank" rel="noopener noreferrer" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
-              <Youtube className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
-              <Facebook className="w-5 h-5" />
-            </a>
+        
+        <footer className="w-full mt-12 pt-8 pb-6 px-4">
+          <div className="max-w-4xl mx-auto flex flex-col items-center">
+            <div className="flex gap-6 items-center justify-center mb-4">
+              <a href="https://x.com/habitscroll" target="_blank" rel="noopener noreferrer" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+                <Youtube className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+                <Facebook className="w-5 h-5" />
+              </a>
+            </div>
+            
+            <div className="flex gap-4 items-center">
+              <Link to="/impressum" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
+                {translate('footer.impressum')}
+              </Link>
+              <Link to="/datenschutz" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
+                {translate('footer.datenschutz')}
+              </Link>
+            </div>
           </div>
-          
-          <div className="flex gap-4 items-center">
-            <Link to="/impressum" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
-              {translate('footer.impressum')}
-            </Link>
-            <Link to="/datenschutz" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
-              {translate('footer.datenschutz')}
-            </Link>
-          </div>
-        </div>
-      </footer>
+        </footer>
 
-      {showCookieConsent && (
-        <CookieConsent
-          onAccept={handleAcceptCookies}
-          onClose={handleCloseCookieConsent}
-        />
-      )}
-    </div>
+        {showCookieConsent && (
+          <CookieConsent
+            onAccept={handleAcceptCookies}
+            onClose={handleCloseCookieConsent}
+          />
+        )}
+      </div>
+    </>
   );
 };
 

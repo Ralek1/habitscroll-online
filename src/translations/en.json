@@ -1,8 +1,10 @@
-
 {
-  "app.title": "Your habitscroll.online",
-  "app.subtitle": "Discover your next",
-  "app.subtitle.highlight": "good habit.",
+  "app": {
+    "title": "Purple Habit Scrolls",
+    "subtitle": "Discover habits",
+    "subtitle.highlight": "that will make you better",
+    "description": "Discover personalized habits to improve your life based on your learning style. Our digital scrolls are tailored to bookworms, audiophiles, visual learners, and knowledge seekers."
+  },
   "button.becomeBetter": "Become Better",
   "button.explore": "Explore More",
   "button.home": "Home",

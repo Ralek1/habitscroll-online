@@ -1,8 +1,8 @@
-
 {
-  "app.title": "Your habitscroll.online",
-  "app.subtitle": "Entdecke deine nächste",
-  "app.subtitle.highlight": "gute Gewohnheit.",
+  "app.title": "Lila Gewohnheitsrollen",
+  "app.subtitle": "Entdecke Gewohnheiten",
+  "app.subtitle.highlight": "die dich besser machen",
+  "app.description": "Entdecken Sie personalisierte Gewohnheiten, um Ihr Leben basierend auf Ihrem Lernstil zu verbessern. Unsere digitalen Schriftrollen sind auf Leseratten, Audiophile, visuelle Lerner und Wissenssuchende zugeschnitten.",
   "button.becomeBetter": "Besser werden",
   "button.explore": "Mehr Entdecken",
   "button.home": "Home",
