@@ -263,7 +263,12 @@ const LearnAboutHabits: React.FC = () => {
                 {/* Visual 1 */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
-                    <div className="flex flex-row items-center gap-3">
+                    <a 
+                      href="https://amzn.to/4iLDS8G"
+                      className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
                           {language === 'de' ? 'Kurs: Gewohnheiten Meistern' : 'Course: Master Your Habits'}
@@ -277,14 +282,19 @@ const LearnAboutHabits: React.FC = () => {
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
                         <Film className="w-8 h-8 text-retro-accent" />
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 
                 {/* Visual 2 */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
-                    <div className="flex flex-row items-center gap-3">
+                    <a 
+                      href="https://amzn.to/42ljzZU"
+                      className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
                           {language === 'de' ? 'YouTube: Habits Simplified' : 'YouTube: Habits Simplified'}
@@ -298,14 +308,19 @@ const LearnAboutHabits: React.FC = () => {
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
                         <Film className="w-8 h-8 text-retro-accent" />
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 
                 {/* Visual 3 */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
-                    <div className="flex flex-row items-center gap-3">
+                    <a 
+                      href="https://amzn.to/441T7FV"
+                      className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
                       <div className="flex-1">
                         <span className="font-pixel-text text-base text-green-400 block mb-1">
                           {language === 'de' ? 'Dokumentation: Die Wissenschaft der Gewohnheiten' : 'Documentary: The Science of Habits'}
@@ -319,7 +334,7 @@ const LearnAboutHabits: React.FC = () => {
                       <div className="w-12 h-12 rounded-md flex-shrink-0 flex items-center justify-center bg-retro-purple-800">
                         <Film className="w-8 h-8 text-retro-accent" />
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
