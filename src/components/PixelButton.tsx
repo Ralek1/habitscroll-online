@@ -5,9 +5,10 @@ import { Sparkles } from 'lucide-react';
 interface PixelButtonProps {
   onClick: () => void;
   children: React.ReactNode;
+  className?: string;
 }
 
-const PixelButton: React.FC<PixelButtonProps> = ({ onClick, children }) => {
+const PixelButton: React.FC<PixelButtonProps> = ({ onClick, children, className = '' }) => {
   const [isAnimating, setIsAnimating] = useState(false);
 
   const handleClick = () => {
@@ -22,6 +23,7 @@ const PixelButton: React.FC<PixelButtonProps> = ({ onClick, children }) => {
         pixel-button rounded-md flex items-center justify-center
         gap-2 min-w-[200px] animate-float
         ${isAnimating ? 'animate-pixel-button-press' : ''}
+        ${className}
       `}
       onClick={handleClick}
     >
