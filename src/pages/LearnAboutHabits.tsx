@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -61,13 +60,11 @@ const LearnAboutHabits: React.FC = () => {
               </p>
               
               <div className="space-y-4 w-full mb-6">
-                {/* Book 1 */}
+                {/* Book 1 - Updated link */}
                 <div className="pixel-scroll-closed">
                   <div className="scroll-closed-body p-3">
                     <a 
-                      href={language === 'de' 
-                        ? "https://www.amazon.de/Die-1-Methode-Ver%C3%A4nderung-Gewohnheiten-erreichen/dp/3442178584?&linkCode=ll1&tag=habitscroll-21&linkId=732a8014feee8c933a134bacef62e35c&language=de_DE&ref_=as_li_ss_tl"
-                        : "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299?&linkCode=ll1&tag=habitscroll-21&linkId=732a8014feee8c933a134bacef62e35c&language=en_US&ref_=as_li_ss_tl"}
+                      href="https://amzn.to/3DXTSFy"
                       className="flex flex-row items-center hover:opacity-90 transition-opacity gap-3" 
                       target="_blank" 
                       rel="noopener noreferrer"
