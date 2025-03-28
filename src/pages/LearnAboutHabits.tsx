@@ -29,7 +29,7 @@ const LearnAboutHabits: React.FC = () => {
       
       <div className="text-center mb-8 animate-appear flex flex-col items-center">
         <div className="inline-block bg-retro-purple-700 px-4 py-1 rounded mb-2">
-          <h1 className="font-pixel text-retro-light text-xs">PURPLE HABIT SCROLLS</h1>
+          <h1 className="font-pixel text-retro-light text-xs">{translate('app.title')}</h1>
         </div>
         <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed text-center">
           {translate('page.learn.habits.title')} <br /> 
@@ -40,10 +40,6 @@ const LearnAboutHabits: React.FC = () => {
       <div className="w-full max-w-6xl">
         {language === 'de' ? (
           <>
-            <h3 className="font-pixel text-retro-accent text-xl mb-6 text-center">
-              <span className="px-3 py-1 bg-retro-purple-800/80 rounded">F1nd3 h3r4u5, w45 G3w0hnh31t3n 51nd!</span>
-            </h3>
-            
             <p className="font-pixel-text text-lg mb-10 text-retro-purple-200 text-center">
               Vertiefe dich in die Wissenschaft und Kunst der Gewohnheiten
             </p>
@@ -140,10 +136,6 @@ const LearnAboutHabits: React.FC = () => {
           </>
         ) : (
           <>
-            <h3 className="font-pixel text-retro-accent text-xl mb-6 text-center">
-              <span className="px-3 py-1 bg-retro-purple-800/80 rounded">D15c0v3r wh4t h4b1t5 4r3!</span>
-            </h3>
-            
             <p className="font-pixel-text text-lg mb-10 text-retro-purple-200 text-center">
               Dive deep into the science and art of habit formation
             </p>

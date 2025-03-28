@@ -26,5 +26,9 @@
   "page.learn.track.title": "Learn How To",
   "page.learn.track.subtitle": "Track Your Progress",
   "page.learn.track.comingSoon": "Coming Soon",
-  "page.learn.track.description": "This section is under development. Soon you'll learn effective ways to track your habits and measure your progress towards your goals."
+  "page.learn.track.description": "This section is under development. Soon you'll learn effective ways to track your habits and measure your progress towards your goals.",
+  "category.bookworms": "For Bookworms",
+  "category.audiophiles": "For Audiophiles",
+  "category.visualLearners": "For Visual Learners",
+  "category.knowledgeSeekers": "For Knowledge Seekers"
 }
