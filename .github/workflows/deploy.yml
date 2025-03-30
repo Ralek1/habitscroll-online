@@ -31,10 +31,15 @@ jobs:
       - name: Create CNAME file
         run: echo "habitscroll.online" > dist/CNAME
 
+      - name: Copy OG image to ensure it's accessible
+        run: |
+          mkdir -p dist/lovable-uploads
+          cp -r public/lovable-uploads/* dist/lovable-uploads/ || true
+
       - name: Update sitemap dates
         run: |
           CURRENT_DATE=$(date +%Y-%m-%d)
-          sed -i "s/<lastmod>.*<\/lastmod>/<lastmod>$CURRENT_DATE<\/lastmod>/g" dist/sitemap.xml
+          sed -i "s/<lastmod>.*<\/lastmod>/<lastmod>$CURRENT_DATE<\/lastmod>/g" dist/sitemap.xml || true
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
@@ -42,4 +47,3 @@ jobs:
           branch: gh-pages
           folder: dist
           clean: true
-
