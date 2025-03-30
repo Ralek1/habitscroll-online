@@ -24,7 +24,7 @@ const Blog: React.FC = () => {
   }, [translate]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center py-12 px-4 bg-retro-dark">
+    <div className="min-h-screen flex flex-col items-center py-12 px-4">
       <div className="absolute top-4 right-4 z-10">
         <HeaderNavigation />
       </div>
@@ -56,7 +56,7 @@ const Blog: React.FC = () => {
       <div className="mt-8">
         <Link to="/">
           <PixelButton onClick={() => {}}>
-            {translate('button.returnHome')}
+            Home
           </PixelButton>
         </Link>
       </div>
