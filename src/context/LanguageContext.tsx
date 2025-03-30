@@ -54,17 +54,21 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   };
 
   const translate = (key: string): string => {
-    if (!translations[language]) return key;
+    if (!translations[language]) {
+      console.warn(`No translations available for language: ${language}`);
+      return key;
+    }
     
     // Handle nested keys like "app.title"
     const keys = key.split('.');
-    let result: TranslationValue = translations[language];
+    let result: any = translations[language];
     
     // Navigate through the nested objects
     for (const k of keys) {
       if (result && typeof result === 'object' && k in result) {
         result = result[k];
       } else {
+        console.warn(`Translation key not found: ${key}`);
         return key; // Key not found, return the original key
       }
     }
