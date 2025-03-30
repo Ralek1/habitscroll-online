@@ -20,7 +20,7 @@ const Deploy: React.FC = () => {
       
       <div className="text-center mb-8 animate-appear">
         <div className="inline-block bg-retro-purple-700 px-4 py-1 rounded mb-2">
-          <h1 className="font-pixel text-retro-light text-xs">PURPLE HABIT SCROLLS</h1>
+          <h1 className="font-pixel text-retro-light text-xs">{translate('app.title')}</h1>
         </div>
         <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed">
           Build <br /> 

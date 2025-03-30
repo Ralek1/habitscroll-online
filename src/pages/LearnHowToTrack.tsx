@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
-import { Sparkles, PenTool, Monitor, FileText, BarChart3, Book, Headphones, Film, Search } from 'lucide-react';
+import { Sparkles, PenTool, Monitor, FileText, BarChart3 } from 'lucide-react';
 import SEO from '../components/SEO';
 
 const LearnHowToTrack: React.FC = () => {
@@ -28,7 +28,7 @@ const LearnHowToTrack: React.FC = () => {
         type="article"
       />
       
-      <div className="min-h-screen flex flex-col items-center justify-center py-12 px-4">
+      <div className="min-h-screen flex flex-col items-center justify-center py-12 px-4 bg-retro-purple-900">
         <div className="absolute top-4 right-4 z-10">
           <LanguageSwitcher />
         </div>
@@ -527,7 +527,7 @@ const LearnHowToTrack: React.FC = () => {
           </div>
           
           <div className="flex justify-center my-6">
-            <Sparkles className="w-8 h-8 text-retro-accent animate-pulse" />
+            <Sparkles className="w-8 h-12 text-retro-accent animate-pulse" />
           </div>
         </div>
         

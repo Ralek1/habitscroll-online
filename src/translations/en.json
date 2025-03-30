@@ -9,7 +9,8 @@
   "button": {
     "becomeBetter": "Become Better",
     "explore": "Explore More",
-    "home": "Home"
+    "home": "Home",
+    "returnHome": "Return Home"
   },
   "learn": {
     "intro": "Not sure how to get started? Learn more about:",
@@ -127,6 +128,12 @@
           }
         }
       }
+    },
+    "notFound": "Page Not Found",
+    "notFound.text": "The page you are looking for does not exist. Please check the URL or return to the home page.",
+    "deploy": {
+      "success": "Deployment Successful",
+      "text": "Your application has been successfully deployed!"
     }
   },
   "category": {
