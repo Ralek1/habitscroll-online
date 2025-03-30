@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { Home, BookOpen, Menu } from "lucide-react";
+import { Home, BookOpen, Menu, FileText } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -20,29 +20,32 @@ const HeaderNavigation: React.FC<HeaderNavigationProps> = ({ className = "" }) =
   return (
     <div className={`relative z-20 ${className}`}>
       <div className="flex items-center justify-end gap-4">
-        <div className="hidden sm:flex items-center gap-2">
-          <Link to="/" className="font-pixel-text text-retro-purple-400 hover:text-retro-accent flex items-center gap-1 px-2 py-1 rounded transition-colors">
+        <div className="hidden sm:flex items-center gap-3 bg-retro-purple-800/80 px-3 py-2 rounded-lg border border-retro-purple-700">
+          <Link to="/" className="font-pixel-text text-retro-purple-200 hover:text-retro-accent flex items-center gap-1 px-2 py-1 rounded transition-colors">
             <Home className="w-4 h-4" />
             <span>{translate('nav.home')}</span>
           </Link>
-          <Link to="/learn-about-habits" className="font-pixel-text text-retro-purple-400 hover:text-retro-accent flex items-center gap-1 px-2 py-1 rounded transition-colors">
+          <Link to="/learn-about-habits" className="font-pixel-text text-retro-purple-200 hover:text-retro-accent flex items-center gap-1 px-2 py-1 rounded transition-colors">
             <BookOpen className="w-4 h-4" />
             <span>{translate('nav.habits')}</span>
           </Link>
-          <Link to="/blog" className="font-pixel-text text-retro-purple-400 hover:text-retro-accent flex items-center gap-1 px-2 py-1 rounded transition-colors">
-            <BookOpen className="w-4 h-4" />
+          <Link to="/blog" className="font-pixel-text text-retro-purple-200 hover:text-retro-accent flex items-center gap-1 px-2 py-1 rounded transition-colors">
+            <FileText className="w-4 h-4" />
             <span>{translate('nav.blog')}</span>
           </Link>
         </div>
         
         <button 
-          className="sm:hidden text-retro-purple-400 hover:text-retro-accent transition-colors"
+          className="sm:hidden flex items-center gap-1 bg-retro-purple-800/80 px-3 py-2 rounded-lg border border-retro-purple-700 text-retro-purple-200 hover:text-retro-accent transition-colors"
           onClick={toggleMenu}
         >
           <Menu className="w-5 h-5" />
+          <span className="font-pixel-text text-xs">{translate('nav.menu')}</span>
         </button>
         
-        <LanguageSwitcher />
+        <div className="bg-retro-purple-800/80 px-3 py-2 rounded-lg border border-retro-purple-700">
+          <LanguageSwitcher />
+        </div>
       </div>
       
       {/* Mobile menu */}
@@ -74,7 +77,7 @@ const HeaderNavigation: React.FC<HeaderNavigationProps> = ({ className = "" }) =
             onClick={() => setIsMenuOpen(false)}
           >
             <div className="flex items-center gap-2">
-              <BookOpen className="w-4 h-4" />
+              <FileText className="w-4 h-4" />
               <span>{translate('nav.blog')}</span>
             </div>
           </Link>
