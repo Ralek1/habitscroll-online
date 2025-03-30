@@ -14,10 +14,10 @@ const LanguageSwitcher: React.FC = () => {
   return (
     <button 
       onClick={toggleLanguage}
-      className="flex items-center gap-1 text-retro-purple-200 hover:text-retro-accent transition-colors font-pixel-text text-sm bg-retro-purple-800/50 px-3 py-1 rounded-md"
+      className="flex items-center gap-1 text-retro-purple-200 hover:text-retro-accent transition-colors font-pixel-text text-sm bg-retro-purple-800 px-3 py-1 rounded-md border border-retro-purple-400"
     >
       <Globe className="w-4 h-4" />
-      <span>{translate('language.switcher')}</span>
+      <span>{language === 'en' ? 'DE' : 'EN'}</span>
     </button>
   );
 };

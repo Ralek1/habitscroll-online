@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PixelButton from "../components/PixelButton";
 import HeaderNavigation from "../components/HeaderNavigation";
@@ -18,12 +18,13 @@ const blogArticles = [
 const Blog: React.FC = () => {
   const { translate } = useLanguage();
   
-  React.useEffect(() => {
+  useEffect(() => {
     document.title = translate('page.blog.title');
+    console.log("Blog page loaded, articles:", blogArticles);
   }, [translate]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center py-12 px-4">
+    <div className="min-h-screen flex flex-col items-center py-12 px-4 bg-retro-dark">
       <div className="absolute top-4 right-4 z-10">
         <HeaderNavigation />
       </div>

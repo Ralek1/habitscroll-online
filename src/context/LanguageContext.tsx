@@ -28,17 +28,18 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     const loadTranslations = async () => {
       try {
         console.log('Loading translations...');
+        // Force import as any to avoid TypeScript errors
         const enTranslations = await import('../translations/en.json');
         const deTranslations = await import('../translations/de.json');
         
         setTranslations({
-          en: enTranslations.default,
-          de: deTranslations.default
+          en: enTranslations,
+          de: deTranslations
         });
         
-        console.log('Translations loaded:', {
-          en: Object.keys(enTranslations.default),
-          de: Object.keys(deTranslations.default)
+        console.log('Translations loaded successfully:', {
+          en: Object.keys(enTranslations).length,
+          de: Object.keys(deTranslations).length
         });
         
         setIsLoaded(true);
@@ -59,7 +60,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   useEffect(() => {
     if (isLoaded) {
       console.log(`Language set to: ${language}`);
-      console.log('Available translation keys:', Object.keys(translations[language] || {}));
+      console.log('Available translation keys:', translations && translations[language] ? Object.keys(translations[language] || {}) : 'None');
     }
   }, [isLoaded, language, translations]);
 
@@ -71,7 +72,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   };
 
   const translate = (key: string): string => {
-    if (!translations[language]) {
+    if (!translations || !translations[language]) {
       console.warn(`No translations available for language: ${language}`);
       return key;
     }
