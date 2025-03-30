@@ -18,7 +18,7 @@ const SEO = ({
   title,
   description,
   canonicalPath = '',
-  image = '/lovable-uploads/414883fb-523f-4591-8327-aa3efa5bc7b7.png',
+  image = '/lovable-uploads/8837ec9e-64ac-4ead-a164-095f8f2d2d44.png',
   type = 'website',
   publishedTime,
   modifiedTime,
@@ -53,8 +53,8 @@ const SEO = ({
       <meta property="og:title" content={siteTitle} />
       <meta property="og:description" content={siteDescription} />
       <meta property="og:image" content={absoluteImageUrl} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      <meta property="og:image:width" content="1024" />
+      <meta property="og:image:height" content="1024" />
       <meta property="og:site_name" content="Purple Habit Scrolls" />
       
       {/* Twitter */}

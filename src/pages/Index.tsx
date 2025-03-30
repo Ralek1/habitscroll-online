@@ -125,6 +125,7 @@ const Index: React.FC = () => {
         title={translate('app.title')}
         description={translate('app.description') || 'Discover personalized habits to improve your life based on your learning style'}
         canonicalPath="/"
+        image="/lovable-uploads/8837ec9e-64ac-4ead-a164-095f8f2d2d44.png"
       />
       
       <div className="min-h-screen flex flex-col items-center justify-between py-12 px-4">
