@@ -19,7 +19,7 @@ const Deploy: React.FC = () => {
         title={translate('page.deploy.success')}
         description={translate('page.deploy.text')}
         canonicalPath="/deploy"
-        image="/lovable-uploads/43657ded-d2bd-428e-84c7-4819312b1600.png"
+        image="/lovable-uploads/cc0f0854-a00f-4def-bdb6-9e21ffaa7f07.png"
       />
       
       <div className="min-h-screen flex flex-col items-center justify-center py-12 px-4 bg-retro-purple-900">

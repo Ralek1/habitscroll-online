@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
@@ -124,7 +125,7 @@ const Index: React.FC = () => {
         title={translate('app.title')}
         description={translate('app.description') || 'Discover personalized habits to improve your life based on your learning style'}
         canonicalPath="/"
-        image="/lovable-uploads/43657ded-d2bd-428e-84c7-4819312b1600.png"
+        image="/lovable-uploads/cc0f0854-a00f-4def-bdb6-9e21ffaa7f07.png"
       />
       
       <div className="min-h-screen flex flex-col items-center justify-between py-12 px-4">
