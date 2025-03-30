@@ -18,7 +18,7 @@ const SEO = ({
   title,
   description,
   canonicalPath = '',
-  image = 'https://lovable.dev/opengraph-image-p98pqg.png',
+  image = 'https://habitscroll.online/lovable-uploads/414883fb-523f-4591-8327-aa3efa5bc7b7.png',
   type = 'website',
   publishedTime,
   modifiedTime,
@@ -48,6 +48,7 @@ const SEO = ({
       <meta property="og:title" content={siteTitle} />
       <meta property="og:description" content={siteDescription} />
       <meta property="og:image" content={image} />
+      <meta property="og:site_name" content="Habit Scroll" />
       
       {/* Twitter */}
       <meta name="twitter:card" content={twitterCard} />
@@ -55,6 +56,7 @@ const SEO = ({
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={siteDescription} />
       <meta name="twitter:image" content={image} />
+      <meta name="twitter:domain" content="habitscroll.online" />
       
       {/* Article specific tags (if applicable) */}
       {type === 'article' && publishedTime && (
