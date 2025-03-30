@@ -18,7 +18,7 @@ const SEO = ({
   title,
   description,
   canonicalPath = '',
-  image = 'https://habitscroll.online/lovable-uploads/414883fb-523f-4591-8327-aa3efa5bc7b7.png',
+  image = '/lovable-uploads/414883fb-523f-4591-8327-aa3efa5bc7b7.png',
   type = 'website',
   publishedTime,
   modifiedTime,
@@ -34,6 +34,11 @@ const SEO = ({
   const siteDescription = description || defaultDescription;
   const siteUrl = 'https://habitscroll.online';
   const canonicalUrl = `${siteUrl}${canonicalPath}`;
+  
+  // Ensure image has absolute URL
+  const absoluteImageUrl = image.startsWith('http') 
+    ? image 
+    : `${siteUrl}${image}`;
 
   return (
     <Helmet>
@@ -47,7 +52,7 @@ const SEO = ({
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:title" content={siteTitle} />
       <meta property="og:description" content={siteDescription} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={absoluteImageUrl} />
       <meta property="og:site_name" content="Habit Scroll" />
       
       {/* Twitter */}
@@ -55,7 +60,7 @@ const SEO = ({
       <meta name="twitter:site" content="@habitscroll" />
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={siteDescription} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={absoluteImageUrl} />
       <meta name="twitter:domain" content="habitscroll.online" />
       
       {/* Article specific tags (if applicable) */}
