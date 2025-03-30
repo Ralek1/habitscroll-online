@@ -44,7 +44,88 @@
         "title": "Learn How To",
         "subtitle": "Track Your Progress",
         "comingSoon": "Coming Soon",
-        "description": "This section is under development. Soon you'll learn effective ways to track your habits and measure your progress towards your goals."
+        "description": "This section is under development. Soon you'll learn effective ways to track your habits and measure your progress towards your goals.",
+        "intro": "Tracking habits is not difficult. Set your goal, write down what you need, and track your progress every day!",
+        "categories": {
+          "paperSamurai": "For Paper Samurai",
+          "byteBookkeepers": "For Byte Bookkeepers",
+          "markdownMagicians": "For Markdown Magicians",
+          "visualAlchemists": "For Visual Alchemists"
+        },
+        "items": {
+          "paper": {
+            "simple": {
+              "title": "The Simple Way",
+              "description": "A simple bullet journal to track your habits with pen and paper."
+            },
+            "structured": {
+              "title": "The Structured Approach",
+              "description": "A guided habit tracker with pre-designed templates."
+            },
+            "allrounder": {
+              "title": "The All-Rounder",
+              "description": "A comprehensive habit tracking system that adapts to your needs."
+            },
+            "visible": {
+              "title": "Always Visible",
+              "description": "A large wall calendar to keep your habits visible at all times."
+            }
+          },
+          "digital": {
+            "iphone": {
+              "title": "Streaks (iPhone)",
+              "description": "Perfect for iPhone users who want to track up to twelve habits."
+            },
+            "android": {
+              "title": "HabitNow (Android)",
+              "description": "Great for Android users with powerful habit tracking capabilities."
+            },
+            "data": {
+              "title": "Way of Life",
+              "description": "For gathering lots of data about your habits and behaviors."
+            },
+            "planning": {
+              "title": "Habitify",
+              "description": "For planning your day around your habits and goals."
+            }
+          },
+          "markdown": {
+            "obsidian": {
+              "title": "Obsidian",
+              "description": "A powerful knowledge base that works on top of a local folder of plain text Markdown files."
+            },
+            "notion": {
+              "title": "Notion",
+              "description": "All-in-one workspace for notes, tasks, wikis, and databases."
+            },
+            "habitica": {
+              "title": "Habitica",
+              "description": "A gamified habit tracking app that treats your life like an RPG."
+            },
+            "ulysses": {
+              "title": "Ulysses",
+              "description": "A writing app that turns your habit tracking into a creative process."
+            }
+          },
+          "visual": {
+            "trello": {
+              "title": "Trello",
+              "description": "A visual tool that makes tracking habits fun and collaborative."
+            },
+            "miro": {
+              "title": "Miro",
+              "description": "An infinite canvas for your habit tracking visualization."
+            },
+            "kanban": {
+              "title": "Kanban Boards",
+              "description": "Track your habits with columns for to-do, doing, and done."
+            },
+            "mindmap": {
+              "title": "Mind Maps",
+              "description": "Create visual connections between your habits and goals."
+            }
+          }
+        }
       }
     }
   },
@@ -64,7 +145,11 @@
       "books": "More for Bookworms",
       "audio": "More for Audiophiles",
       "video": "More for Visual Learners",
-      "research": "More for Knowledge Seekers"
+      "research": "More for Knowledge Seekers",
+      "paper": "More for Paper Samurai",
+      "digital": "More for Byte Bookkeepers",
+      "markdown": "More for Markdown Magicians",
+      "visual": "More for Visual Alchemists"
     }
   }
 }

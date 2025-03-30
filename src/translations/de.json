@@ -44,7 +44,88 @@
         "title": "Lerne wie du",
         "subtitle": "deinen Fortschritt verfolgst",
         "comingSoon": "Demnächst verfügbar",
-        "description": "Dieser Bereich ist in Entwicklung. Bald lernst du effektive Wege, um deine Gewohnheiten zu verfolgen und deinen Fortschritt in Richtung deiner Ziele zu messen."
+        "description": "Dieser Bereich ist in Entwicklung. Bald lernst du effektive Wege, um deine Gewohnheiten zu verfolgen und deinen Fortschritt in Richtung deiner Ziele zu messen.",
+        "intro": "Gewohnheiten zu Tracken ist keine Kunst. Setze dein Ziel und schreibe auf, was du dafür brauchst und machst, jeden Tag!",
+        "categories": {
+          "paperSamurai": "Für Papier-Samurai",
+          "byteBookkeepers": "Für Byte-Buchhalter",
+          "markdownMagicians": "Für Markdown-Magier",
+          "visualAlchemists": "Für Visu-Alchemisten"
+        },
+        "items": {
+          "paper": {
+            "simple": {
+              "title": "Der einfache Weg",
+              "description": "Ein einfaches Bullet-Journal, um deine Gewohnheiten mit Stift und Papier zu verfolgen."
+            },
+            "structured": {
+              "title": "Der strukturierte Ansatz",
+              "description": "Ein geführter Habit-Tracker mit vordesignten Vorlagen."
+            },
+            "allrounder": {
+              "title": "Der Alleskönner",
+              "description": "Ein umfassendes Habit-Tracking-System, das sich an deine Bedürfnisse anpasst."
+            },
+            "visible": {
+              "title": "Immer sichtbar",
+              "description": "Ein großer Wandkalender, um deine Gewohnheiten jederzeit sichtbar zu halten."
+            }
+          },
+          "digital": {
+            "iphone": {
+              "title": "Streaks (iPhone)",
+              "description": "Perfekt für iPhone-Benutzer, die bis zu zwölf Gewohnheiten verfolgen möchten."
+            },
+            "android": {
+              "title": "HabitNow (Android)",
+              "description": "Großartig für Android-Benutzer mit leistungsstarken Habit-Tracking-Funktionen."
+            },
+            "data": {
+              "title": "Way of Life",
+              "description": "Zum Sammeln vieler Daten über deine Gewohnheiten und Verhaltensweisen."
+            },
+            "planning": {
+              "title": "Habitify",
+              "description": "Zum Planen deines Tages rund um deine Gewohnheiten und Ziele."
+            }
+          },
+          "markdown": {
+            "obsidian": {
+              "title": "Obsidian",
+              "description": "Eine leistungsstarke Wissensdatenbank, die auf einem lokalen Ordner mit einfachen Markdown-Textdateien basiert."
+            },
+            "notion": {
+              "title": "Notion",
+              "description": "All-in-One-Arbeitsbereich für Notizen, Aufgaben, Wikis und Datenbanken."
+            },
+            "habitica": {
+              "title": "Habitica",
+              "description": "Eine spielerische Habit-Tracking-App, die dein Leben wie ein Rollenspiel behandelt."
+            },
+            "ulysses": {
+              "title": "Ulysses",
+              "description": "Eine Schreib-App, die dein Habit-Tracking in einen kreativen Prozess verwandelt."
+            }
+          },
+          "visual": {
+            "trello": {
+              "title": "Trello",
+              "description": "Ein visuelles Tool, das das Tracking von Gewohnheiten unterhaltsam und kollaborativ macht."
+            },
+            "miro": {
+              "title": "Miro",
+              "description": "Eine unendliche Leinwand für deine Habit-Tracking-Visualisierung."
+            },
+            "kanban": {
+              "title": "Kanban-Boards",
+              "description": "Verfolge deine Gewohnheiten mit Spalten für To-Do, In Bearbeitung und Erledigt."
+            },
+            "mindmap": {
+              "title": "MindMaps",
+              "description": "Erstelle visuelle Verbindungen zwischen deinen Gewohnheiten und Zielen."
+            }
+          }
+        }
       }
     }
   },
@@ -64,7 +145,11 @@
       "books": "Mehr für Bücherwürmer",
       "audio": "Mehr für Audiophile",
       "video": "Mehr für Sehgenießer",
-      "research": "Mehr für Wissenssuchende"
+      "research": "Mehr für Wissenssuchende",
+      "paper": "Mehr für Papier-Samurai",
+      "digital": "Mehr für Byte-Buchhalter",
+      "markdown": "Mehr für Markdown-Magier",
+      "visual": "Mehr für Visu-Alchemisten"
     }
   }
 }
