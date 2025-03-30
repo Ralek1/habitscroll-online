@@ -22,10 +22,12 @@ interface LanguageProviderProps {
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const [language, setLanguage] = useState<Language>('en');
   const [translations, setTranslations] = useState<Record<string, TranslationObject>>({});
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     const loadTranslations = async () => {
       try {
+        console.log('Loading translations...');
         const enTranslations = await import('../translations/en.json');
         const deTranslations = await import('../translations/de.json');
         
@@ -33,6 +35,13 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
           en: enTranslations.default,
           de: deTranslations.default
         });
+        
+        console.log('Translations loaded:', {
+          en: Object.keys(enTranslations.default),
+          de: Object.keys(deTranslations.default)
+        });
+        
+        setIsLoaded(true);
       } catch (error) {
         console.error('Error loading translations:', error);
       }
@@ -47,7 +56,15 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     }
   }, []);
 
+  useEffect(() => {
+    if (isLoaded) {
+      console.log(`Language set to: ${language}`);
+      console.log('Available translation keys:', Object.keys(translations[language] || {}));
+    }
+  }, [isLoaded, language, translations]);
+
   const changeLanguage = (lang: Language) => {
+    console.log(`Changing language from ${language} to ${lang}`);
     setLanguage(lang);
     localStorage.setItem('language', lang);
     document.documentElement.lang = lang;

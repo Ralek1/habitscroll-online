@@ -168,5 +168,30 @@
       "markdown": "More for Markdown Magicians",
       "visual": "More for Visual Alchemists"
     }
+  },
+  "blog": {
+    "articles": {
+      "obsidian": {
+        "title": "Habit Tracking in Obsidian – Your Ultimate Guide",
+        "shortDescription": "Learn how to effectively track your habits using Obsidian, a powerful note-taking app.",
+        "introduction": "Habits are the key to personal growth. They can help us improve our lives, live healthier, or be more productive. But how do you keep track of your habits? The answer lies in habit tracking – and one of the best ways to do this is with Obsidian.",
+        "whatIsTitle": "What is Habit Tracking?",
+        "whatIsContent": "Habit tracking is the process of documenting and tracking your daily habits. The goal is to recognize patterns and make progress visible. Whether it's fitness, nutrition, meditation, or achieving professional goals – through habit tracking, you can monitor your progress and motivate yourself to stick with it.",
+        "whyTitle": "Why Obsidian?",
+        "whyContent": "Obsidian is a powerful note-taking app known primarily for its flexibility and focus on linked notes. It's excellent for habit tracking because it allows you to organize information in a clear and well-structured way. Additionally, with Obsidian, you can customize everything you need to record and analyze your goals and habits.",
+        "whereTitle": "Where to Get Habit Tracking in Obsidian?",
+        "whereContent": "The best way to integrate habit tracking in Obsidian is through the use of plugins. A particularly popular plugin for this purpose is the Obsidian Tracker Plugin. This plugin allows you to create habits and automatically track progress in your daily notes. Here's a simple guide on how to get it: 1. Open Obsidian and go to the Settings area. 2. Click on Community Plugins and enable Community Plugins. 3. Search for the Obsidian Tracker plugin and install it. 4. After installation, you can configure the plugin by adjusting it in the settings.",
+        "howTitle": "How to Set Up Habit Tracking in Obsidian?",
+        "howContent": "Create a new file: A central file for your habit tracking is helpful. Call it, for example, 'Habits' or 'Habit Tracker'. Define your habits: Decide which habits you want to track, e.g., 'Daily Workout', 'Meditation', 'Drinking Water', etc. Create a table or a list: You can use simple tables or a to-do list to document your daily progress. The Obsidian Tracker plugin helps you automatically create daily entries. Monitor your progress: Regularly look at your tracking data to recognize progress and make adjustments. Regular checking will help you focus on your habits and continuously improve them.",
+        "effectiveTitle": "How to Use Habit Tracking Effectively?",
+        "effectiveContent": "Habit tracking works best when you check it regularly. Set small, achievable goals and make sure you track your progress day by day. An additional tip: Use the linking functions in Obsidian to connect habits with other notes or goals to gain an even deeper insight into your progress.",
+        "youtuberTitle": "Three Major YouTubers Who Focus on Obsidian:",
+        "youtuber1": "Effective Remote Work (Nat Eliason): Nat Eliason has many great videos on Obsidian and how to use it productively for notes and habits.",
+        "youtuber2": "Sönke Ahrens: Sönke has intensively studied Obsidian and effective learning methods and shows you how to integrate Obsidian into your workflow.",
+        "youtuber3": "The Productive Engineer (Thomas Frank): Thomas also has some in-depth tutorials about Obsidian that help you get the most out of the app.",
+        "conclusionTitle": "Conclusion:",
+        "conclusionContent": "Obsidian is a powerful tool when it comes to tracking and analyzing habits. With the right setup and appropriate plugins, you can efficiently monitor your habits and continuously improve them. Start today and experience how you achieve your goals!"
+      }
+    }
   }
 }
