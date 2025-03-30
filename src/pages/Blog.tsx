@@ -5,6 +5,7 @@ import PixelButton from "../components/PixelButton";
 import HeaderNavigation from "../components/HeaderNavigation";
 import { useLanguage } from "../context/LanguageContext";
 import BlogArticleScroll from "../components/BlogArticleScroll";
+import SEO from "../components/SEO";
 
 // Blog articles data
 const blogArticles = [
@@ -12,6 +13,10 @@ const blogArticles = [
     id: "obsidian",
     imageUrl: "/lovable-uploads/8d7b002d-7c00-40c5-bdc8-7f70c5c69d87.png"
   },
+  {
+    id: "handwritten",
+    imageUrl: "/lovable-uploads/43657ded-d2bd-428e-84c7-4819312b1600.png"
+  }
   // Add more articles here in the future
 ];
 
@@ -25,6 +30,12 @@ const Blog: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center py-12 px-4">
+      <SEO 
+        title={translate('page.blog.title')} 
+        description={translate('page.blog.subtitle')}
+        canonicalPath="/blog"
+      />
+      
       <div className="absolute top-4 right-4 z-10">
         <HeaderNavigation />
       </div>
