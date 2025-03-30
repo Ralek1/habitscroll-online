@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
-import LanguageSwitcher from '../components/LanguageSwitcher';
+import HeaderNavigation from '../components/HeaderNavigation';
 import { Brain, User, Users, Briefcase, Heart, Shield, DollarSign } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { NonScrollableArea } from '../components/ui/non-scrollable-area';
@@ -188,7 +188,7 @@ const LearnWhoYouAre: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-start py-12 px-4">
       <div className="absolute top-4 right-4 z-10">
-        <LanguageSwitcher />
+        <HeaderNavigation />
       </div>
       
       <div className="text-center mb-8 animate-appear flex flex-col items-center">
