@@ -3,7 +3,7 @@ import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
 import PixelButton from "../components/PixelButton";
-import LanguageSwitcher from "../components/LanguageSwitcher";
+import HeaderNavigation from "../components/HeaderNavigation";
 import { useLanguage } from "../context/LanguageContext";
 
 const NotFound = () => {
@@ -20,7 +20,7 @@ const NotFound = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-12 px-4 bg-retro-purple-900">
       <div className="absolute top-4 right-4 z-10">
-        <LanguageSwitcher />
+        <HeaderNavigation />
       </div>
       
       <div className="text-center mb-8 animate-appear">

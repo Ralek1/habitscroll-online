@@ -5,15 +5,15 @@ import PixelButton from "../components/PixelButton";
 import HeaderNavigation from "../components/HeaderNavigation";
 import { useLanguage } from "../context/LanguageContext";
 
-const Deploy: React.FC = () => {
+const Blog: React.FC = () => {
   const { translate } = useLanguage();
   
   React.useEffect(() => {
-    document.title = translate('page.deploy.success');
+    document.title = translate('page.blog.title');
   }, [translate]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center py-12 px-4 bg-retro-purple-900">
+    <div className="min-h-screen flex flex-col items-center justify-center py-12 px-4">
       <div className="absolute top-4 right-4 z-10">
         <HeaderNavigation />
       </div>
@@ -23,13 +23,13 @@ const Deploy: React.FC = () => {
           <h1 className="font-pixel text-retro-light text-xs">{translate('app.title')}</h1>
         </div>
         <h2 className="font-pixel text-2xl text-retro-purple-200 leading-relaxed">
-          Build <br /> 
-          <span className="text-green-400">{translate('page.deploy.success')}</span>
+          {translate('page.blog.title')} <br /> 
+          <span className="text-green-400">{translate('page.blog.subtitle')}</span>
         </h2>
       </div>
 
-      <div className="text-center text-green-200 mb-8 font-pixel-text">
-        {translate('page.deploy.text')}
+      <div className="text-center text-green-200 mb-8 font-pixel-text max-w-2xl">
+        {translate('page.blog.comingSoon')}
       </div>
       
       <Link to="/">
@@ -41,4 +41,4 @@ const Deploy: React.FC = () => {
   );
 };
 
-export default Deploy;
+export default Blog;

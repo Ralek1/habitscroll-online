@@ -33,7 +33,17 @@
     "accept": "Accept",
     "close": "Close"
   },
+  "nav": {
+    "home": "Home",
+    "habits": "Habits",
+    "blog": "Blog"
+  },
   "page": {
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Articles & Thoughts",
+      "comingSoon": "Our blog is coming soon! We'll be sharing articles about habit formation, learning styles, and personal development."
+    },
     "learn": {
       "habits": {
         "title": "Learn About",

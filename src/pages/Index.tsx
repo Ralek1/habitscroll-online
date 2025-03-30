@@ -1,18 +1,19 @@
+
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import PixelButton from '../components/PixelButton';
 import { useLanguage } from '../context/LanguageContext';
 import { habits } from '../data/habits';
 import type { Habit } from '../data/habits';
-import { Sparkles, HeartPulse, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
+import { HeartPulse, Twitter, Youtube, Instagram, Facebook } from 'lucide-react';
 import { Skeleton } from '../components/ui/skeleton';
 import CookieConsent from '../components/CookieConsent';
 import SEO from '../components/SEO';
+import HeaderNavigation from '../components/HeaderNavigation';
 
 // Lazy load components that aren't needed immediately
 const HabitScroll = lazy(() => import('../components/HabitScroll'));
 const ClosedScroll = lazy(() => import('../components/ClosedScroll'));
-const LanguageSwitcher = lazy(() => import('../components/LanguageSwitcher'));
 
 // Loading fallback component
 const LoadingFallback = () => (
@@ -128,9 +129,7 @@ const Index: React.FC = () => {
       
       <div className="min-h-screen flex flex-col items-center justify-between py-12 px-4">
         <div className="absolute top-4 right-4 z-10">
-          <Suspense fallback={<div className="w-8 h-8 bg-retro-purple-700/20 rounded animate-pulse"></div>}>
-            <LanguageSwitcher />
-          </Suspense>
+          <HeaderNavigation />
         </div>
         
         <div className="text-center mb-8 animate-appear">
@@ -216,6 +215,9 @@ const Index: React.FC = () => {
               </Link>
               <Link to="/datenschutz" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
                 {translate('footer.datenschutz')}
+              </Link>
+              <Link to="/blog" className="text-retro-purple-400 hover:text-retro-accent transition-colors text-sm font-pixel-text">
+                {translate('nav.blog')}
               </Link>
             </div>
           </div>

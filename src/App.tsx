@@ -16,6 +16,7 @@ const LearnHowToTrack = lazy(() => import('./pages/LearnHowToTrack'));
 const Impressum = lazy(() => import('./pages/Impressum'));
 const Datenschutz = lazy(() => import('./pages/Datenschutz'));
 const Deploy = lazy(() => import('./pages/Deploy'));
+const Blog = lazy(() => import('./pages/Blog'));
 
 // New category pages
 const Bookworms = lazy(() => import('./pages/categories/Bookworms'));
@@ -44,6 +45,7 @@ function App() {
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/datenschutz" element={<Datenschutz />} />
               <Route path="/deploy" element={<Deploy />} />
+              <Route path="/blog" element={<Blog />} />
               
               {/* Category pages */}
               <Route path="/bookworms" element={<Bookworms />} />
