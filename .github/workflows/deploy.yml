@@ -35,6 +35,8 @@ jobs:
         run: |
           mkdir -p dist/lovable-uploads
           cp -r public/lovable-uploads/* dist/lovable-uploads/ || true
+          # Ensure the image exists in the right place
+          test -f dist/lovable-uploads/43657ded-d2bd-428e-84c7-4819312b1600.png || echo "Warning: OG image not found!"
 
       - name: Update sitemap dates
         run: |
@@ -47,3 +49,4 @@ jobs:
           branch: gh-pages
           folder: dist
           clean: true
+
