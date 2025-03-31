@@ -22,7 +22,7 @@ const SEO = ({
   type = 'website',
   publishedTime,
   modifiedTime,
-  author = 'Purple Habit Scrolls',
+  author = 'Your Habitscroll',
   twitterCard = 'summary_large_image'
 }: SEOProps) => {
   const { translate } = useLanguage();
@@ -30,7 +30,7 @@ const SEO = ({
   const defaultTitle = translate('app.title') + ' | ' + translate('app.subtitle');
   const defaultDescription = translate('app.description') || 'Discover personalized habits to improve your life based on your learning style';
   
-  const siteTitle = title ? `${title} | Purple Habit Scrolls` : defaultTitle;
+  const siteTitle = title ? `${title} | Your Habitscroll` : defaultTitle;
   const siteDescription = description || defaultDescription;
   const siteUrl = 'https://habitscroll.online';
   const canonicalUrl = `${siteUrl}${canonicalPath}`;
@@ -55,7 +55,7 @@ const SEO = ({
       <meta property="og:image" content={absoluteImageUrl} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="1200" />
-      <meta property="og:site_name" content="Purple Habit Scrolls" />
+      <meta property="og:site_name" content="Your Habitscroll" />
       
       {/* Twitter */}
       <meta name="twitter:card" content={twitterCard} />
