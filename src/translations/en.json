@@ -1,4 +1,3 @@
-
 {
   "app": {
     "title": "Your habitscroll.online",
@@ -212,6 +211,29 @@
         "youtuber3": "Studytee: On this channel, you'll find many videos about Bullet Journaling, including detailed instructions on how to effectively track habits with handwritten methods.",
         "conclusionTitle": "Conclusion:",
         "conclusionContent": "Habit tracking with handwritten tools is a great method to keep track of your habits. Using notebooks and bullet journals allows you to creatively document your progress and motivate yourself daily. With the right structure and regular reviews, you'll quickly experience the benefits of this traditional method."
+      },
+      "habits-vs-goals": {
+        "title": "Why Habits Are More Important Than Goals – The Key to Long-Term Success",
+        "shortDescription": "Discover why focusing on consistent habits rather than just setting goals is the true path to achieving lasting success.",
+        "introduction": "In the world of personal development, goals are often discussed. We set goals to realize our dreams, advance our careers, or improve our health. But what if we told you that it's not the goals that really make the difference? Rather, it's the habits you cultivate daily. In this post, we explain why habits are the true key to success and how you can effectively establish them in your life.",
+        "goalsVsHabitsTitle": "Goals vs. Habits: The Difference",
+        "goalsVsHabitsContent": "Goals are important, no question. They give us direction, vision, and something to aim for. But goals alone are not enough to ensure long-term success. They are the 'what' – they define what we want to achieve. Habits, however, are the 'how' – they describe how we actually achieve our goal.",
+        "whyHabitsTitle": "Why Are Habits More Important Than Goals?",
+        "whyHabitsContent": "Goals are one-time events – habits are permanent: A goal like 'I want to lose 10 pounds' or 'I want to read a book' is a specific event. Once you've achieved your goal, there's often no structure to continue. In contrast, habits provide a lasting strategy. A habit like 'Exercise 30 minutes daily' or 'Read 10 pages every day' ensures that you continuously make progress and achieve your goal in the long term.",
+        "goalsUnclearTitle": "Goals can seem unclear or unattainable:",
+        "goalsUnclearContent": "Big goals can seem overwhelming. If the goal seems too big, like 'I want to run a marathon in 6 months,' it can be difficult to take the first step. Habits, on the other hand, are small, easily achievable steps that bring you closer to your goal every day. The focus is not on the big end goal, but on the process.",
+        "habitsIdentityTitle": "Habits change your identity:",
+        "habitsIdentityContent": "When you try to achieve a goal, you often do so for an external reason – e.g., to look better or be more successful. Habits, however, shape your identity. If you regularly exercise, you don't just get fitter – you also become a 'sporty person.' Your habits determine who you are, not just what you do.",
+        "habitsPredictableTitle": "Habits are predictable and measurable:",
+        "habitsPredictableContent": "Goals like 'I want to be more successful' are hard to measure. It's difficult to determine if you're getting closer to your goal. Habits like 'Read 30 minutes every day' or 'Cook one meal yourself every day' are measurable and concrete. They give you clear feedback and allow you to track your progress.",
+        "buildHabitsTitle": "How to Build Habits Effectively",
+        "buildHabitsContent": "Now that you know why habits are so important, you might wonder how to successfully integrate them into your life. Here are some proven tips: Start small: Begin with a simple habit that is easy to integrate. Instead of immediately starting a whole fitness program, start with a short, daily exercise. Link new habits with existing ones: One of the best methods to establish new habits is to link them with an already existing habit. For example: 'After breakfast, I will meditate for 10 minutes.' You use the existing routine as a trigger for the new habit. Stay consistent: The key to any habit is consistency. It's not about being 'perfect' once, but about sticking with it regularly. Even if you skip a day, it's important to start again the next day. Use tracking tools: Use tools like notebooks, apps, or Obsidian to track your habits. Tracking keeps you accountable and gives you a clear overview of your progress.",
+        "psychologyTitle": "The Psychology Behind Habits",
+        "psychologyContent": "The science behind habits shows that our brain responds to repeated actions. When you repeat an action often, it becomes a habit, and your brain begins to perform it without much thought. The 'habit loop' consists of a trigger, a routine, and a reward. This cycle repeats over and over until the habit is firmly established.",
+        "examplesTitle": "Practical Examples of Habits That Make a Difference",
+        "examplesContent": "Daily reading: A habit like reading 10 pages of a book daily can help you continuously expand your knowledge and skills. Morning routine: A set morning routine that includes meditation, movement, and setting priorities can start your day with positive, productive energy. Healthy eating: Instead of setting a goal to follow a diet, you could develop a habit like preparing healthy meals on Sunday that supports you throughout the week.",
+        "conclusionTitle": "Final Thoughts",
+        "conclusionContent": "Habits are the true key to long-term success. They are the foundation on which you can build your goals. While goals give you direction, it's the habits that help you take each step to get there. So, instead of focusing exclusively on goals, start establishing positive habits in your life – they will bring you the success you desire."
       }
     }
   }

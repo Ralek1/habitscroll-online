@@ -35,8 +35,9 @@ jobs:
         run: |
           mkdir -p dist/lovable-uploads
           cp -r public/lovable-uploads/* dist/lovable-uploads/ || true
-          # Ensure the image exists in the right place
+          # Ensure the images exist in the right place
           test -f dist/lovable-uploads/cc0f0854-a00f-4def-bdb6-9e21ffaa7f07.png || echo "Warning: OG image not found!"
+          test -f dist/lovable-uploads/699e6574-3e99-4dfa-9c2f-a340f12b245b.png || echo "Warning: Habits vs Goals image not found!"
 
       - name: Update sitemap dates
         run: |

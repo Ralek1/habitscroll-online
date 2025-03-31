@@ -10,6 +10,10 @@ import SEO from "../components/SEO";
 // Blog articles data
 const blogArticles = [
   {
+    id: "habits-vs-goals",
+    imageUrl: "/lovable-uploads/699e6574-3e99-4dfa-9c2f-a340f12b245b.png"
+  },
+  {
     id: "obsidian",
     imageUrl: "/lovable-uploads/8d7b002d-7c00-40c5-bdc8-7f70c5c69d87.png"
   },
