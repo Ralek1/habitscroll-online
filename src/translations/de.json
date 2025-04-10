@@ -37,7 +37,8 @@
   "nav": {
     "home": "Startseite",
     "habits": "Gewohnheiten",
-    "blog": "Blog"
+    "blog": "Blog",
+    "menu": "Menü"
   },
   "blog": {
     "articles": {
@@ -206,6 +207,25 @@
           }
         }
       }
+    }
+  },
+  "category": {
+    "bookworms": "Für Leseratten",
+    "audiophiles": "Für Audiophile", 
+    "visualLearners": "Für visuelle Lerner",
+    "knowledgeSeekers": "Für Wissenssuchende"
+  },
+  "quote": {
+    "james": {
+      "clear": "\"Du steigst nicht auf das Niveau deiner Ziele. Du fällst auf das Niveau deiner Systeme.\" - James Clear"
+    }
+  },
+  "see": {
+    "more": {
+      "books": "Mehr Bücher",
+      "audio": "Mehr Audio",
+      "video": "Mehr Videos",
+      "research": "Mehr Forschung"
     }
   }
 }

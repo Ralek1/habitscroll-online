@@ -37,7 +37,8 @@
   "nav": {
     "home": "Home",
     "habits": "Habits",
-    "blog": "Blog"
+    "blog": "Blog",
+    "menu": "Menu"
   },
   "blog": {
     "articles": {
@@ -188,6 +189,25 @@
           }
         }
       }
+    }
+  },
+  "category": {
+    "bookworms": "For Bookworms",
+    "audiophiles": "For Audiophiles", 
+    "visualLearners": "For Visual Learners",
+    "knowledgeSeekers": "For Knowledge Seekers"
+  },
+  "quote": {
+    "james": {
+      "clear": "\"You do not rise to the level of your goals. You fall to the level of your systems.\" - James Clear"
+    }
+  },
+  "see": {
+    "more": {
+      "books": "See More Books",
+      "audio": "See More Audio",
+      "video": "See More Videos",
+      "research": "See More Research"
     }
   }
 }

@@ -27,10 +27,11 @@ const SEO = ({
 }: SEOProps) => {
   const { translate } = useLanguage();
   
-  const defaultTitle = translate('app.title') + ' | ' + translate('app.subtitle');
+  const siteName = "Your Habitscroll";
+  const defaultTitle = siteName + ' | ' + translate('app.subtitle');
   const defaultDescription = translate('app.description') || 'Discover personalized habits to improve your life based on your learning style';
   
-  const siteTitle = title ? `${title} | Your Habitscroll` : defaultTitle;
+  const siteTitle = title ? `${title} | ${siteName}` : defaultTitle;
   const siteDescription = description || defaultDescription;
   const siteUrl = 'https://habitscroll.online';
   const canonicalUrl = `${siteUrl}${canonicalPath}`;
@@ -55,7 +56,7 @@ const SEO = ({
       <meta property="og:image" content={absoluteImageUrl} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="1200" />
-      <meta property="og:site_name" content="Your Habitscroll" />
+      <meta property="og:site_name" content={siteName} />
       
       {/* Twitter */}
       <meta name="twitter:card" content={twitterCard} />
