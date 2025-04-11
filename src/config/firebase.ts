@@ -2,6 +2,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics, isSupported } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -17,6 +18,9 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
+// Initialize Firebase services
+const auth = getAuth(app);
+
 // Initialize Analytics with environment check
 const initAnalytics = async () => {
   if (await isSupported()) {
@@ -26,4 +30,4 @@ const initAnalytics = async () => {
   return null;
 };
 
-export { app, initAnalytics };
+export { app, auth, initAnalytics };

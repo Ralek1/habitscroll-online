@@ -209,6 +209,16 @@
           }
         }
       }
+    },
+    "login": {
+      "title": "Login",
+      "subtitle": "Enter your credentials to access your account",
+      "description": "Login to your HabitScroll account"
+    },
+    "signup": {
+      "title": "Create an Account",
+      "subtitle": "Enter your details to create a new account",
+      "description": "Sign up for a HabitScroll account"
     }
   },
   "category": {
