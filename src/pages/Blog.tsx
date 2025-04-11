@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PixelButton from "../components/PixelButton";
@@ -5,6 +6,7 @@ import HeaderNavigation from "../components/HeaderNavigation";
 import { useLanguage } from "../context/LanguageContext";
 import BlogArticleScroll from "../components/BlogArticleScroll";
 import SEO from "../components/SEO";
+import { optimizedImage } from "../utils/optimizeImage";
 
 // Blog articles data
 const blogArticles = [
@@ -22,7 +24,7 @@ const blogArticles = [
   },
   {
     id: "getting-back-on-track",
-    imageUrl: "/lovable-uploads/4ac26d16-a0d7-46ba-96a1-75965c9125aa.png"
+    imageUrl: "/lovable-uploads/49c81ca6-6410-4c05-a635-b740bfb5a5ad.png"
   }
   // Add more articles here in the future
 ];
