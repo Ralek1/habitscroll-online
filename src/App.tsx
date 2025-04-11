@@ -1,6 +1,6 @@
 
 import { lazy, Suspense } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
 import { AuthProvider } from './context/AuthContext';
 import { HelmetProvider } from 'react-helmet-async';
@@ -47,8 +47,11 @@ function App() {
             <Suspense fallback={<PageLoading />}>
               <Routes>
                 <Route path="/" element={<Index />} />
+                
+                {/* Auth routes with exact paths */}
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<SignUp />} />
+                
                 <Route path="/learn-who-you-are" element={<LearnWhoYouAre />} />
                 <Route path="/learn-about-habits" element={<LearnAboutHabits />} />
                 <Route path="/learn-how-to-track" element={<LearnHowToTrack />} />
@@ -63,6 +66,7 @@ function App() {
                 <Route path="/visual-learners" element={<VisualLearners />} />
                 <Route path="/knowledge-seekers" element={<KnowledgeSeekers />} />
                 
+                {/* Handle 404 - this needs to be last */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>

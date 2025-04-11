@@ -27,6 +27,16 @@ if (typeof window !== 'undefined' && 'performance' in window) {
   }
 }
 
+// Check for redirect from 404 page
+const checkRedirect = () => {
+  const redirectPath = sessionStorage.getItem('redirectPath');
+  if (redirectPath) {
+    console.log('Redirected from:', redirectPath);
+    sessionStorage.removeItem('redirectPath');
+    // We're using HashRouter so we don't need to handle the redirect here
+  }
+};
+
 // Initialize Firebase Analytics
 initAnalytics()
   .then(analytics => {
@@ -61,6 +71,8 @@ const prefetchResources = () => {
 // Use a self-executing function to optimize rendering process
 (async () => {
   try {
+    checkRedirect();
+    
     // Create root and render app
     const root = createRoot(document.getElementById("root")!);
     root.render(<App />);
@@ -90,13 +102,5 @@ window.addEventListener('load', () => {
   const totalPageLoad = window.performance.getEntriesByName('total-page-load')[0];
   if (totalPageLoad) {
     console.debug(`Page fully loaded in: ${Math.round(totalPageLoad.duration)}ms`);
-  }
-  
-  // Add security headers for single-page application
-  if (typeof window !== 'undefined' && 'navigation' in window) {
-    window.addEventListener('navigate', () => {
-      // Refresh security context on navigation
-      document.dispatchEvent(new Event('securityrefresh'));
-    });
   }
 });

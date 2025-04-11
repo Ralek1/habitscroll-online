@@ -20,9 +20,16 @@
       }
     }(window.location))
   </script>
-  <meta http-equiv="refresh" content="0;URL='./'" />
+  <script>
+    // Redirect to index and handle routing there
+    sessionStorage.setItem('redirectPath', window.location.pathname);
+    window.location.href = './';
+  </script>
 </head>
 <body>
-  <p>Redirecting to the main page...</p>
+  <div style="font-family: Arial, sans-serif; text-align: center; padding: 20px;">
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, <a href="./">click here</a>.</p>
+  </div>
 </body>
 </html>
