@@ -2,6 +2,7 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App'
+import { initAnalytics } from './config/firebase'
 
 // Register performance markers
 if (typeof window !== 'undefined' && 'performance' in window) {
@@ -25,6 +26,19 @@ if (typeof window !== 'undefined' && 'performance' in window) {
     }
   }
 }
+
+// Initialize Firebase Analytics
+initAnalytics()
+  .then(analytics => {
+    if (analytics) {
+      console.debug('Firebase Analytics initialized successfully');
+    } else {
+      console.debug('Firebase Analytics not supported in this environment');
+    }
+  })
+  .catch(error => {
+    console.error('Error initializing Firebase Analytics:', error);
+  });
 
 // Prefetch critical resources in parallel
 const prefetchResources = () => {
