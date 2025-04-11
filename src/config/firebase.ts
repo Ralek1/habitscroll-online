@@ -2,17 +2,16 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics, isSupported } from "firebase/analytics";
-import { getAuth, connectAuthEmulator } from "firebase/auth";
+import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDCDzDcaol4b5mQvYUCKl2fpQHmXxwpNPk",
+  apiKey: "YOUR_API_KEY", // Replace this with your actual API key
   authDomain: "habitscroll-b4ccb.firebaseapp.com",
   projectId: "habitscroll-b4ccb",
-  storageBucket: "habitscroll-b4ccb.firebasestorage.app",
+  storageBucket: "habitscroll-b4ccb.appspot.com", 
   messagingSenderId: "861547233127",
-  appId: "1:861547233127:web:769503666f785c6e9df9c2",
-  measurementId: "G-E4JKCFNJFW"
+  appId: "1:861547233127:web:6924798a3f107996b50206"
 };
 
 // Initialize Firebase
@@ -20,11 +19,6 @@ const app = initializeApp(firebaseConfig);
 
 // Initialize Firebase services
 const auth = getAuth(app);
-
-// Use auth emulator in development if needed
-// if (process.env.NODE_ENV === 'development') {
-//   connectAuthEmulator(auth, 'http://localhost:9099');
-// }
 
 // Initialize Analytics with environment check
 const initAnalytics = async () => {
@@ -35,6 +29,6 @@ const initAnalytics = async () => {
   return null;
 };
 
-console.log("Firebase initialized");
+console.log("Firebase initialized with updated configuration");
 
 export { app, auth, initAnalytics };
