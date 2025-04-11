@@ -10,7 +10,7 @@ interface PrivateRouteProps {
 
 const PrivateRoute: React.FC<PrivateRouteProps> = ({ 
   children, 
-  redirectTo = '/login' 
+  redirectTo = '/' 
 }) => {
   const { currentUser, loading } = useAuth();
   

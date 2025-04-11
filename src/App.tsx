@@ -13,8 +13,6 @@ import NotFound from './pages/NotFound';
 
 // Lazy-load page components
 const Index = lazy(() => import('./pages/Index'));
-const Login = lazy(() => import('./pages/Login'));
-const SignUp = lazy(() => import('./pages/SignUp'));
 const LearnWhoYouAre = lazy(() => import('./pages/LearnWhoYouAre'));
 const LearnAboutHabits = lazy(() => import('./pages/LearnAboutHabits'));
 const LearnHowToTrack = lazy(() => import('./pages/LearnHowToTrack'));
@@ -47,10 +45,6 @@ function App() {
             <Suspense fallback={<PageLoading />}>
               <Routes>
                 <Route path="/" element={<Index />} />
-                
-                {/* Auth routes with exact paths */}
-                <Route path="/login" element={<Login />} />
-                <Route path="/signup" element={<SignUp />} />
                 
                 <Route path="/learn-who-you-are" element={<LearnWhoYouAre />} />
                 <Route path="/learn-about-habits" element={<LearnAboutHabits />} />
