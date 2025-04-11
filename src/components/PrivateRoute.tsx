@@ -14,6 +14,8 @@ const PrivateRoute: React.FC<PrivateRouteProps> = ({
 }) => {
   const { currentUser, loading } = useAuth();
   
+  console.log("PrivateRoute - loading:", loading, "currentUser:", currentUser?.email);
+  
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-retro-dark">

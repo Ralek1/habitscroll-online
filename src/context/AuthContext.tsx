@@ -48,7 +48,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const login = async (email: string, password: string) => {
     try {
+      console.log("Attempting login with:", email);
       const result = await signInWithEmailAndPassword(auth, email, password);
+      console.log("Login successful");
       toast({
         title: "Login successful",
         description: "You've been successfully logged in",
@@ -56,6 +58,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       });
       return result.user;
     } catch (error: any) {
+      console.error("Login error:", error.code, error.message);
       let errorMessage = "Failed to login";
       if (error.code === "auth/user-not-found" || error.code === "auth/wrong-password") {
         errorMessage = "Invalid email or password";
@@ -74,7 +77,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signup = async (email: string, password: string) => {
     try {
+      console.log("Attempting signup with:", email);
       const result = await createUserWithEmailAndPassword(auth, email, password);
+      console.log("Signup successful");
       toast({
         title: "Account created",
         description: "Your account has been created successfully",
@@ -82,6 +87,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       });
       return result.user;
     } catch (error: any) {
+      console.error("Signup error:", error.code, error.message);
       let errorMessage = "Failed to create an account";
       if (error.code === "auth/email-already-in-use") {
         errorMessage = "Email already in use";

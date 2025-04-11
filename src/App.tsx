@@ -37,6 +37,8 @@ const PageLoading = () => (
 );
 
 function App() {
+  console.log("App component rendering");
+  
   return (
     <HelmetProvider>
       <AuthProvider>
