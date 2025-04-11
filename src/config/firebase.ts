@@ -6,7 +6,7 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY", // Replace this with your actual API key
+  apiKey: "AIzaSyDCDzDcaol4b5mQvYUCKl2fpQHmXxwpNPk",
   authDomain: "habitscroll-b4ccb.firebaseapp.com",
   projectId: "habitscroll-b4ccb",
   storageBucket: "habitscroll-b4ccb.appspot.com", 
