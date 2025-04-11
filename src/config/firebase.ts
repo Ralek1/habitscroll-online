@@ -30,4 +30,6 @@ const initAnalytics = async () => {
   return null;
 };
 
+console.log("Firebase initialized");
+
 export { app, auth, initAnalytics };

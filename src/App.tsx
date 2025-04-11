@@ -5,6 +5,7 @@ import { LanguageProvider } from './context/LanguageContext';
 import { AuthProvider } from './context/AuthContext';
 import { HelmetProvider } from 'react-helmet-async';
 import { Toaster } from './components/ui/toaster';
+import PrivateRoute from './components/PrivateRoute';
 import './App.css';
 
 // Import common components
@@ -38,8 +39,8 @@ const PageLoading = () => (
 function App() {
   return (
     <HelmetProvider>
-      <LanguageProvider>
-        <AuthProvider>
+      <AuthProvider>
+        <LanguageProvider>
           <Router>
             <Suspense fallback={<PageLoading />}>
               <Routes>
@@ -65,8 +66,8 @@ function App() {
             </Suspense>
             <Toaster />
           </Router>
-        </AuthProvider>
-      </LanguageProvider>
+        </LanguageProvider>
+      </AuthProvider>
     </HelmetProvider>
   );
 }

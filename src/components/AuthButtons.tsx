@@ -17,6 +17,8 @@ const AuthButtons: React.FC = () => {
     }
   };
 
+  console.log("AuthButtons rendering, currentUser:", currentUser?.email);
+
   if (currentUser) {
     return (
       <div className="flex items-center gap-2">

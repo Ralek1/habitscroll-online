@@ -36,7 +36,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const { toast } = useToast();
 
   useEffect(() => {
+    console.log("Setting up auth state listener");
     const unsubscribe = onAuthStateChanged(auth, (user) => {
+      console.log("Auth state changed:", user ? "User authenticated" : "No user");
       setCurrentUser(user);
       setLoading(false);
     });
@@ -151,9 +153,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     resetPassword,
   };
 
+  console.log("Auth Provider rendering, loading:", loading);
+
   return (
     <AuthContext.Provider value={value}>
-      {!loading && children}
+      {children}
     </AuthContext.Provider>
   );
 }
