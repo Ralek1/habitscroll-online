@@ -1,4 +1,3 @@
-
 {
   "app": {
     "title": "Your Habitscroll",
@@ -104,6 +103,27 @@
         "youtuber3": "Mariana's Study Corner - Zeigt, wie man handschriftliche und digitale Notizen kombiniert",
         "conclusionTitle": "Fazit",
         "conclusionContent": "Während digitale Werkzeuge Bequemlichkeit und Durchsuchbarkeit bieten, bietet die Handschrift kognitive Vorteile, die nicht übersehen werden sollten. Erwäge die Einbindung handschriftlicher Notizen in deine Lern- und Produktivitätssysteme für bessere Beibehaltung und tiefere Verarbeitung."
+      },
+      "getting-back-on-track": {
+        "title": "Wie du nach einem Scheitern wieder auf Kurs kommst",
+        "shortDescription": "Lerne, wie du deinen Schwung wiederfindest, wenn deine Gewohnheitssträhnen reißen, und wie du Widerstandsfähigkeit in deinen Gewohnheitssystemen aufbaust.",
+        "introduction": "Wir alle beginnen Gewohnheiten mit den besten Absichten. Aber dann... passiert das Leben. Du überspringst ein Training, vergisst zu journalisieren oder fällst für eine Woche aus deiner Morgenroutine. Plötzlich fühlst du dich, als hättest du versagt. Hier ist die Wahrheit: Eine Gewohnheit zu verpassen macht dich nicht zu einem Versager. Was zählt, ist deine Reaktion darauf.",
+        "whatIsTitle": "Warum Menschen nach dem Brechen einer Gewohnheit kämpfen",
+        "whatIsContent": "Einen Tag zu verpassen kann schnell zu einer verpassten Woche werden, wenn du zulässt, dass Schuld oder Scham die Oberhand gewinnen. Viele Menschen verfallen in eine \"Alles oder Nichts\"-Denkweise — und denken: \"Ich habe es vermasselt, warum sollte ich es überhaupt versuchen?\" Aber Gewohnheiten drehen sich nie um Perfektion. Sie drehen sich um Konsistenz über die Zeit.",
+        "whyTitle": "Wie man sich erholt, ohne Schwung zu verlieren",
+        "whyContent": "Vergib schnell - ein verpasster Tag ist nie das Ende. Erkenne es an, lerne daraus und mach weiter. Verpflichte dich neu mit einer winzigen Version - reduziere deine Gewohnheit. Wenn du aufgehört hast, 10 Minuten zu meditieren, starte wieder mit nur 1 Minute. Das Verkleinern der Gewohnheit verringert die Reibung.",
+        "whereTitle": "Verwende die \"Niemals Zweimal\"-Regel",
+        "whereContent": "Jeder verpasst einmal etwas. Aber verpasse nicht zweimal. Mache es dir zur Regel, am nächsten Tag immer wieder zurückzukommen. Verfolge Erfolge, nicht Strähnen - anstatt auf eine perfekte Strähne abzuzielen, verfolge, an wie vielen Tagen du diesen Monat erschienen bist. Fortschritt über Perfektion.",
+        "howTitle": "Was du zu dir selbst sagen solltest, wenn du ausrutschst",
+        "howContent": "Ersetze negative Selbstgespräche durch kraftvolle Neuformulierungen: \"Ich bin faul\" → \"Ich lerne, wie ich wieder erscheinen kann.\" \"Ich habe wieder versagt\" → \"Jede Gewohnheitsreise beinhaltet Neustarts.\" \"Ich werde nie konsequent sein\" → \"Ich brauche nur einen kleinen Erfolg heute.\"",
+        "effectiveTitle": "Effektivste Erholungsansätze",
+        "effectiveContent": "Die erfolgreichsten Gewohnheitswiederaufbauer konzentrieren sich auf Systeme, nicht auf Ziele. Sie planen im Voraus für Misserfolge, schaffen Verantwortlichkeit durch das Teilen ihrer Reise und feiern selbst die kleinsten Erfolge, wenn sie wieder auf Kurs kommen.",
+        "youtuberTitle": "YouTuber, die dieses Thema behandeln",
+        "youtuber1": "Thomas Frank - Praktische Ratschläge zum Aufbau von Gewohnheiten ohne Perfektionismus",
+        "youtuber2": "Matt Ragland - Lehrt Gewohnheitssysteme, die Scheitern als Teil des Prozesses annehmen",
+        "youtuber3": "Jay Shetty - Spricht über Denkweise, Selbstmitgefühl und reale Veränderung",
+        "conclusionTitle": "Fazit",
+        "conclusionContent": "Vom Kurs abzukommen ist normal. Vom Kurs abzubleiben ist eine Entscheidung. Dein nächster Gewohnheitserfolg ist nur eine kleine Aktion entfernt. Anstatt zu versuchen, perfekt zu sein, konzentriere dich darauf, jemand zu werden, der immer zurückkommt. Konsistenz bedeutet nicht, niemals zu fallen - es bedeutet, zu lernen, jedes Mal schneller wieder aufzustehen."
       }
     }
   },

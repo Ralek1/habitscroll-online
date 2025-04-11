@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PixelButton from "../components/PixelButton";
@@ -20,6 +19,10 @@ const blogArticles = [
   {
     id: "handwritten",
     imageUrl: "/lovable-uploads/43657ded-d2bd-428e-84c7-4819312b1600.png"
+  },
+  {
+    id: "getting-back-on-track",
+    imageUrl: "/lovable-uploads/4ac26d16-a0d7-46ba-96a1-75965c9125aa.png"
   }
   // Add more articles here in the future
 ];
