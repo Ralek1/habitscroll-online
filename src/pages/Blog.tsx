@@ -6,7 +6,7 @@ import HeaderNavigation from "../components/HeaderNavigation";
 import { useLanguage } from "../context/LanguageContext";
 import BlogArticleScroll from "../components/BlogArticleScroll";
 import SEO from "../components/SEO";
-import { optimizedImage } from "../utils/optimizeImage";
+import { optimizedImage, preloadCriticalImages } from "../utils/optimizeImage";
 
 // Blog articles data
 const blogArticles = [
@@ -35,6 +35,10 @@ const Blog: React.FC = () => {
   useEffect(() => {
     document.title = translate('page.blog.title');
     console.log("Blog page loaded, articles:", blogArticles);
+    
+    // Preload all blog images to ensure they're available
+    const imagesToPreload = blogArticles.map(article => article.imageUrl);
+    preloadCriticalImages(imagesToPreload);
   }, [translate]);
 
   return (

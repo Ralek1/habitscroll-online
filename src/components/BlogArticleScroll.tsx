@@ -1,8 +1,9 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from './ui/collapsible';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { lazyLoadImage } from '../utils/optimizeImage';
 
 interface BlogArticle {
   id: string;
@@ -16,10 +17,23 @@ interface BlogArticleScrollProps {
 const BlogArticleScroll: React.FC<BlogArticleScrollProps> = ({ article }) => {
   const { translate, language } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    // Preload the image
+    lazyLoadImage(article.imageUrl)
+      .then(() => {
+        setImageLoaded(true);
+        console.log(`Image loaded successfully: ${article.imageUrl}`);
+      })
+      .catch((error) => {
+        console.error(`Failed to load image: ${article.imageUrl}`, error);
+      });
+  }, [article.imageUrl]);
 
   const baseKey = `blog.articles.${article.id}`;
 
@@ -55,6 +69,9 @@ const BlogArticleScroll: React.FC<BlogArticleScrollProps> = ({ article }) => {
                     src={article.imageUrl} 
                     alt={translate(`${baseKey}.title`)}
                     className="w-full h-full object-cover rounded-lg"
+                    key={`${article.id}-${Date.now()}`} // Force refresh of image
+                    onLoad={() => console.log(`Image displayed: ${article.imageUrl}`)}
+                    onError={(e) => console.error(`Image error: ${article.imageUrl}`, e)}
                   />
                 </div>
                 <div className="text-green-500">

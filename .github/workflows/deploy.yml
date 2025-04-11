@@ -38,6 +38,9 @@ jobs:
           # Ensure the images exist in the right place
           test -f dist/lovable-uploads/cc0f0854-a00f-4def-bdb6-9e21ffaa7f07.png || echo "Warning: OG image not found!"
           test -f dist/lovable-uploads/699e6574-3e99-4dfa-9c2f-a340f12b245b.png || echo "Warning: Habits vs Goals image not found!"
+          test -f dist/lovable-uploads/49c81ca6-6410-4c05-a635-b740bfb5a5ad.png || echo "Warning: Getting Back on Track image not found!"
+          # Check if images are actually copied
+          ls -la dist/lovable-uploads/
 
       - name: Update sitemap dates
         run: |
@@ -50,3 +53,7 @@ jobs:
           branch: gh-pages
           folder: dist
           clean: true
+          clean-exclude: |
+            .nojekyll
+            CNAME
+            lovable-uploads/*.png
