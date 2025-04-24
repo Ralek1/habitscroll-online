@@ -24,7 +24,7 @@ export default defineConfig(({ mode }: ConfigEnv) => ({
   },
   base: "./", // This makes relative paths work on GitHub Pages
   build: {
-    outDir: "public", // Output directory for GitHub Pages
+    outDir: "dist", // Output directory for GitHub Pages
     sourcemap: false,
     minify: true,
     cssMinify: true,
