@@ -20,7 +20,7 @@ const Datenschutz       = lazy(() => import('./pages/Datenschutz'));
 const Deploy            = lazy(() => import('./pages/Deploy'));
 const Blog              = lazy(() => import('./pages/Blog'));
 const BlogDetail        = lazy(() => import('./pages/BlogDetail')); // Ensure BlogDetail.tsx exists in the ./pages directory
-const Roadmap        = lazy(() => import('./pages/Roadmap')); // Ensure BlogDetail.tsx exists in the ./pages directory
+const Roadmap           = lazy(() => import('./pages/Roadmap')); // Ensure BlogDetail.tsx exists in the ./pages directory
 
 // New category pages
 const Bookworms         = lazy(() => import('./pages/categories/Bookworms'));

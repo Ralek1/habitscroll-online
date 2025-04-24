@@ -27,7 +27,7 @@ const sanitizeImageSrc = (src: string): string => {
   }
   
   // Allow only specific domains
-  const allowedDomains = ['lovable.dev', 'example.com']; // Add more as needed
+  const allowedDomains = ['lovable.dev', 'example.com','habitscroll.online']; // Add more as needed
   try {
     const url = new URL(src);
     if (allowedDomains.some(domain => url.hostname.includes(domain))) {
