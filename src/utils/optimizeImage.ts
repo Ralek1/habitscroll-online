@@ -30,8 +30,12 @@ const sanitizeImageSrc = (src: string): string => {
   const allowedDomains = ['lovable.dev', 'example.com','habitscroll.online']; // Add more as needed
   try {
     const url = new URL(src);
-    if (allowedDomains.some(domain => url.hostname.includes(domain))) {
-      return src;
+    const hostname = url.hostname.replace(/^www\./, '');
+    const allowed = ['lovable.dev','example.com','habitscroll.online'];
+    if ((url.protocol === 'http:' || url.protocol === 'https:')
+        && allowed.includes(hostname)) {
+      // Tausche http → https
+      return src.replace(/^http:\/\//, 'https://');
     }
   } catch (e) {
     // Invalid URL
