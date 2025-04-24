@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-import { lazyLoadImage } from '../utils/optimizeImage';
+import { optimizedImage } from '../utils/optimizeImage';
 
 interface BlogArticle {
   id: string;
@@ -15,25 +15,24 @@ interface BlogArticleScrollProps {
 
 const BlogArticleCard: React.FC<BlogArticleScrollProps> = ({ article }) => {
   const { translate } = useLanguage();
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const imgProps = optimizedImage({
+    src: article.imageUrl,       // "/lovable-uploads/…"
+    alt: translate(`blog.articles.${article.id}.title`),
+    width: 400,                  // oder passend für deinen Card-Block
+    height: 240,
+    className: 'w-full h-full object-cover',
+    placeholder: true,           // lazy-loading mit 1×1-GIF
+    priority: false              // normal lazy-loaden
+  });
 
-  useEffect(() => {
-    lazyLoadImage(article.imageUrl)
-      .then(() => setImageLoaded(true))
-      .catch(() => {});
-  }, [article.imageUrl]);
-
+  
   const baseKey = `blog.articles.${article.id}`;
 
   return (
     <article className="bg-transparent border border-purple-600 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
       <Link to={`/blog/${article.id}`} className="block">
         <div className="w-full h-40 bg-gray-800 overflow-hidden">
-          <img
-            src={article.imageUrl}
-            alt={translate(`${baseKey}.title`)}
-            className="w-full h-full object-cover"
-            onLoad={() => setImageLoaded(true)}
+          <img {...(imgProps as React.ImgHTMLAttributes<HTMLImageElement>)} 
           />
         </div>
         <div className="p-4">
