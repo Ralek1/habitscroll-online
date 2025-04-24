@@ -196,16 +196,16 @@ const Index: React.FC = () => {
         <footer className="w-full mt-12 pt-8 pb-6 px-4">
           <div className="max-w-4xl mx-auto flex flex-col items-center">
             <div className="flex gap-6 items-center justify-center mb-4">
-              <a href="https://x.com/habitscroll" target="_blank" rel="noopener noreferrer" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+              <a href="https://x.com/habitscroll" target="_blank" rel="noopener noreferrer" className="text-retro-purple-400 hover:text-retro-accent transition-colors" title="Follow us on Twitter">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors" title="Follow us on YouTube">
                 <Youtube className="w-5 h-5" />
               </a>
-              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors" title="Follow us on Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-retro-purple-400 hover:text-retro-accent transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61575158904964" target="_blank" rel="noopener noreferrer" className="text-retro-purple-400 hover:text-retro-accent transition-colors" title="Follow us on Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>

@@ -25,13 +25,14 @@ const HeaderNavigation: React.FC<HeaderNavigationProps> = ({ className = "" }) =
             <Home className="w-4 h-4" />
             <span>{translate('nav.home')}</span>
           </Link>
-          <Link to="/learn-about-habits" className="font-pixel-text text-retro-purple-200 hover:text-retro-accent flex items-center gap-1 px-2 py-1 rounded transition-colors">
-            <BookOpen className="w-4 h-4" />
-            <span>{translate('nav.habits')}</span>
-          </Link>
+          
           <Link to="/blog" className="font-pixel-text text-retro-purple-200 hover:text-retro-accent flex items-center gap-1 px-2 py-1 rounded transition-colors">
             <FileText className="w-4 h-4" />
             <span>{translate('nav.blog')}</span>
+          </Link>
+          <Link to="/Roadmap" className="font-pixel-text text-retro-purple-200 hover:text-retro-accent flex items-center gap-1 px-2 py-1 rounded transition-colors">
+            <FileText className="w-4 h-4" />
+            <span>{translate('nav.Roadmap')}</span>
           </Link>
         </div>
         
@@ -61,16 +62,7 @@ const HeaderNavigation: React.FC<HeaderNavigationProps> = ({ className = "" }) =
               <span>{translate('nav.home')}</span>
             </div>
           </Link>
-          <Link 
-            to="/learn-about-habits" 
-            className="block font-pixel-text text-retro-purple-200 hover:text-retro-accent px-3 py-2 rounded transition-colors"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            <div className="flex items-center gap-2">
-              <BookOpen className="w-4 h-4" />
-              <span>{translate('nav.habits')}</span>
-            </div>
-          </Link>
+         
           <Link 
             to="/blog" 
             className="block font-pixel-text text-retro-purple-200 hover:text-retro-accent px-3 py-2 rounded transition-colors"

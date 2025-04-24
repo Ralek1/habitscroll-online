@@ -9,8 +9,9 @@
     "becomeBetter": "Become Better",
     "explore": "Explore More",
     "home": "Home",
-    "returnHome": "Return Home",
-    "backToHome": "Back to Home"
+    "returnHome": "Home",
+    "backToHome": "Home",
+    "backToBlog": "Blog"
   },
   "learn": {
     "intro": "Not sure how to get started? Learn more about:",
@@ -37,96 +38,111 @@
     "home": "Home",
     "habits": "Habits",
     "blog": "Blog",
-    "menu": "Menu"
+    "menu": "Menu",
+    "Roadmap": "Roadmap"
+  },
+  "tags": {
+    "all": "All",
+    "aufbauen": "Build Habits",
+    "loswerden": "Lose Habits",
+    "sinnvoll": "Meaningful Habits",
+    "mindset": "Motivation & Mindset",
+    "hacks": "Habit Hacks"
   },
   "blog": {
+    
     "articles": {
       "habits-vs-goals": {
-        "title": "Habits vs. Goals",
-        "shortDescription": "Learn the key differences between goals and habits and why habits lead to lasting change.",
-        "introduction": "Many people focus on setting goals but overlook the power of daily habits. This article explores why habits might be more important than goals for long-term success.",
-        "whatIsTitle": "What's the Difference?",
-        "whatIsContent": "Goals are endpoints - achievements you want to reach. Habits are behaviors you perform regularly, often automatically. While goals provide direction, habits create lasting systems for continuous improvement.",
-        "whyTitle": "Why Habits Win",
-        "whyContent": "Goals can create a yo-yo effect of motivation and disappointment. Habits, however, compound over time, leading to sustainable progress regardless of motivation levels.",
-        "whereTitle": "Where to Start",
-        "whereContent": "Begin by identifying one small habit that aligns with your larger goals. Focus on consistency rather than perfection. Track your habit daily to reinforce the behavior.",
-        "howTitle": "How to Build Habits",
-        "howContent": "Use the four-step habit loop: cue, craving, response, and reward. Make the habit obvious, attractive, easy, and satisfying to increase your chances of sticking with it.",
-        "effectiveTitle": "Most Effective Habits",
-        "effectiveContent": "Some of the most transformative habits include reading daily, exercising regularly, journaling, meditation, and time-blocking your day. Even five minutes of these activities can create momentum.",
-        "youtuberTitle": "YouTubers Who Cover This Topic",
-        "youtuber1": "James Clear - Author of Atomic Habits",
-        "youtuber2": "Matt D'Avella - Minimalist filmmaker who explores habit building",
-        "youtuber3": "Ali Abdaal - Productivity expert who discusses habit formation",
-        "conclusionTitle": "Conclusion",
-        "conclusionContent": "While goals help you set direction, habits are the daily systems that actually get you there. Focus on building consistent habits that align with your values, and the goals will follow naturally."
+        "content": "Content", 
+        "title": "Habits vs Goals: A Magical Path to Mastery",
+        "shortDescription": "Scrolly reveals why tiny rituals trump grand plans—with humor, sarcasm, and a sprinkle of mysticism.",
+        "tags": ["all","build","mindset","hacks"],
+        "introductionTitle": "An Ancient Scroll Unfurls Its Wisdom",
+        "introduction": "I, Scrolly, ancient wanderer through snow-capped pagodas of China, the serene Zen gardens of Japan, the sun-drenched ashrams of India, and the rugged code labs of Siberia, descend my endless scroll and listen to the ticking of time. Across 3,000 years I’ve downed more coffee than any digital native and devoured more manuscripts than the most zealous self-help fanatic. Yet what truly keeps us on course: the blazing goals we etch in our minds, or the tiny habits we weave day after day? Whether you're battling bosses with a controller, juggling lectures and job applications, blending detox smoothies with ritual precision, or bathing in the wisdom of 'Atomic Habits', this path will unveil the real magic of the everyday. Once, amid the neon sprawl of Tokyo, my wand vanished and I was left cursing like a rogue sorcerer—and fidgeting with motion-detecting gloves. Even there I learned: grand ambition without daily ritual is like a tank full of promise but no fuel. Magic isn't just in spells—it's woven into the mundane.",
+        "whatIsTitle": "What Are Habits vs Goals?",
+        "whatIsContent": "Goals are epic firework blasts—our grand battles etched on the mind: a marathon conquest, the career-defining promotion, the perfect zen session. They spark vision, flare bright, then fizzle when the first challenge hits. Habits, however, are subtle spells: tiny actions like a two-minute mindfulness break, a single line of code at sunrise, or nightly gratitude journaling. These rituals slip into our subconscious, stacking XP in manageable bites and building a tower that suddenly catapults you skyward. For gamers, they're Daily Quests; for students, Learning Nuggets; for wellness seekers, Soul Check-Ins; and for self-help aficionados, the enchanted hacks from our favorite tomes—a silent alchemy stronger than any dazzling goal.",
+        "whyTitle": "Why Habits Outshine Goals",
+        "whyContent": "Why do habits outshine goals? Because our brains are as lazy as a hibernating dragon. The brain craves consistency. They love autopilot and burn through raw motivation faster than you can say 'Next Level'. A lofty goal is impressive, but immovable when your inner gremlin builds roadblocks. Yet do two push-ups every day, and in a year you'll be bench-pressing mountains. Goals fire us up, but habits carry us onward when enthusiasm flatlines. Once, in a Delhi ashram, I slipped into automatic meditation while my grand hackathon plan evaporated into thin air. Two minutes of ritual trumps an empty promise every time.",
+        "whereTitle": "Where to Begin?",
+        "whereContent": "The location hardly matters—what counts is the trigger. In your dungeon run, the open-office chaos, the campus library, or even next to your yoga mat. Pick a cue you can’t easily ignore—booting your rig, finishing a lecture, or right after your post-workout smoothie. Stick Post-its like runes, set alarms, or tether your habit to something already automatic. Whether your desk is an energy-drink shrine or a serene altar, habits bloom wherever you lay the groundwork.",
+        "howTitle": "How to Forge Habits & Goals?",
+        "howContent": "1. Sharpen goals: Make them SMART (Specific, Measurable, Achievable, Relevant, Time-bound).  \n2. Design habits: Start so small your lazy brain can’t object (‘Just two squats—that’s it’).  \n3. Habit Stacking: Anchor a new ritual to an existing habit (‘After my first sip of coffee, I’ll meditate for two minutes’).  \n4. Build in rewards: A victory dance, a healthy snack-level up, or a cheeky meme as loot.  \n5. Track progress: Habit-tracker apps, calendar checkmarks, or pixel art streaks—our minds adore checkboxes nearly as much as loot drops.  \n6. Reflect weekly: Rewind your scroll, spot what glitched, and tweak like a master alchemist refining an elixir.  \n7. Adjust as you go: Adapt your spells if life throws curveballs—flexibility is key to long-term sorcery.",
+        "effectiveTitle": "Turning Magic into Results",
+        "effectiveContent": "Turning magic into results demands patience, flexibility, and the right fellowship.  \n– Shape your environment: Remove distractions, place tools in plain sight.  \n– Accountability buddy: Find a comrade who reminds you with banter, not judgment.  \n– Gamify the system: Create levels, rewards, and even fail states; keep the humor alive when you slip.  \n– Micro-Commitments: Phrase your rituals in the present tense (‘I stretch for three minutes every morning’).  \n– Community: Share your wins and failures in streams, team huddles, gym sessions, or coaching circles.  \nThis isn’t dark sorcery—it’s neuroscience cloaked in ancient runes. Watch as your everyday life orchestrates into a symphony of mystery and method.",
+        "SourcesTitle": "Sources",
+        "sourcesContent": "- James Clear: 'Atomic Habits'  \n- Charles Duhigg: 'The Power of Habit'  \n- Nir Eyal: 'Indistractable'",
+        "conclusionTitle": "Final Thoughts",
+        "conclusionContent": "So, brave adventurers—whether you’re slaying virtual dragons, skyrocketing your career, cultivating wellness, or diving into self-help tomes—habits are the true transmuters of reality. Goals are the beacon that fuels your motivation, but without the daily ritual’s enchantment, that light dims. Cast a tiny spell, weave it into your routine, chase those goals, and watch your life transform from the ground up. And when you stumble—laugh it off, learn, and scroll onward. The next epic quest awaits at dawn. May your inner wizard stay vigilant and guard every step."
       },
       "obsidian": {
-        "title": "Obsidian for Habit Tracking",
-        "shortDescription": "Discover how to use Obsidian to build a powerful habit tracking system that grows with you.",
-        "introduction": "Obsidian is a powerful knowledge management tool that can also be leveraged for habit tracking. This article explores how to set up an effective habit tracking system in Obsidian.",
-        "whatIsTitle": "What is Obsidian?",
-        "whatIsContent": "Obsidian is a note-taking application that stores data as plain Markdown files on your device. It allows for linking notes together, creating a personal knowledge graph that reveals connections between your ideas.",
-        "whyTitle": "Why Use Obsidian for Habits?",
-        "whyContent": "Obsidian offers flexibility, complete ownership of your data, and the ability to connect your habits to your broader knowledge system. You can create custom views, templates, and automated tracking with community plugins.",
-        "whereTitle": "Where to Begin",
-        "whereContent": "Start by creating a habits vault or folder within your existing vault. Set up daily note templates that include habit trackers, and consider using the Tracker plugin or Dataview plugin for more advanced tracking.",
-        "howTitle": "How to Set Up Your System",
-        "howContent": "Create templates for daily, weekly, and monthly tracking. Use checkboxes for simple habit tracking, or more complex dataview queries for analyzing patterns over time. Connect your habits to your projects, goals, and knowledge areas.",
-        "effectiveTitle": "Most Effective Approaches",
-        "effectiveContent": "The most successful Obsidian habit systems include daily review prompts, visual progress indicators, and connections to your 'why' - the deeper reasons behind each habit. Consider using the Calendar plugin to visualize your consistency.",
-        "youtuberTitle": "YouTubers Who Cover This Topic",
-        "youtuber1": "Nicole van der Hoeven - Expert Obsidian user with habit tracking tutorials",
-        "youtuber2": "Linking Your Thinking - Shows how to connect habits to broader knowledge",
-        "youtuber3": "Danny Hatcher - Provides detailed Obsidian workflows for productivity",
-        "conclusionTitle": "Conclusion",
-        "conclusionContent": "Obsidian offers a unique approach to habit tracking that evolves with your needs. By connecting your habits to your knowledge system, you create a more meaningful and sustainable approach to personal development."
-      },
+          "content": "Content", 
+          "title": "Obsidian as Your Spellbook for Habit Tracking",
+          "shortDescription": "Scrolly reveals how to master your habits in Obsidian with plugins and rituals – with mischief, mysticism, and a pinch of sarcasm.",
+          "tags": ["all","build","hacks","mindset"],
+          "introductionTitle": "An Ancient Spell Scroll Meets Modern Note Chaos",
+          "introduction": "I, Scrolly, ancient wizard and living scroll, have tried everything in 3000 years: pottery workshops in China, Zen exercises in Japan, Ayurvedic ashrams in India, and code circles in Siberia. Hehe, even in the most digital corners of this world, gamers trip over empty tabs, students over scattered notes, fitness buffs over dusty planners, and self-help devotees over illegible scribbles. \n\n Then I stumbled upon Obsidian – a glowing crystal that not only stores your habits but transforms them into magical everyday rituals. Whether you're chasing a highscore, juggling your thesis, blending detox smoothies, or questing in the self-help jungle for the holy grail: I'll show you how to master habit tracking with templates, plugins, and a few ancient spells, without turning your life into unreadable Markdown runes.",
+          "whatIsTitle": "What Is Habit Tracking in Obsidian?",
+          "whatIsContent": "Obsidian is a local-first Markdown editor and knowledge-management app that stores your notes in a vault as plain text files. No cloud chains, no data lock-in – you own it all. In your Obsidian Vault, you keep notes in Markdown files, link them bidirectionally, and create a connected knowledge web – perfect for tracking thoughts, projects, and habits over the long haul. \n\n Habit tracking here means making recurring actions visible: your morning stretch, five minutes of meditation, a glass of water upon waking, or your daily code commit. In Obsidian, you embed these rituals into your notes, tag and timestamp them, and get a dashboard that gives your brain a clear path. For digital natives they're Daily Logs, for students study blocks, for wellness enthusiasts hydration trackers, and for self-help fans those magical checkmarks that unleash motivation and accountability.",
+          "whyTitle": "Why Obsidian Instead of Any Other App?",
+          "whyContent": "Apps come and go like fleeting spells, and data lock-in hits faster than you can say 'Sync error.' Obsidian, by contrast, belongs to you: local-first, in Markdown, portable, and extensible like an ancient library. You build your personal habit grimoire without begging permission. Plugins like 'Daily Notes', 'Periodic Notes', 'Dataview', and 'Templater' act like potions that visualize your routine, analyze it seamlessly, and gently remind you of your ritual each morning – minus the annoying push-notification curses.",
+          "whereTitle": "Where Do You Start?",
+          "whereContent": "First, create a folder called 'Habits' or 'Rituals' in your vault (that’s your Obsidian repository). Then craft a template with YAML frontmatter:\n```yaml\n---\ntitle: {{date:YYYY-MM-DD}} Habit Log\ntags: [habit, daily]\n---\n```\nNext, enable 'Daily Notes', install 'Periodic Notes', and set up your Dataview queries. Whether you're in the office, a dorm room, a library café, or between protein shakes at the gym, your vault travels with you.",
+          "howTitle": "How Do You Forge Your Habit Tracking?",
+          "howContent": "1. **Create a Template**: Design a habit-log template with fields for your key habits.  \n\n 2. **YAML Magic**: Use frontmatter for tags, date fields, even emojis – your wand does the painting.  \n\n 3. **Link in Daily Notes**: Insert your habit log section via Templater hotkey.  \n\n 4. **Dataview Query**: Build a dashboard in a separate note:\n```dataview\ntable date as Date, done as Done\nfrom \"Habits\"\nwhere contains(tags, \"daily\")\nsort date desc\n```\n– see all checkmarks at a glance.  \n\n 5. **Use Plugins**: 'Calendar' for overview, 'Tracker' for graphs, 'Kanban' for weekly goals.  \n\n 6. **Anchor Your Routine**: Tie the habit log to a trigger – laptop startup, bedtime, or first coffee.  \n\n 7. **Add Rewards**: A checkmark is your XP. Stick three days in a row? Treat yourself to dark chocolate or an IRL loot drop.",
+          "effectiveTitle": "How to Make Your Magic Effective",
+          "effectiveContent": "Patience is your strongest rune: habits need time to take root.  \n\n – **Visual Feedback**: Use Dataview charts and calendar heatmaps so progress crackles visibly.  \n\n – **Accountability Circle**: Share your vault read-only with a buddy who spurs you on with friendly sarcasm.  \n\n – **Gamification**: Set levels (e.g., Level 1 at a 7-day streak, Level 2 at a 21-day streak) and reward real goodies – a smoothie, a break, or a new controller skin.  \n\n – **Flexibility**: Adjust for exam stress, vacations, or illness. A wizard weaves around storms without betraying the ritual.",
+          "SourcesTitle": "Sources & Resources",
+          "sourcesContent": "- Obsidian Documentation: https://help.obsidian.md/  \n- James Clear: 'Atomic Habits'  \n- Dataview Plugin Guide: https://github.com/blacksmithgu/obsidian-dataview  \n- Periodic Notes Plugin: https://github.com/lynchjames/obsidian-periodic-notes",
+          "conclusionTitle": "Final Thoughts",
+          "conclusionContent": "So, brave adventurers in pixel realms, career jungles, yoga oases, and book temples: with Obsidian as your personal spellbook, habit tracking becomes an epic ritual.  \nYour daily spells will no longer be invisible – they light the path to real change. When you stumble, shrug, whistle a mischievous tune, and scroll on – Scrolly watches over you, and the next magical checkmark is already flickering on the horizon."
+        },
       "handwritten": {
-        "title": "The Power of Handwritten Notes",
-        "shortDescription": "Learn why writing by hand enhances learning and memory retention in our digital age.",
-        "introduction": "In a world dominated by digital devices, handwritten notes might seem outdated. However, research shows that writing by hand offers unique cognitive benefits that typing simply can't match.",
-        "whatIsTitle": "What's Special About Handwriting?",
-        "whatIsContent": "Handwriting activates regions of the brain involved in thinking, language, and working memory in ways that typing doesn't. When you write by hand, you process information more deeply because you must be selective about what you record.",
-        "whyTitle": "Why Hand Over Keyboard?",
-        "whyContent": "Studies show that students who take handwritten notes typically outperform those who type notes on tests of conceptual understanding and application of knowledge, even when they're permitted to review their notes before testing.",
-        "whereTitle": "Where to Use Handwritten Notes",
-        "whereContent": "Consider using handwritten notes for learning new concepts, planning creative projects, journaling, goal-setting, and habit tracking. Analog tools work particularly well for tasks requiring reflection and deep thinking.",
-        "howTitle": "How to Maximize Handwriting Benefits",
-        "howContent": "Use a dedicated notebook for different areas of your life. Experiment with sketchnoting or mind mapping. Don't try to capture everything verbatim - focus on main ideas and connections between concepts.",
-        "effectiveTitle": "Most Effective Handwriting Practices",
-        "effectiveContent": "The Cornell note-taking method, bullet journaling, and the Zettelkasten method are all powerful frameworks that leverage handwriting. Combine these with periodic review for maximum retention and application.",
-        "youtuberTitle": "YouTubers Who Cover This Topic",
-        "youtuber1": "How to ADHD - Discusses handwriting for neurodivergent brains",
-        "youtuber2": "Ryder Carroll - Creator of the Bullet Journal method",
-        "youtuber3": "Mariana's Study Corner - Shows how to combine handwritten and digital notes",
-        "conclusionTitle": "Conclusion",
-        "conclusionContent": "While digital tools offer convenience and searchability, handwriting provides cognitive advantages that shouldn't be overlooked. Consider incorporating handwritten notes into your learning and productivity systems for better retention and deeper processing."
-      },
+          "content": "Content",
+          "title": "Sticky Notes & Quill: Handwritten Tracking as a Magical Ritual",
+          "shortDescription": "Scrolly reveals why analogue habit‐tracking with pen and paper becomes your most powerful daily ritual—tactile, enchanting, and endlessly charming.",
+          "tags": ["all","sinnvoll","hacks","mindset"],
+          "introductionTitle": "When Digital Warriors Wield the Quill",
+          "introduction": "I, Scrolly, ancient wizard and living scroll‐whisperer, have spilled more ink in 3,000 years than any blogger could dream of. From ink‐soaked calligraphy temples in China to palm‐leaf sutra caves in India, I’ve seen scribes chase enlightenment with every stroke. Hehe, even the fiercest gamers lose track of their high scores when glued to glowing screens, and students drown in endless digital tabs until their laptops crash.\n\nBut true magic sparks when you press pen to paper: each flourish becomes a spell your brain remembers far deeper than any pixel. Whether you’re juggling work deadlines, perfecting detox sequences in yoga studios, or devouring self-help tomes, your notebook transforms into a portal—each crossed-out box an affirmation that you’re one step closer to your quest’s end.",
+          "whatIsTitle": "What Is Handwritten Tracking?",
+          "whatIsContent": "Handwritten tracking means recording your daily rituals, habits, and little victories in an analogue system: a bullet journal, a habit-tracker grid, or even simple tally marks on the back of an old receipt.\n\nInstead of wading through menus on an app to tap ‘Done’, you draw checkmarks, crosses, or tiny smiley faces right between the lines. For digital natives, it’s level-ups on paper; for young professionals and students, a personal learning log; for wellness buffs, hydration and meditation journals; and for self-help fans, a concrete mirror of progress. Each entry becomes a tactile reminder, etched into muscle memory—no battery required.",
+          "whyTitle": "Why Handwritten Instead of an App?",
+          "whyContent": "Apps blink, sync, crash, and often demand subscription gold. Your notebook, however, rests solidly in your grasp—no pesky cloud, no data breach, no ‘Sync Error’ that kills your flow.\n\nWriting by hand activates a different part of your brain, rewarding each stroke with a micro dose of neuro-pleasure. A crossed-out square on paper feels more satisfying than a tiny green tick on a screen because it’s undeniably real. And seriously, who wants a fickle server to eat their ‘glass of water’ log just when they need it?",
+          "whereTitle": "Where Do You Begin Your Ritual?",
+          "whereContent": "Choose a sacred spot you visit daily: the home-office desk, the nightstand in your shared flat, your gym locker shelf, or your favorite coffee-shop table.\n\nGrab a sturdy notebook—dot-grid bullet journal, classic lined pad, or college-ruled composition book—and pick your weapon: a fountain pen for elegance, a gel pen for speed, or a simple pencil for raw, erasable minimalism. The key is joy: only a tool you love will survive past the first two weeks of commitment.",
+          "howTitle": "How to Forge Your Handwritten Tracking?",
+          "howContent": "1. **Purpose on Page One**: On the first page, write your ‘Why’ in one bold sentence—your guiding star when motivation dips.\n\n2. **Habit Key**: Dedicate a spread to your core habits. Draw icons or initialisms: 🧘 for meditation, 💧 for hydration, 💪 for workouts, 💻 for coding sprints.\n\n3. **Monthly Matrix**: Sketch a grid of days versus habits. Each time you complete a habit, mark a cross or a dot. By month’s end, you’ll spot streaks and gaps like a heatmap.\n\n4. **Daily Log**: Reserve a few lines per day for quick notes: mood, mini-wins, or stumbling blocks. One sentence is plenty—no need to pen an epic saga.\n\n5. **Weekly Review**: Every Sunday, spend five minutes scanning your tracker. Celebrate streaks, adjust forgotten habits, and set micro-goals for the week ahead.\n\n6. **Accountability Scroll**: Snap a pic of your layout and share it in a group chat or with a friend. Social banter becomes your playful nudge to stay on track.\n\n7. **Reward Plan**: Seven-day streak earns a gourmet coffee, 21 days unlocks a fresh journal cover. Your inner NPC applauds loudly.",
+          "effectiveTitle": "How to Unleash True Magic",
+          "effectiveContent": "– **Tactile Clarity**: Your notebook is your grimoire, not an app buried under tabs.\n\n– **Neuro-Reward**: Each pen stroke sparks dopamine in your reward circuit.\n\n– **Offline Power**: Whether in airplane mode, on a train, or atop a mountain—your tracking never quits.\n\n– **Legacy Chronicles**: Over years, your stacks of notebooks become archaeological layers of your own growth.\n\n– **Community Enchantment**: Swap layouts on social, borrow creative spreads, and cast analogue charm into your digital realm.",
+          "SourcesTitle": "Sources & Inspiration",
+          "sourcesContent": "- Ryder Carroll: “The Bullet Journal Method”  \n- B.J. Fogg: “Tiny Habits”  \n- James Clear: “Atomic Habits”  \n- Leuchtturm1917 Notebooks – your literary armor",
+          "conclusionTitle": "Final Thoughts",
+          "conclusionContent": "So, my pixel warriors, analogue yogis, career‐ashram dwellers, and book-temple wanderers: grab your pen and notebook, dive into the world of handwritten tracking, and feel how habits truly root.\n\nWhen you stumble, flip the page and begin anew—Scrolly blesses your ritual, and each filled square is a mighty triumph in the endless quest of your life."
+        },
       "getting-back-on-track": {
-        "title": "How to Get Back on Track After Failing a Habit",
-        "shortDescription": "Learn how to recover momentum when your habit streaks break and build resilience in your habit systems.",
-        "introduction": "We all start habits with the best intentions. But then… life happens. You skip a workout, forget to journal, or fall off your morning routine for a week. Suddenly, you feel like you've failed. Here's the truth: missing a habit doesn't make you a failure. What matters is how you respond.",
-        "whatIsTitle": "Why People Struggle After Breaking a Habit",
-        "whatIsContent": "Missing a day can quickly become missing a week if you let guilt or shame take over. Many people fall into an \"all or nothing\" mindset — thinking, \"I blew it, so why even try?\" But habits are never about perfection. They're about consistency over time.",
-        "whyTitle": "How to Recover Without Losing Momentum",
-        "whyContent": "Forgive quickly - one missed day is never the end. Acknowledge it, learn from it, and move on. Recommit with a tiny version - scale your habit down. If you stopped meditating for 10 minutes, restart with just 1 minute. Shrinking the habit removes friction.",
-        "whereTitle": "Use the \"Never Twice\" Rule",
-        "whereContent": "Everyone misses once. Just don't miss twice. Make it a rule to always bounce back the next day. Track wins, not streaks - instead of aiming for a perfect streak, track how many days you showed up this month. Progress over perfection.",
-        "howTitle": "What to Say to Yourself When You Slip",
-        "howContent": "Replace negative self-talk with powerful reframes: \"I'm lazy\" → \"I'm learning how to show up again.\" \"I failed again\" → \"Every habit journey includes resets.\" \"I'll never be consistent\" → \"I just need one small win today.\"",
-        "effectiveTitle": "Most Effective Recovery Approaches",
-        "effectiveContent": "The most successful habit rebuilders focus on systems, not goals. They plan for failure in advance, create accountability through sharing their journey, and celebrate even the smallest wins when getting back on track.",
-        "youtuberTitle": "YouTubers Who Cover This Topic",
-        "youtuber1": "Thomas Frank - Practical advice on building habits without perfectionism",
-        "youtuber2": "Matt Ragland - Teaches habit systems that embrace failure as part of the process",
-        "youtuber3": "Jay Shetty - Talks about mindset, self-compassion, and real-life change",
-        "conclusionTitle": "Conclusion",
-        "conclusionContent": "Falling off track is normal. Staying off track is a choice. Your next habit win is just one tiny action away. Instead of trying to be perfect, focus on becoming someone who always comes back. Consistency isn't about never falling — it's about learning to rise faster each time you do."
-      }
+        "content": "Table of Contents",
+        "title": "From the Mud Back to the Path: How to Get Back to Your Habits After a Failure",
+        "shortDescription": "Scrolly shows you how to rekindle your rituals after a setback with humor, mysticism, and cheeky sarcasm.",
+        "tags": ["all","build","mindset","hacks"],
+        "introductionTitle": "When the Magic Wanes",
+        "introduction": "I, Scrolly, ancient wizard, have botched my fair share of runes and face-planted more times than I can count—whether in China’s pagodas, Japanese Zen gardens, or Siberian code labs. Hehe, even I tumble off my broom when I try to cast too many habits at once.\n\nBut it’s right after a spectacular crash that you discover the true value of your rituals. Whether you’re chasing high scores as a gamer, sprinting through deadlines as a student, celebrating detox routines as a wellness devotee, or seeking enlightenment in self-help tomes—when your magic fizzles, I’ll show you how to spark it anew.",
+        "whatIsTitle": "What Does Failure in Habits Mean?",
+        "whatIsContent": "Failure doesn’t mean you’ve failed; it means your ritual got out of sync. Maybe you misplaced your bullet journal, snoozed your meditation alarm, or simply bit off more than you could hex. Science even splits it into **lapse** (a small slip) and **relapse** (falling back into old patterns).\n\nA single day without your ritual isn’t a total wipe-out, but a data point: What distracted you? Where did your system break down? That analysis becomes your compass for a fresh start.",
+        "whyTitle": "Why Setbacks Matter",
+        "whyContent": "Setbacks teach us more than unbroken success ever could. Each lapse exposes weak spots in your ritual-spellbook and offers a chance to refine your system. When I once slept through meditation in the middle of an ashram marathon, I learned to tether routines to rock-solid triggers. Setbacks sharpen your focus: they debunk false expectations and invite you to make your habit more realistic and sustainable.",
+        "whereTitle": "Where to Find Your First Anchor Point?",
+        "whereContent": "Begin where your daily life is most stable: your home-office desk, the nightstand in your shared flat, next to your yoga mat, or beside your gaming rig.\n\nChoose an unmistakable trigger—first sip of morning coffee, logging into your study portal, or powering off your controller. That trigger becomes your magical lever, pulling you right back into your routine whenever you activate it.",
+        "howTitle": "How to Get Back into the Flow?",
+        "howContent": "1. **Self-forgiveness**: Say it out loud—“Mistakes are okay!”—or your inner wizard spits venom.  \n\n2. **Reflection**: Write down what tripped you up. A rune of insight.  \n\n3. **Mini-habits**: Start tiny (e.g., 1 minute of meditation instead of 10) so it’s ridiculously easy to begin.  \n\n4. **Habit stacking**: Attach your mini-ritual to an existing action—after brushing teeth or before the first key-press.  \n\n5. **Visual check-ins**: Draw a simple tracker box in your notebook or stick a sticky note on your monitor.  \n\n6. **Reward**: Treat yourself instantly—a piece of chocolate or a meme—to bewitch your reward system.  \n\n7. **Accountability**: Tell a buddy about your mini-plan—fellow wizards keep each other on track.",
+        "effectiveTitle": "How to Make Your Comeback Magically Effective",
+        "effectiveContent": "– **Clear timeframe**: Schedule your reset for tomorrow morning, not “sometime.”  \n– **Flexibility**: Let the plan bend for stress phases without breaking your spell.  \n– **Ritual architecture**: Optimize your space—pen, notebook, app, water bottle all within reach.  \n– **Gamification**: Award yourself XP for every day you do your mini-habit. Collect streaks like legendary runes.  \n– **Celebrate wins**: Review weekly, reward progress, and tweak your ritual as circumstances change.",
+        "SourcesTitle": "Sources & Inspiration",
+        "sourcesContent": "- James Clear: *Atomic Habits*  \n- B.J. Fogg: *Tiny Habits*  \n- Charles Duhigg: *The Power of Habit*  \n- Ryder Carroll: *The Bullet Journal Method*",
+        "conclusionTitle": "Final Thoughts",
+        "conclusionContent": "So, valiant adventurers—whether you’re chasing high scores, sprinting through presentations, mastering balance, or wandering self-help canyons: a failure isn’t a final boss, but a waypoint. With tiny spells, honest reflection, and the cheekiest sarcasm your soul can muster, you’ll return to your path stronger than ever.\n\nScrolly blesses your new beginning—every step forward is a triumphant scene in the endless scroll of your life."
+    }
     }
   },
+
   "page": {
     "blog": {
       "title": "Blog",
@@ -188,42 +204,14 @@
               "title": "Habitify",
               "description": "For planning your day around your habits and goals."
             }
-          },
-          "markdown": {
-            "obsidian": {
-              "title": "Obsidian",
-              "description": "A powerful knowledge base that works on top of a local folder of plain Markdown text files."
-            },
-            "notion": {
-              "title": "Notion",
-              "description": "All-in-one workspace for notes, tasks, wikis, and databases."
-            },
-            "habitica": {
-              "title": "Habitica",
-              "description": "A gamified habit-tracking app that treats your life like a role-playing game."
-            },
-            "ulysses": {
-              "title": "Ulysses",
-              "description": "A writing app that turns your habit tracking into a creative process."
-            }
           }
         }
       }
-    },
-    "login": {
-      "title": "Login",
-      "subtitle": "Enter your credentials to access your account",
-      "description": "Login to your HabitScroll account"
-    },
-    "signup": {
-      "title": "Create an Account",
-      "subtitle": "Enter your details to create a new account",
-      "description": "Sign up for a HabitScroll account"
     }
   },
   "category": {
     "bookworms": "For Bookworms",
-    "audiophiles": "For Audiophiles", 
+    "audiophiles": "For Audiophiles",
     "visualLearners": "For Visual Learners",
     "knowledgeSeekers": "For Knowledge Seekers"
   },
@@ -239,5 +227,41 @@
       "video": "See More Videos",
       "research": "See More Research"
     }
-  }
+  },
+  "roadmap": {
+        "headline": "The HabitScroll Roadmap – Discover What’s Coming Next in the World of Habits",
+        "chapter1": {
+          "title": "Chapter I – The First Scroll (LIVE)",
+          "description": "Here it all began. A humble yet powerful idea: Every day, one simple habit – randomly discovered, thoughtfully presented, crafted to help you grow.",
+          "bullets":{ 
+            "1":" - Random habit generator",
+            "2":" - Simple scrollable UI", 
+            "3":" - Inspired by behavioural science & habit formation", 
+            "4":" - Pixel Wizard as guide"
+        }
+          },
+          "chapter2": {
+            "title": "Chapter II – The Wizard’s Path (In the Works)",
+            "description": "The scroll is growing… and soon, you’ll be able to write your own story upon it.",
+            "bullets":{ 
+              "1":" - User Accounts – Create your own Scroll Book",
+              "2":" - Daily Habit Suggestions",
+              "3":" - Track your Habits – Checkbox, calendar, streak system",
+              "4":" - Level System – XP, badges, visual feedback from Scrolly",
+              "5":" - Social Sharing – One-click share buttons"
+          }
+            },
+            "chapter3": {
+              "title": "Chapter III – The Mystical Fog (Yet to be revealed)",
+              "description": "Far beyond the valley of habits lies the Cryptoscroll – a mysterious place where habits are rewarded not only with XP… but with artifacts of true power.",
+              "bullets":{
+                "1":" - Blockchain-Integration",
+                "2":" - NFTs as rewards for consistency",
+                "3":" - Ranks",
+                "4":" - Token generation system based on habit streaks",
+                "5":" - Mystical Mechanics of the Token Economy still unknown…"
+            }
+            },
+            "footerNote": "Only time (and habits) will lift the fog."
+          }
 }

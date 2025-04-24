@@ -80,6 +80,12 @@ export default {
 					'pixel-border': '#3A0062'
 				}
 			},
+			borderColor: {
+			  DEFAULT: 'hsl(var(--border))',
+			  border: 'hsl(var(--border))',
+			  input: 'hsl(var(--input))',
+			  ring: 'hsl(var(--ring))',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',

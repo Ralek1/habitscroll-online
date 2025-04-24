@@ -4,7 +4,7 @@ import React, { createContext, useContext, useState, useEffect, ReactNode } from
 type Language = 'en' | 'de';
 
 // Define a recursive type for translations that matches our JSON structure
-type TranslationValue = string | { [key: string]: TranslationValue };
+type TranslationValue = string | string[] | { [key: string]: TranslationValue };
 type TranslationObject = { [key: string]: TranslationValue };
 
 interface LanguageContextType {
@@ -29,8 +29,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
       try {
         console.log('Loading translations...');
         // Force import as any to avoid TypeScript errors
-        const enTranslations = await import('../translations/en.json');
-        const deTranslations = await import('../translations/de.json');
+        const enTranslations = (await import('../translations/en.json')).default;
+        const deTranslations = (await import('../translations/de.json')).default;
         
         setTranslations({
           en: enTranslations,

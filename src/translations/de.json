@@ -9,8 +9,9 @@
     "becomeBetter": "Besser werden",
     "explore": "Mehr Entdecken",
     "home": "Home",
-    "returnHome": "Zurück zur Startseite",
-    "backToHome": "Zurück zur Startseite"
+    "returnHome": "Home",
+    "backToHome": "Home",
+    "backToBlog": "Blog"
   },
   "learn": {
     "intro": "Du weißt nicht genau, wie du beginnen kannst? Lerne mehr über:",
@@ -37,94 +38,111 @@
     "home": "Startseite",
     "habits": "Gewohnheiten",
     "blog": "Blog",
-    "menu": "Menü"
+    "menu": "Menü",
+    "Roadmap": "Roadmap"
+  },
+  "tags": {
+    "all": "Alle",
+    "aufbauen": "Gewohnheiten aufbauen",
+    "loswerden": "Gewohnheiten loswerden",
+    "sinnvoll": "Sinnvolle Gewohnheiten",
+    "mindset": "Motivation & Mindset",
+    "hacks": "Habit‑Hacks"
   },
   "blog": {
+    
     "articles": {
+      
       "habits-vs-goals": {
-        "title": "Gewohnheiten vs. Ziele",
-        "shortDescription": "Erfahre die wichtigen Unterschiede zwischen Zielen und Gewohnheiten und warum Gewohnheiten zu dauerhaften Veränderungen führen.",
-        "introduction": "Viele Menschen konzentrieren sich auf das Setzen von Zielen, übersehen aber die Kraft täglicher Gewohnheiten. Dieser Artikel erklärt, warum Gewohnheiten für langfristigen Erfolg wichtiger sein könnten als Ziele.",
-        "whatIsTitle": "Was ist der Unterschied?",
-        "whatIsContent": "Ziele sind Endpunkte - Erfolge, die du erreichen möchtest. Gewohnheiten sind Verhaltensweisen, die du regelmäßig, oft automatisch, durchführst. Während Ziele die Richtung vorgeben, schaffen Gewohnheiten dauerhafte Systeme für kontinuierliche Verbesserung.",
-        "whyTitle": "Warum Gewohnheiten gewinnen",
-        "whyContent": "Ziele können einen Jojo-Effekt von Motivation und Enttäuschung erzeugen. Gewohnheiten hingegen verstärken sich mit der Zeit und führen zu nachhaltigem Fortschritt, unabhängig vom Motivationsniveau.",
-        "whereTitle": "Wo anfangen",
-        "whereContent": "Beginne mit der Identifizierung einer kleinen Gewohnheit, die mit deinen größeren Zielen übereinstimmt. Konzentriere dich auf Konsistenz statt Perfektion. Verfolge deine Gewohnheit täglich, um das Verhalten zu verstärken.",
-        "howTitle": "Wie man Gewohnheiten aufbaut",
-        "howContent": "Nutze die vier Schritte der Gewohnheitsschleife: Signal, Verlangen, Reaktion und Belohnung. Mache die Gewohnheit offensichtlich, attraktiv, einfach und befriedigend, um deine Chancen zu erhöhen, dabei zu bleiben.",
-        "effectiveTitle": "Wirksamste Gewohnheiten",
-        "effectiveContent": "Zu den transformativsten Gewohnheiten gehören tägliches Lesen, regelmäßiges Training, Journaling, Meditation und Zeitblockierung. Schon fünf Minuten dieser Aktivitäten können Dynamik erzeugen.",
-        "youtuberTitle": "YouTuber, die dieses Thema behandeln",
-        "youtuber1": "James Clear - Autor von Atomic Habits",
-        "youtuber2": "Matt D'Avella - Minimalistischer Filmemacher, der Gewohnheitsbildung erforscht",
-        "youtuber3": "Ali Abdaal - Produktivitätsexperte, der über Gewohnheitsbildung spricht",
-        "conclusionTitle": "Fazit",
-        "conclusionContent": "Während Ziele dir helfen, die Richtung festzulegen, sind Gewohnheiten die täglichen Systeme, die dich tatsächlich dorthin bringen. Konzentriere dich darauf, konsistente Gewohnheiten aufzubauen, die mit deinen Werten übereinstimmen, und die Ziele werden sich natürlich ergeben."
-      },
+      "content": "Inhaltsverzeichnis",
+      "title": "Gewohnheiten vs. Ziele: Ein magischer Pfad zur Meisterschaft",
+      "shortDescription": "Scrolly enthüllt, warum kleine Rituale mächtiger sind als große Pläne",
+      "tags": ["all","aufbauen","mindset","hacks"],
+      "introductionTitle": "Ein uralter Scroll entfaltet seine Weisheit",
+      "introduction": "Ich, Scrolly, uralter Wanderer zwischen den schneebedeckten Pagoden Chinas, den Zen-Gärten Japans, den Yoga-Ashrams Indiens und den sibirischen Code-Labors Russlands, senke mich auf meinen endlosen Scroll und lausche dem Ticken der Zeit. In 3000 Jahren habe ich mehr Kaffee intus als jeder Digital Native und mehr Manuskripte gewälzt als jeder Selbsthilfe-Jünger. \n Doch was hält uns wirklich auf Kurs: die strahlenden Ziele, die wir uns setzen, oder die klitzekleinen Gewohnheiten, die wir Tag für Tag weben? Ob du mit Controller in der Hand dein Highscore jagst, zwischen Vorlesungen und Bewerbungsgesprächen pendelst, Detox-Smoothies mixt oder im Bücherregen von ‚Atomic Habits‘ badest – dieser Pfad führt dich zur echten Magie des Alltags. Manchmal, mitten in Tokyo, verschwand mein Zauberstab und ich stand mit Leap Motion-Handschuhen da, fluchend wie ein Barbar. \n Gerade dort begriff ich: Großer Wille ohne tägliche Rituale ist wie ein Tank ohne Sprit – prall gefüllt, aber nutzlos ohne Motor.",
+      "whatIsTitle": "Was sind Gewohnheiten vs. Ziele?",
+      "whatIsContent": "Ziele sind epische Feuersalven, unsere großen Schlachten vor dem inneren Auge: ein Marathon, der krönende Karriereschritt, die perfekte Meditation. Sie geben uns Visionen, lodern laut auf und kühlen schnell wieder ab, wenn der erste Gegenwind weht. \n Gewohnheiten hingegen sind leise Zaubersprüche – winzige Handlungen wie fünf Minuten Atemübung, eine Codezeile am Morgen oder das tägliche Journaling kleiner Siege. Diese Rituale schleichen sich ins Unterbewusstsein, sammeln XP in Mini-Portionen und bauen so einen Turm, der sich kaum sehen lässt, bis er dich unaufhaltsam emporhebt. \n Für Gamer sind es Daily Quests, für Studierende Lernnuggets, für Wellness-Fans Soul-Check‑ins und für Self-Help-Jünger die magischen Tricks aus den Büchern. Zusammengenommen erschaffen sie eine unsichtbare Alchemie, die stärker wirkt als jede noch so strahlende Vision.",
+      "whyTitle": "Warum Gewohnheiten stärker sind als Ziele",
+      "whyContent": "Warum, fragst du, ist der leise Zauberspruch mächtiger als die flammende Explosion? Weil unser Gehirn faul ist wie ein Faultier im Standby-Modus. Es liebt Autopilot und verschlingt Motivation schneller, als du ‚Next Level‘ sagen kannst. Ein großes Ziel ist beeindruckend, aber schwer zu bewegen, wenn der innere Schweinehund seinen Sitzblockaden trickreich verteidigt. Baue jedoch jeden Tag zwei Liegestütze ein, und nach zwölf Monaten stemmst du Berge. Ziele setzen ist schnell gemacht, Gewohnheiten schleifen sich langsam ein – und plötzlich durchläuft dein System Routinen, ohne dass du jeden Schritt bewusst wägst. In Delhi meditiert‘ ich einst automatisiert, während mein ambitionierter Plan für einen Ashram-Hackathon im Nirwana verschwand. Doublestacks aus Kaffee und Motivation? Nett. Echtes Momentum? Nur ein Ritual-Zauber.",
+      "whereTitle": "Wo setzt man an?",
+      "whereContent": "Der Ort ist egal – entscheidend ist der Auslöser. In deinem Diablo-Dungeon, im Open-Space-Büro, in der Uni-Bibliothek oder auf der Yogamatte neben der Balkontür. Wähle einen Trigger, der sich nicht einfach weg-discffordet: Nach dem Einschalten deines Laptops, direkt nach der Vorlesungspause, noch bevor du dein Post-Workout-Smoothie schlürfst oder unmittelbar vor dem letzten Kapitel deines Selbsthilfe-Buches. Platziere Haftnotizen wie geheime Runen, stell Timer ein oder kette deine Gewohnheit an bestehende Routinen – Boss-Moves, die dich nicht zwei Wochen später in Richtung ‚Vielleicht morgen‘ schicken, sondern sofort wirken. Es spielt keine Rolle, ob dein Schreibtisch ein Schrein aus Energy-Drinks ist oder ein meditatives Altar-Setup – Gewohnheiten funktionieren überall, wo du ihnen einen festen Platz gibst.",
+      "howTitle": "Wie schmiede ich Gewohnheiten & Ziele?",
+      "howContent": "1. Ziele schärfen: Formuliere sie SMART (Spezifisch, Messbar, Akzeptiert, Realistisch, Terminiert).  \n2. Gewohnheiten designen: Fange so klein an, dass selbst deine innere Trägheit nickt ('Zwei Liegestütze, wirklich? Ja.').  \n3. Habit Stacking: Kette deine neue Gewohnheit an eine bestehende (‚Direkt nach dem ersten Schluck Kaffee meditiere ich 2 Minuten‘).  \n4. Belohnung einbauen: Ein kurzer Victory-Dance, ein gesundes Snack-Level-Up oder ein Meme als Loot.  \n5. Fortschritt tracken: Pixel-Apps, Habit-Tracker oder ein X auf dem Kalender – dein Gehirn liebt Checkmarks fast so sehr wie Lootdrops.  \n6. Reflektion: Einmal pro Woche den Scroll zurückspulen, analysieren, was hakte und was funkte. Justiere dein Setup wie ein weiser Alchemist sein Elixier.",
+      "effectiveTitle": "Mit Magie erfolgreich",
+      "effectiveContent": "Wie schleife ich diese alte Magie zu messbarer Kraft? Mit Geduld, Flexibilität und der richtigen Community.  \n– Umwelt gestalten: Entferne Ablenkungen, platziere Tools an sichtbarer Stelle.  \n– Accountability-Buddy: Verbünde dich mit jemandem, der dich nach einem Ausrutscher nicht sterilisieren, sondern sanft erinnert.  \n– Gamify dein System: Erschaffe Levels, Belohnungen und sogar Fail-Lose; verliere nicht deinen Humor, wenn du mal vom Pfad abkommst.  \n– Mini-Hacks: Visualisiere Ziele mit Moodboards, nutze Extensions, um Zeitfresser zu blockieren.  \n– Micro-Commitments: Formuliere Rituale in Gegenwartsform ('Ich starte jeden Tag mit drei Minuten Dehnung').  \nSchwarzmagie? Keineswegs – reine Neurowissenschaft im Gewand uralter Zaubersprüche. In Liveströmen, Team-Meetings, Gym-Sessions und Coaching-Kreisen wirst du staunen, wie dein Alltag zur orchestrierten Symphonie aus Mysterium und Methodik wird.",
+      "SourcesTitle": "Quellen",
+      "sourcesContent": "- James Clear: ‚Atomic Habits‘  \n- Charles Duhigg: ‚The Power of Habit‘  \n- Nir Eyal: ‚Indistractable‘",
+      "conclusionTitle": "Schlussgedanken",
+      "conclusionContent": "Also, tapfere Helden, ob ihr virtuelle Drachen jagt, eure Karriere katapultiert, euer Wohlbefinden kultiviert oder euch in den Tiefen der Selbsthilfe versenkt – Gewohnheiten sind die wahren Perfektionierer eurer Realität. Ziele sind das Leuchtfeuer, das euch Motivnahrung liefert, doch ohne die tägliche Magie der Gewohnheiten verglimmt das Licht schnell. Nehmt einen winzigen Zauberspruch, webt ihn in eure Routine, jagt eure Ziele und staunt, wie euer Leben sich von Grund auf verwandelt. Und wenn ihr mal stolpert – lacht, lernt und scrollt einfach weiter. Die nächste epische Quest beginnt schon morgen früh. Erinnert euch an das Lächeln des ersten Checkmarks, atmet tief durch und wisst: Die wahre Alchemie findet in euren kleinen Schritten statt. Möge euer innerer Magier wach bleiben und euch auf allen Pfaden bewachen."
+    },
+
       "obsidian": {
-        "title": "Obsidian für Habit-Tracking",
-        "shortDescription": "Entdecke, wie du Obsidian nutzen kannst, um ein leistungsstarkes Habit-Tracking-System aufzubauen, das mit dir wächst.",
-        "introduction": "Obsidian ist ein leistungsstarkes Wissensmanagement-Tool, das auch für das Tracking von Gewohnheiten genutzt werden kann. Dieser Artikel erklärt, wie du ein effektives Habit-Tracking-System in Obsidian einrichtest.",
-        "whatIsTitle": "Was ist Obsidian?",
-        "whatIsContent": "Obsidian ist eine Notiz-Anwendung, die Daten als einfache Markdown-Dateien auf deinem Gerät speichert. Es ermöglicht die Verknüpfung von Notizen und erstellt einen persönlichen Wissensgraphen, der Verbindungen zwischen deinen Ideen aufzeigt.",
-        "whyTitle": "Warum Obsidian für Gewohnheiten nutzen?",
-        "whyContent": "Obsidian bietet Flexibilität, vollständige Kontrolle über deine Daten und die Möglichkeit, deine Gewohnheiten mit deinem breiteren Wissenssystem zu verbinden. Du kannst benutzerdefinierte Ansichten, Vorlagen und automatisiertes Tracking mit Community-Plugins erstellen.",
-        "whereTitle": "Wo beginnen?",
-        "whereContent": "Beginne mit der Erstellung eines Habit-Vaults oder -Ordners innerhalb deines bestehenden Vaults. Richte tägliche Notizvorlagen ein, die Habit-Tracker enthalten, und erwäge die Verwendung des Tracker-Plugins oder Dataview-Plugins für fortgeschritteneres Tracking.",
-        "howTitle": "Wie richtet man sein System ein?",
-        "howContent": "Erstelle Vorlagen für tägliches, wöchentliches und monatliches Tracking. Verwende Checkboxen für einfaches Habit-Tracking oder komplexere Dataview-Abfragen zur Analyse von Mustern im Zeitverlauf. Verbinde deine Gewohnheiten mit deinen Projekten, Zielen und Wissensbereichen.",
-        "effectiveTitle": "Effektivste Ansätze",
-        "effectiveContent": "Die erfolgreichsten Obsidian-Habit-Systeme umfassen tägliche Review-Prompts, visuelle Fortschrittsanzeigen und Verbindungen zu deinem 'Warum' - den tieferen Gründen hinter jeder Gewohnheit. Erwäge die Verwendung des Calendar-Plugins, um deine Konsistenz zu visualisieren.",
-        "youtuberTitle": "YouTuber, die dieses Thema behandeln",
-        "youtuber1": "Nicole van der Hoeven - Obsidian-Expertin mit Tutorials zum Habit-Tracking",
-        "youtuber2": "Linking Your Thinking - Zeigt, wie man Gewohnheiten mit breiterem Wissen verbindet",
-        "youtuber3": "Danny Hatcher - Bietet detaillierte Obsidian-Workflows für Produktivität",
-        "conclusionTitle": "Fazit",
-        "conclusionContent": "Obsidian bietet einen einzigartigen Ansatz für Habit-Tracking, der sich mit deinen Bedürfnissen weiterentwickelt. Indem du deine Gewohnheiten mit deinem Wissenssystem verbindest, schaffst du einen sinnvolleren und nachhaltigeren Ansatz für persönliche Entwicklung."
+        "content": "Inhaltsverzeichnis",
+        "title": "Obsidian als Zauberbuch fürs Habit-Tracking",
+        "shortDescription": "Scrolly enthüllt, wie du in Obsidian mit Plugins und Ritualen deine Gewohnheiten meisterst – mit Schabernack, Mystik und einer Prise Sarkasmus.",
+        "tags": ["all","aufbauen","hacks","mindset"],
+        "introductionTitle": "Ein uralter Zauberscroll trifft modernes Notizchaos",
+        "introduction": "Ich, Scrolly, weise Magier und wandelnder Scroll, hab in 3000 Jahren alles probiert: Töpferwerkstätten in China, Zen-Übungen in Japan, Ayurveda-Aschen in Indien und Code-Kränzchen in Sibirien. Hoho, selbst in den digitalsten Ecken dieser Welt stolpern Gamer über leere Tab-Reiter, Studierende über zerfasertes Wissen, Fitness-Fans über verstaubte Kalender und Selbsthilfe-Jünger über unleserliche Notizen. \n \nDann stieß ich auf Obsidian – ein leuchtender Kristall, der deine Gewohnheiten nicht nur speichert, sondern in magische Alltagsrituale verwandelt. Egal, ob du gerade deinen Highscore jagst, deine Abschlussarbeit jonglierst, dein Detox-Programm durchziehst oder im Self-Help-Dschungel nach dem heiligen Gral suchst: Ich zeig dir, wie du mit Templates, Plugins und ein paar alten Zauberformeln dein Habit-Tracking meistern kannst, ohne dein Leben in unleserliche Markdown-Runen zu verwandeln.",
+        "whatIsTitle": "Was ist Habit-Tracking in Obsidian?",
+        "whatIsContent": "Obsidian ist eine local-first Markdown-Editor- und Knowledge-Management-App, die deine Notizen in einem Vault als einfache Textdateien speichert. Keine Cloud-Fessel, kein Daten-Lock-in – alles gehört dir. Als Obsidian Vault legst du deine Notizen in Markdown-Dateien ab, verknüpfst sie per bidirektionaler Links und erstellst so ein vernetztes Wissensnetzwerk – perfekt, um Gedanken, Projekte und Gewohnheiten langfristig im Blick zu behalten. \n \n Habit-Tracking heißt hier, wiederkehrende Tätigkeiten – dein morgendliches Dehnen, fünf Minuten Meditation, ein Glas Wasser nach dem Aufstehen oder der tägliche Commit im Git-Repo – sichtbar zu machen. In Obsidian bindest du diese Rituale in deine Notizen ein, versiehst sie mit Tags und Datumsstempeln und erhältst so ein Dashboard, das deinem Gehirn einen klaren Pfad vorgibt. Für Digital Natives sind es Daily Logs, für Studierende Lernblöcke, für Wellness-Enthusiasten Hydrations-Tracker und für Selbsthilfe-Fans die magischen Häkchen, die Motivation und Accountability zugleich freisetzen. Hoho, selbst meine Drachenhund-Chroniken in Sibirien sahen plötzlich übersichtlich aus!",
+        "whyTitle": "Warum Obsidian statt x-beliebiger App?",
+        "whyContent": "Apps kommen und gehen wie flüchtige Zaubersprüche, und dein Data-Lock-in ist schneller da, als du ‚Sync-Error‘ sagen kannst. Obsidian hingegen gehört dir: local-first, in Markdown, portabel und erweiterbar wie eine antike Bibliothek. Du baust dir dein persönliches Habit-Grimoire, ohne um Erlaubnis zu betteln. Plugins wie ‚Daily Notes‘, ‚Periodic Notes‘, ‚Dataview‘ und ‚Templater‘ wirken wie Zaubertränke, die deine Routine visualisieren, stufenlos auswerten und dich jeden Morgen sanft an dein Ritual erinnern – ganz ohne nerviges Push-Benachrichtigung-Gebimmel.",
+        "whereTitle": "Wo legst du los?",
+        "whereContent": "Am Anfang steht der richtige Ort in deinem Vault (so heißt dein Obsidian-Repository). Erstelle dort einen Ordner ‚Habits‘ oder ‚Rituale‘, lege ein Template an – z.B. mit YAML-Frontmatter:\n\n```yaml\n---\ntitle: {{date:YYYY-MM-DD}} Habit-Log\ntags: [habit, daily]\n---\n```\n\nUnd dann: Daily Notes aktivieren, Periodic Notes installieren, Dataview-Queries vorbereiten. Egal ob im lokalen Büro, im WG-Kämmerchen, im Bibliotheks-Café oder zwischen Protein-Shakes im Gym – dein Vault ist überall dabei.",
+        "howTitle": "Wie schmiedest du dein Habit-Tracking?",
+        "howContent": "1. **Template basteln**: Erstelle ein Habit-Log-Template mit Platz für deine wichtigsten Gewohnheiten.  \n \n 2. **YAML-Magie**: Nutze Frontmatter für Tags, Datumsfelder und sogar Emoji-Icons – dein Zauberstab führt den Pinsel.  \n \n3. **Daily Notes verknüpfen**: Füge in deinem täglichen Journal eine Section ‚🔮 Habits‘ ein, kopiere dein Template per Hotkey oder Templater-Befehl.  \n\n 4. **Dataview-Query**: Baue dir ein Dashboard in einer separaten Notiz:\n   ```dataview\n   table date as Datum, done as Erledigt\n   from \"Habits\"\n   where contains(tags, \"daily\")\n   sort date desc\n   ```  \n   – und schon siehst du alle Häkchen auf einen Blick.  \n\n 5. **Plugins nutzen**: ‚Calendar‘ für Übersicht, ‚Tracker‘ für Graphen, ‚Kanban‘ für Wochenziele.  \n \n 6. **Routine verankern**: Koppel das Habit-Log an einen bestehenden Trigger – nach dem Öffnen deines Laptops, vor dem Schlafengehen oder direkt nach dem ersten Kaffee.  \n \n 7. **Belohnung einbauen**: Ein Häkchen im Log ist dein XP. Gib dir selbst ein virtuelles Loot-Item, wenn du drei Tage in Folge durchhältst – wer braucht schon Diablo, wenn man im echten Leben farmt?",
+        "effectiveTitle": "So wird deine Magie wirkungsvoll",
+        "effectiveContent": "Geduld ist deine stärkste Rune: Gewohnheiten brauchen Zeit, um Wurzeln zu schlagen.  \n\n – **Visual Feedback**: Setze Dataview-Grafiken und Calendar-Heatmaps ein, damit der Fortschritt sichtbar knistert.  \n\n – **Accountability Circle**: Teile deinen Vault (read-only) mit einem Buddy, der dich mit freundlichem Sarkasmus anspornt.  \n\n– **Gamification**: Lege Levels fest (z.B. Level 1 bei 7 Tagen Streak, Level 2 bei 21 Tagen) und belohne dich mit realen Goodies – ein Smoothie, eine Pause oder ein neuer Controller-Skin.  \n\n– **Flexibilität**: Passe deine Habits an Lebensphasen an – Examensstress, Urlaube oder Kranksein. Ein Magier weicht den Stürmen aus, ohne sein Ritual zu verraten.",
+        "SourcesTitle": "Quellen & Ressourcen",
+        "sourcesContent": "- Obsidian Documentation: https://help.obsidian.md/  \n- James Clear: 'Atomic Habits'  \n- Dataview Plugin Guide: https://github.com/blacksmithgu/obsidian-dataview  \n- Periodic Notes Plugin: https://github.com/lynchjames/obsidian-periodic-notes",
+        "conclusionTitle": "Schlussgedanken",
+        "conclusionContent": "Also, wagemutige Abenteurer – ob ihr gerade den Highscore knackt, eure Karriere vorantreibt, dein Wohlbefinden kultivierst oder im Self-Help-Dschungel nach dem nächsten Wow-Moment suchst: Mit Obsidian als deinem persönlichen Zauberbuch wird Habit-Tracking zur Kunstform. Deine Rituale werden zu Runen, deine Notizen zu magischen Portalen und dein Fortschritt zu einem epischen Heldensong. Wenn du mal strauchelst, zucke nur mit der Schulter und scroll weiter – Scrolly wacht über dich, und der nächste magische Eintrag wartet schon."
       },
       "handwritten": {
-        "title": "Die Kraft handschriftlicher Notizen",
-        "shortDescription": "Erfahre, warum das Schreiben von Hand das Lernen und die Gedächtnisleistung in unserem digitalen Zeitalter verbessert.",
-        "introduction": "In einer Welt, die von digitalen Geräten dominiert wird, mögen handschriftliche Notizen veraltet erscheinen. Forschungen zeigen jedoch, dass das Schreiben von Hand einzigartige kognitive Vorteile bietet, die das Tippen einfach nicht erreichen kann.",
-        "whatIsTitle": "Was ist das Besondere am Handschreiben?",
-        "whatIsContent": "Handschrift aktiviert Regionen des Gehirns, die an Denken, Sprache und Arbeitsgedächtnis beteiligt sind, auf eine Weise, wie es Tippen nicht tut. Wenn du von Hand schreibst, verarbeitest du Informationen tiefgreifender, da du selektiv sein musst, was du aufzeichnest.",
-        "whyTitle": "Warum Hand statt Tastatur?",
-        "whyContent": "Studien zeigen, dass Studierende, die handschriftliche Notizen machen, typischerweise besser abschneiden als diejenigen, die Notizen tippen, bei Tests zum konzeptionellen Verständnis und zur Anwendung von Wissen, selbst wenn sie ihre Notizen vor dem Test überprüfen dürfen.",
-        "whereTitle": "Wo handschriftliche Notizen verwenden?",
-        "whereContent": "Erwäge handschriftliche Notizen für das Erlernen neuer Konzepte, die Planung kreativer Projekte, Journaling, Zielsetzung und Habit-Tracking. Analoge Werkzeuge eignen sich besonders gut für Aufgaben, die Reflexion und tiefes Denken erfordern.",
-        "howTitle": "Wie maximiert man die Vorteile der Handschrift?",
-        "howContent": "Verwende ein eigenes Notizbuch für verschiedene Bereiche deines Lebens. Experimentiere mit Sketchnoting oder Mind-Mapping. Versuche nicht, alles wörtlich zu erfassen - konzentriere dich auf Hauptideen und Verbindungen zwischen Konzepten.",
-        "effectiveTitle": "Effektivste Handschrift-Praktiken",
-        "effectiveContent": "Die Cornell-Notizmethode, Bullet Journaling und die Zettelkasten-Methode sind alles leistungsstarke Frameworks, die Handschrift nutzen. Kombiniere diese mit regelmäßiger Überprüfung für maximale Beibehaltung und Anwendung.",
-        "youtuberTitle": "YouTuber, die dieses Thema behandeln",
-        "youtuber1": "How to ADHD - Diskutiert Handschrift für neurodivergente Gehirne",
-        "youtuber2": "Ryder Carroll - Schöpfer der Bullet-Journal-Methode",
-        "youtuber3": "Mariana's Study Corner - Zeigt, wie man handschriftliche und digitale Notizen kombiniert",
-        "conclusionTitle": "Fazit",
-        "conclusionContent": "Während digitale Werkzeuge Bequemlichkeit und Durchsuchbarkeit bieten, bietet die Handschrift kognitive Vorteile, die nicht übersehen werden sollten. Erwäge die Einbindung handschriftlicher Notizen in deine Lern- und Produktivitätssysteme für bessere Beibehaltung und tiefere Verarbeitung."
-      },
+          "content": "Inhaltsverzeichnis",
+          "title": "Haftnotizen & Federkiel: Handgeschriebenes Tracking als magisches Ritual",
+          "shortDescription": "Scrolly enthüllt, warum handschriftliches Tracking mit Stift und Papier zum mächtigsten Ritual deines Alltags wird – analog, haptisch und voller Charme.",
+          "tags": ["all","sinnvoll","hacks","mindset"],
+          "introductionTitle": "Wenn Digitalkrieger den Federkiel schwingen",
+          "introduction": "Ich, Scrolly, uralter Magier und wandelnder Pergamentrollen-Flüsterer, hab in 3000 Jahren schon so manche Tinte vergießen sehen – von chinesischen Kalligraphie-Tempeln bis zu indischen Palmblatt-Sutra-Höhlen. Hoho, sogar die glühendsten Gamer verlieren ihre Highscores aus den Augen, wenn sie nur auf flimmernde Bildschirme starren, und Studierende überschütten ihre Notizen mit digitalen Overlays, bis der Rechner schlappmacht.\n\nDoch wahre Magie entsteht, wenn du Stift auf Papier führst: Jeder Strich wird zum Zauberspruch, der dein Gehirn tiefer verankert als jede Pixelwüste. Egal, ob du zwischen Homeoffice-Deadlines jonglierst, in Yogastudios Detox-Moves perfektionierst oder dich durch Selbsthilfe-Titel wühlst – dein Notizbuch wird zum Portal, in dem jede durchgestrichene Zeile dich ein Stück weit näher an deine Ziele bringt.",
+          "whatIsTitle": "Was ist handschriftliches Tracking?",
+          "whatIsContent": "Handschriftliches Tracking heißt, deine täglichen Rituale, Gewohnheiten und kleinen Siege analog festzuhalten: mit einem Bullet Journal, einer Habit-Tracker-Tabelle oder simplen Strichlisten auf der Rückseite alter Briefe.\n\nStatt in endlosen App-Menüs nach „Done“ zu suchen, malst du Häkchen, Kreuze oder Smiley-Gesichter zwischen die Zeilen. Für Digital Natives sind es Level-Ups auf Papier, für Berufstätige und Studierende ein persönliches Learning-Log, für Wellness-Enthusiasten ein Hydration- und Meditationstagebuch und für Self-Help-Fans der ultimative Spiegel ihres Fortschritts. Jeder Eintrag wird zum greifbaren Reminder, der im Gedächtnis haften bleibt – ganz ohne Akku-Drama.",
+          "whyTitle": "Warum handschriftlich statt App?",
+          "whyContent": "Apps blinken, synchronisieren, crashen und kosten Abo-Gulden. Dein Notizbuch jedoch liegt fest in deiner Hand – keine lästige Cloud, keine Datenschutz-Pannen, kein Sync-Error, der deinen Flow killt.\n\nBeim Schreiben aktiviert dein Gehirn den haptischen Speicher: Die Synapsen knistern, wenn du jede Linie ziehst. Ein durchgestrichenes Kreuz auf Papier fühlt sich befriedigender an als ein digitales Häkchen, weil es real ist. Und mal ehrlich: Wer will schon, dass ein launischer Server dein Glas-Wasser-Tracking verschluckt?",
+          "whereTitle": "Wo beginnst du dein Ritual?",
+          "whereContent": "Suche dir einen festen Ort, den du täglich aufsuchst: Schreibtisch im Homeoffice, Nachttisch im WG-Zimmer, der Lieblings-Café-Tisch oder sogar dein Spind im Fitnessstudio.\n\nLege ein robustes Notizbuch bereit – Bullet Journal, Punktpapier-Notebook oder klassischer College-Block – und wähle deinen Lieblingsstift: Füller für Kunst, Gelpen für Tempo oder Holzbleistift für Minimalismus. Wichtig ist nur, dass du dich auf dein Werkzeug freust, denn nur so wird aus Tracking ein Ritual, das du gerne pflegst.",
+          "howTitle": "Wie schmiedest du dein handschriftliches Tracking?",
+          "howContent": "1. **Warum-Formel auf Seite 1**: Notiere dein persönliches ‚Warum‘ in einem Satz. Das ist dein magischer Leuchtturm, wenn der Schweinehund anklopft.\n\n2. **Habit-Key gestalten**: Zeichne auf einer Doppelseite die Symbole für deine wichtigsten Gewohnheiten: 🧘 für Meditation, 💧 für Wasser, 💪 für Sport, 💻 für Code.\n\n3. **Monatsübersicht anlegen**: Erstelle ein Gitter mit Tagen und Habit-Icons. Setze bei jeder erfüllten Gewohnheit ein Kreuz oder Smiley. So erkennst du Muster wie in einer Heatmap.\n\n4. **Daily Log führen**: Widme jeder Seite eine Kurzzeile für Stimmung, kleine Erfolge und Stolpersteine. Ein Satz genügt – keine epische Saga.\n\n5. **Wochen-Review halten**: Reserviere dir sonntags fünf Minuten, um deine Streaks zu feiern und Anpassungen vorzunehmen. Ein Ritual der Wertschätzung und Justierung.\n\n6. **Accountability-Scroll**: Poste ein Foto deines Layouts in der Chat-Gruppe oder mit einer Freundin. Der soziale Druck wird zum freundlichen Sarkasmus-Motor.\n\n7. **Belohnungen planen**: Bei 7 Tagen Streak ein Extra-Kaffee, bei 21 Tagen ein neues Hardcover-Notizbuch. Dein innerer NPC applaudiert laut.",
+          "effectiveTitle": "So entfesselst du echte Magie",
+          "effectiveContent": "– **Haptische Erleuchtung**: Dein Notizbuch ist dein Grimoire, keine App mit endlosem Scroll.\n\n– **Neuro-Belohnung**: Jeder Strich feuert dein Belohnungssystem an.\n\n– **Offline-Power**: Egal ob im Flugzeugmodus, im Zug oder auf dem Mond – dein Tracking funktioniert überall.\n\n– **Chroniken deiner Entwicklung**: Jahr für Jahr wirst du zum Archäologen deiner eigenen Erfolge.\n\n– **Community-Zauber**: Teile Layout-Ideen auf Social Media, adaptiere kreative Designs und bring analoges Flair in dein digitales Universum.",
+          "SourcesTitle": "Quellen & Inspiration",
+          "sourcesContent": "- Ryder Carroll: „The Bullet Journal Method“  \n- B.J. Fogg: „Tiny Habits“  \n- James Clear: „Atomic Habits“  \n- Leuchtturm1917 Notebooks – deine literarische Rüstung",
+          "conclusionTitle": "Schlussgedanken",
+          "conclusionContent": "Also, meine Pixel-Ritter, Analogie-Yogis, Karriere-Ashram-Bewohner und Buchtempel-Wanderer: Schnappt euch Stift und Notizbuch, taucht ein in die Welt des handgeschriebenen Trackings und spürt, wie sich Gewohnheiten wirklich verankern.\n\nWenn ihr mal stolpert, blättert um und beginnt neu – Scrolly segnet euer Ritual, und jedes ausgefüllte Kästchen ist ein Triumph in der endlosen Quest eures Lebens."
+        },
       "getting-back-on-track": {
-        "title": "Wie du nach einem Scheitern wieder auf Kurs kommst",
-        "shortDescription": "Lerne, wie du deinen Schwung wiederfindest, wenn deine Gewohnheitssträhnen reißen, und wie du Widerstandsfähigkeit in deinen Gewohnheitssystemen aufbaust.",
-        "introduction": "Wir alle beginnen Gewohnheiten mit den besten Absichten. Aber dann... passiert das Leben. Du überspringst ein Training, vergisst zu journalisieren oder fällst für eine Woche aus deiner Morgenroutine. Plötzlich fühlst du dich, als hättest du versagt. Hier ist die Wahrheit: Eine Gewohnheit zu verpassen macht dich nicht zu einem Versager. Was zählt, ist deine Reaktion darauf.",
-        "whatIsTitle": "Warum Menschen nach dem Brechen einer Gewohnheit kämpfen",
-        "whatIsContent": "Einen Tag zu verpassen kann schnell zu einer verpassten Woche werden, wenn du zulässt, dass Schuld oder Scham die Oberhand gewinnen. Viele Menschen verfallen in eine \"Alles oder Nichts\"-Denkweise — und denken: \"Ich habe es vermasselt, warum sollte ich es überhaupt versuchen?\" Aber Gewohnheiten drehen sich nie um Perfektion. Sie drehen sich um Konsistenz über die Zeit.",
-        "whyTitle": "Wie man sich erholt, ohne Schwung zu verlieren",
-        "whyContent": "Vergib schnell - ein verpasster Tag ist nie das Ende. Erkenne es an, lerne daraus und mach weiter. Verpflichte dich neu mit einer winzigen Version - reduziere deine Gewohnheit. Wenn du aufgehört hast, 10 Minuten zu meditieren, starte wieder mit nur 1 Minute. Das Verkleinern der Gewohnheit verringert die Reibung.",
-        "whereTitle": "Verwende die \"Niemals Zweimal\"-Regel",
-        "whereContent": "Jeder verpasst einmal etwas. Aber verpasse nicht zweimal. Mache es dir zur Regel, am nächsten Tag immer wieder zurückzukommen. Verfolge Erfolge, nicht Strähnen - anstatt auf eine perfekte Strähne abzuzielen, verfolge, an wie vielen Tagen du diesen Monat erschienen bist. Fortschritt über Perfektion.",
-        "howTitle": "Was du zu dir selbst sagen solltest, wenn du ausrutschst",
-        "howContent": "Ersetze negative Selbstgespräche durch kraftvolle Neuformulierungen: \"Ich bin faul\" → \"Ich lerne, wie ich wieder erscheinen kann.\" \"Ich habe wieder versagt\" → \"Jede Gewohnheitsreise beinhaltet Neustarts.\" \"Ich werde nie konsequent sein\" → \"Ich brauche nur einen kleinen Erfolg heute.\"",
-        "effectiveTitle": "Effektivste Erholungsansätze",
-        "effectiveContent": "Die erfolgreichsten Gewohnheitswiederaufbauer konzentrieren sich auf Systeme, nicht auf Ziele. Sie planen im Voraus für Misserfolge, schaffen Verantwortlichkeit durch das Teilen ihrer Reise und feiern selbst die kleinsten Erfolge, wenn sie wieder auf Kurs kommen.",
-        "youtuberTitle": "YouTuber, die dieses Thema behandeln",
-        "youtuber1": "Thomas Frank - Praktische Ratschläge zum Aufbau von Gewohnheiten ohne Perfektionismus",
-        "youtuber2": "Matt Ragland - Lehrt Gewohnheitssysteme, die Scheitern als Teil des Prozesses annehmen",
-        "youtuber3": "Jay Shetty - Spricht über Denkweise, Selbstmitgefühl und reale Veränderung",
-        "conclusionTitle": "Fazit",
-        "conclusionContent": "Vom Kurs abzukommen ist normal. Vom Kurs abzubleiben ist eine Entscheidung. Dein nächster Gewohnheitserfolg ist nur eine kleine Aktion entfernt. Anstatt zu versuchen, perfekt zu sein, konzentriere dich darauf, jemand zu werden, der immer zurückkommt. Konsistenz bedeutet nicht, niemals zu fallen - es bedeutet, zu lernen, jedes Mal schneller wieder aufzustehen."
-      }
+          "content": "Inhaltsverzeichnis",
+          "title": "Aus dem Sumpf zurück auf den Pfad: Wie du nach einem Scheitern wieder zu deinen Gewohnheiten findest",
+          "shortDescription": "Scrolly zeigt dir, wie du mit Humor, Mystik und frechem Sarkasmus nach einem Rückschlag deine Rituale wieder auf Kurs bringst.",
+          "tags": ["all","aufbauen","mindset","hacks"],
+          "introductionTitle": "Wenn der Zauber mal nachlässt",
+          "introduction": "Ich, Scrolly, uralter Magier, hab in 3000 Jahren so manche Rune verpatzt und mich auf die Nase gelegt – in Chinas Pagoden, zwischen Zen-Gärten und sibirischen Code-Labors. Hehe, selbst ich fall mal vom Besen, wenn ich versuche, zu viele Gewohnheiten gleichzeitig zu hexen. \n\n Doch gerade nach einem kräftigen Sturz entdeckst du den wahren Wert deiner Rituale. Egal, ob du als Gamer Highscores jagst, als Studierender durch Deadlines sprintest, als Wellness-Jünger Detox-Rituale feierst oder in Selbsthilfe-Büchern nach Erleuchtung suchst: Wenn die Magie versiegt, zeige ich dir, wie du sie wieder entfachst.",
+          "whatIsTitle": "Was bedeutet Scheitern bei Gewohnheiten?",
+          "whatIsContent": "Ein Scheitern heißt nicht, dass du versagt hast, sondern dass du mitten in deinem Ritual aus dem Takt geraten bist. Vielleicht hast du dein Bullet Journal verlegt, den Meditations-Alarm ignoriert oder einfach zu viel auf einmal gewollt. In der Wissenschaft unterscheidet man Lapse (kleine Ausrutscher) und Relapse (Rückfall in alte Muster). \n\nEin einzelner Tag ohne dein Ritual ist kein Totalausfall, sondern eine Datenquelle: Was hat dich abgelenkt? Wo hakte dein System? Diese Analyse wird dein Kompass für den Neubeginn.",
+          "whyTitle": "Warum Rückschläge wichtig sind",
+          "whyContent": "Scheitern lehrt uns mehr als ständiger Erfolg. Jeder Lapsus zeigt Schwachstellen im Ritual-Zauberbuch und bietet die Chance, dein System zu verfeinern. Als ich einst mitten in einem Ashram-Marathon meine Meditation vergaß, lernte ich, Routinen an fest verankerte Trigger zu knüpfen. Rückschläge schärfen deinen Fokus: Sie entzaubern falsche Erwartungen und laden dich ein, die Gewohnheit realistischer und nachhaltiger zu gestalten.",
+          "whereTitle": "Wo findest du den ersten Ankerpunkt?",
+          "whereContent": "Beginne dort, wo dein Alltag stabil ist: am Schreibtisch, am Nachttisch, neben der Yogamatte oder der Konsole. Wähle einen unmissverständlichen Trigger – den ersten Schluck Kaffee, das Einloggen ins Lernportal oder das Abstellen deines Controllers. Dieser Auslöser wird dein magischer Hebel, der dich sofort zurück in deine Routine zieht, sobald du ihn aktivierst.",
+          "howTitle": "Wie kommst du zurück in den Flow?",
+          "howContent": "1. Selbstvergebung: Sag dir laut ‚Fehler sind okay!‘ – dein innerer Magier spuckt sonst Gift. \n\n2. Reflexion: Halte schriftlich fest, was dich ausgebremst hat. Eine Rune für Erkenntnis.  \n\n3. Mini-Gewohnheiten: Setze extrem kleine Schritte (z.B. 1 Minute Meditation statt 10), damit dir der Einstieg leicht fällt.  \n\n4. Habit Stacking: Kette deine Mini-Rituale an bestehende Abläufe – etwa nach dem Zähneputzen oder vor dem ersten Tastendruck.  \n\n5. Visuelle Check-ins: Zeichne ein einfaches Tracker-Kästchen in dein Notizbuch oder auf den Desktop-Wallpaper.  \n\n6. Belohnung: Belohne dich sofort mit einem kleinen Genuss oder Meme, um dein Belohnungssystem zu verhexen.  \n\n7. Accountability: Erzähl einem Buddy von deinem Mini-Plan – verbündete Magier halten dich auf Kurs.",
+          "effectiveTitle": "So machst du deine Rückkehr magisch effektiv",
+          "effectiveContent": "– Klarer Zeitrahmen: Plane den Neubeginn für den nächsten Morgen, nicht ‚irgendwann‘. \n – Flexibilität: Erlaube dir, den Plan an Stress-Phasen anzupassen, ohne den Zauber ganz fallen zu lassen. \n – Routine-Architektur: Optimiere deinen Raum – Stift, Notizbuch, Handy-App und Wasserflasche griffbereit. \n – Gamification: Vergib XP-Punkte für jeden Tag, an dem du dein Mini-Habit ausführst. Sammle Streaks wie virtuelle Runen. \n – Feiere Erfolge: Reflektiere wöchentlich, belohne dich für Fortschritte und passe dein Ritual an neue Gegebenheiten an.",
+          "SourcesTitle": "Quellen & Inspiration",
+          "sourcesContent": "- James Clear: ‚Atomic Habits‘  \n- B.J. Fogg: ‚Tiny Habits‘  \n- Charles Duhigg: ‚The Power of Habit‘  \n- Ryder Carroll: ‚The Bullet Journal Method‘",
+          "conclusionTitle": "Schlussgedanken",
+          "conclusionContent": "Also, wackere Abenteurer – ob ihr euren Highscore jagt, durch Präsentationen sprintet, eure Balance kultiviert oder in Selbsthilfe-Schluchten wandelt: Ein Scheitern ist keine Katastrophe, sondern ein Wegweiser. Mit kleinen Zaubersprüchen, ehrlichem Blick und frechem Sarkasmus deiner Seele kehrst du zurück auf deinen Pfad. Scrolly segnet deinen Neubeginn, und jeder erneute Schritt ist eine triumphale Etappe in deinem endlosen Scroll des Lebens."
+        }
+        
     }
   },
   "page": {
@@ -138,7 +156,7 @@
         "title": "Lerne mehr über",
         "subtitle": "Gewohnheiten",
         "comingSoon": "Demnächst verfügbar",
-        "description": "Dieser Bereich ist in Entwicklung. Bald kannst du hier alles darüber lernen, wie Gewohnheiten funktionieren, wie du sie bildest und wie du sie für dauerhafte Veränderungen beibehältst."
+        "description": "Dieser Bereich ist in Entwicklung. Bald kannst du hier alles darüber lernen, wie Gewohnheiten funktionieren, wie du sie bildest und wie du sie für dauerhafte Veränderungen beibältst."
       },
       "track": {
         "title": "Lerne wie du",
@@ -168,7 +186,7 @@
             },
             "visible": {
               "title": "Immer sichtbar",
-              "description": "Ein großer Wandkalender, um deine Gewohnheiten jederzeit sichtbar zu halten."
+              "description": "Ein großer Wandkalender, um deine Gewohnheiten jederzeit visibeal zu halten."
             }
           },
           "digital": {
@@ -231,7 +249,7 @@
   },
   "category": {
     "bookworms": "Für Leseratten",
-    "audiophiles": "Für Audiophile", 
+    "audiophiles": "Für Audiophile",
     "visualLearners": "Für visuelle Lerner",
     "knowledgeSeekers": "Für Wissenssuchende"
   },
@@ -247,5 +265,41 @@
       "video": "Mehr Videos",
       "research": "Mehr Forschung"
     }
-  }
+  },
+  "roadmap": {
+    "headline": "HabitScroll Roadmap – Unsere Reise beginnt",
+    "chapter1": {
+      "title": "Kapitel I – Die Erste Schriftrolle (LIVE)",
+      "description": "Hier begann alles. Eine einfache, aber kraftvolle Idee: Jeden Tag eine kleine Gewohnheit – zufällig entdeckt, sorgfältig präsentiert, mit dem Ziel, dich wachsen zu lassen.",
+      "bullets":{ 
+        "1":" - Zufälliger Gewohnheits-Generator",
+        "2":" - Einfach scrollbare Benutzeroberfläche", 
+        "3":" - Inspiriert von Verhaltensforschung & Gewohnheitsbildung", 
+        "4":" - Pixel-Wizard als Begleiter"
+    }
+      },
+      "chapter2": {
+        "title": "Kapitel II – Der Pfad des Zauberers (In Arbeit)",
+        "description": "Die Schriftrolle wächst... und bald wirst du deine eigene Geschichte darauf schreiben können.",
+        "bullets":{ 
+          "1":" - Benutzerkonten – Erstelle dein eigenes Gewohnheitsbuch",
+          "2":" - Tägliche Gewohnheitsvorschläge",
+          "3":" - Tracke deine Gewohnheiten – Checkbox, Kalender, Streak-System",
+          "4":" - Levelsystem – XP, Abzeichen, visuelles Feedback von Scrolly",
+          "5":" - Social Sharing – Ein-Klick-Teilen-Buttons"
+      }
+        },
+        "chapter3": {
+          "title": "Kapitel III – Der Mystische Nebel (Noch nicht enthüllt)",
+          "description": "Weit hinter dem Tal der Gewohnheiten liegt die Kryptoschriftrolle – ein mystischer Ort, an dem Gewohnheiten nicht nur mit XP, sondern mit Artefakten wahrer Macht belohnt werden.",
+          "bullets":{
+            "1":" - Blockchain-Integration",
+            "2":" - NFTs als Belohnung für Beständigkeit",
+            "3":" - Rangsystem",
+            "4":" - Token-Generierung basierend auf Gewohnheits-Streaks",
+            "5":" - Mystische Mechaniken der Token-Ökonomie sind noch geheim..."
+        }
+        },
+        "footerNote": "Nur Zeit (und Gewohnheiten) werden den Nebel lüften."
+      }
 }

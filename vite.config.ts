@@ -10,7 +10,7 @@ export default defineConfig(({ mode }: ConfigEnv) => ({
   server: {
     host: "::",
     port: 8080,
-    https: {}, // Use an empty object instead of boolean to match ServerOptions type
+    https: undefined, // Use an empty object instead of boolean to match ServerOptions type // deactivateted for now
   },
   plugins: [
     react(),

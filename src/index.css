@@ -49,7 +49,7 @@
   }
   
   * {
-    @apply border-border;
+    border-color: var(--border); /* Changed from @apply border-border; */
   }
 
   body {
@@ -211,6 +211,10 @@
   * {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    /* Fallback for unsupported browsers */
+    &::-webkit-scrollbar {
+      display: none;  /* Chrome, Safari, and other WebKit browsers */
+    }
   }
 }
 
