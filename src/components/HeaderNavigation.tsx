@@ -62,7 +62,7 @@ const HeaderNavigation: React.FC<HeaderNavigationProps> = ({ className = "" }) =
               <span>{translate('nav.home')}</span>
             </div>
           </Link>
-         
+      
           <Link 
             to="/blog" 
             className="block font-pixel-text text-retro-purple-200 hover:text-retro-accent px-3 py-2 rounded transition-colors"
@@ -71,6 +71,16 @@ const HeaderNavigation: React.FC<HeaderNavigationProps> = ({ className = "" }) =
             <div className="flex items-center gap-2">
               <FileText className="w-4 h-4" />
               <span>{translate('nav.blog')}</span>
+            </div>
+          </Link>
+          <Link 
+            to="/Roadmap" 
+            className="block font-pixel-text text-retro-purple-200 hover:text-retro-accent px-3 py-2 rounded transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <div className="flex items-center gap-2">
+              <FileText className="w-4 h-4" />
+              <span>{translate('nav.roadmap')}</span>
             </div>
           </Link>
         </div>

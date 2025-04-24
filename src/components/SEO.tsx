@@ -37,7 +37,7 @@ const SEO = ({
   const canonicalUrl = `${siteUrl}${canonicalPath}`;
   
   // Ensure image has absolute URL
-  const absoluteImageUrl = image.startsWith('http') 
+  const absoluteImageUrl = image.startsWith('https') 
     ? image 
     : `${siteUrl}${image}`;
 

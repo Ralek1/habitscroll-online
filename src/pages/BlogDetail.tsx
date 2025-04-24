@@ -5,6 +5,7 @@ import { useLanguage } from '../context/LanguageContext';
 import SEO from '../components/SEO';
 import HeaderNavigation from '../components/HeaderNavigation';
 import PixelButton from '../components/PixelButton';
+import { optimizedImage } from '../utils/optimizeImage';  // ← Import
 
 // Import your JSON translations
 import deData from '../translations/de.json';
@@ -79,6 +80,17 @@ const BlogDetail: React.FC = () => {
     const el = document.getElementById(sectionId);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
+  const imgProps = imageUrl
+    ? optimizedImage({
+        src: imageUrl,
+        alt: entry.title,
+        width: 800,                // Passe Breite/Höhe nach Bedarf an
+        height: 450,
+        className: 'w-full max-w-2xl mx-auto mb-6 rounded-lg',
+        placeholder: true,
+        priority: true,            // setzt loading="eager" und preload
+      })
+    : null;
 
   return (
     <div className="prose mx-auto py-12 px-4 text-left">
@@ -93,12 +105,10 @@ const BlogDetail: React.FC = () => {
         {language === 'de' ? `${wordCount} Wörter` : `${wordCount} words`}
       </div>
 
-      {imageUrl && (
-        <img
-          src={imageUrl}
-          alt={entry.title}
-          className="w-full max-w-2xl mx-auto mb-6 rounded-lg"
-        />
+      {/* **Hier** verwendest du imgProps */}
+      {imgProps && (
+        // cast nötig, damit TS die Props-Typen akzeptiert
+        <img {...(imgProps as React.ImgHTMLAttributes<HTMLImageElement>)} />
       )}
 
       {/* Inhaltsverzeichnis */}
